@@ -1,6 +1,6 @@
 [
     {
-        "Hound": "x",
+        "Hound": "Event is missing msg.sender parameter",
         "IllIllI": "Events are missing sender information"
     },
     {
@@ -64,7 +64,6 @@
         "IllIllI": "Import declarations should import specific identifiers, rather than the whole file"
     },
     {
-        "Hound": "???",
         "IllIllI": "Contract implements interface without extending the interface"
     },
     {
@@ -116,7 +115,6 @@
         "IllIllI": "Interfaces should be indicated with an I prefix in the contract name"
     },
     {
-        "Hound": "???",
         "IllIllI": "Control structures do not follow the Solidity Style Guide"
     },
     {
@@ -140,24 +138,99 @@
         "IllIllI": "Large or complicated code bases should implement invariant tests"
     },
     {
+        "Hound": "Hardcoded address should be avoided",
         "IllIllI": "addresss shouldn't be hard-coded"
     },
     {
+        "Hound": "Parameter omission in events",
         "IllIllI": "Events that mark critical parameter changes should contain both the old and the new value"
     },
     {
+        "Hound": "Use @inheritdoc rather than using a non-standard annotation",
         "IllIllI": "Use @inheritdoc rather than using a non-standard annotation"
     },
     {
+        "Hound": "Inconsistent spacing in comments",
         "IllIllI": "Inconsistent spacing in comments"
     },
     {
+        "Hound": "Use of floating pragma",
         "IllIllI": "Non-library/interface files should use fixed compiler versions, not floating ones"
     },
     {
+        "Hound": "Some variables have a implicit default visibility",
         "IllIllI": "Visibility should be set explicitly rather than defaulting to internal"
     },
     {
+        "Hound": "mapping definitions does not comply with best practices",
         "IllIllI": "mapping definitions do not follow the Solidity Style Guide"
+    },
+    {
+        "Hound": "Array lengths not checked",
+        "IllIllI": "Array lengths not checked"
+    },
+    {
+        "Hound": "Use of ownership with a single step rather than double",
+        "IllIllI": "Use Ownable2Step rather than Ownable"
+    },
+    {
+        "Hound": "Upgradeable contract is missing a gap storage variable",
+        "IllIllI": "Upgradeable contract is missing a __gap[50] storage variable to allow for new storage variables in later versions"
+    },
+    {
+        "Hound": "Loss of precision on division",
+        "IllIllI": "Loss of precision"
+    },
+    {
+        "Hound": "Solidity version 0.8.20 may not work on other chains due to PUSH0",
+        "IllIllI": "Solidity version 0.8.20 may not work on other chains due to PUSH0"
+    },
+    {
+        "Hound": "Usage of functions that are not part of the IERC20 interface",
+        "IllIllI": "decimals() is not a part of the ERC-20 standard"
+    },
+    {
+        "Hound": "Missing checks for address(0)",
+        "IllIllI": "Missing checks for address(0x0) when assigning values to address state variables"
+    },
+    {
+        "Hound": "Some functions do not work correctly with fee-on-transfer tokens",
+        "IllIllI": "Contracts are vulnerable to fee-on-transfer accounting-related issues"
+    },
+    {
+        "Hound": "Missing staleness checks for Chainlink oracle",
+        "IllIllI": "Insufficient oracle validation"
+    },
+    {
+        "Hound": "Missing L2 sequencer checks for Chainlink oracle",
+        "IllIllI": "Missing checks for whether the L2 Sequencer is active"
+    },
+    {
+        "Hound": "Centralization issue caused by admin privileges",
+        "IllIllI": "The owner is a single point of failure and a centralization risk"
+    },
+    {
+        "Hound": "Some functions do not work correctly with rebasing tokens",
+        "IllIllI": "Contracts are vulnerable to rebasing accounting-related issues"
+    },
+    {
+        "Hound": "Some ERC20 can revert on a zero value transfer",
+        "IllIllI": "Some tokens may revert when zero value transfers are made"
+    },
+    {
+        "Hound": "Non-compliant IERC20 tokens may revert with transfer",
+        "IllIllI": "Unsafe use of transfer()/transferFrom() with IERC20"
+    },
+    {
+        "Hound": "Return values of transfer/transferFrom not checked",
+        "IllIllI": "Return values of transfer()/transferFrom() not checked"
+    },
+    {
+        "Hound": "Reduce gas usage by moving to Solidity 0.8.19 or later",
+        "IllIllI": "Use at least Solidity version 0.8.19 to gain some gas boost"
+    },
+    {
+        "Hound": "Avoid updating storage when the value hasn't changed",
+        "IllIllI": "Avoid updating storage when the value hasn't changed"
     }
 ]
