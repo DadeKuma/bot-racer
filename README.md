@@ -2,6 +2,8 @@
 
 This project was created to assist judges in Code4rena bot races.
 
+A live website is available [here](https://botrace-judging-helper.netlify.app/).
+
 ## Contributing
 
 To add a finding for your bot, follow these steps:
