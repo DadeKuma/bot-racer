@@ -232,5 +232,128 @@
     {
         "Hound": "Avoid updating storage when the value hasn't changed",
         "IllIllI": "Avoid updating storage when the value hasn't changed"
+    },
+    {
+        "Hound": "Multiple mappings that share an ID can be combined into a single mapping of ID / struct",
+        "IllIllI": "Multiple address/ID mappings can be combined into a single mapping of an address/ID to a struct, where appropriate"
+    },
+    {
+        "Hound": "State variables only set in the constructor should be declared `immutable`",
+        "IllIllI": "State variables only set in the constructor should be declared immutable"
+    },
+    {
+        "Hound": "Use of memory instead of storage for struct/array state variables",
+        "IllIllI": "Using storage instead of memory for structs/arrays saves gas"
+    },
+    {
+        "Hound": "Cache state variables with stack variables",
+        "IllIllI": "State variables should be cached in stack variables rather than re-reading them from storage"
+    },
+    {
+        "Hound": "Cache multiple accesses of a mapping/array",
+        "IllIllI": "Multiple accesses of a mapping/array should use a local variable cache"
+    },
+    {
+        "Hound": "`x += y` is more expensive than `x = x + y` for state variables",
+        "IllIllI": "<x> += <y> costs more gas than <x> = <x> + <y> for state variables"
+    },
+    {
+        "Hound": "internal functions only called once can be inlined to save gas",
+        "IllIllI": "internal functions only called once can be inlined to save gas"
+    },
+    {
+        "Hound": "Add unchecked blocks for subtractions where the operands cannot underflow",
+        "IllIllI": "Add unchecked {} for subtractions where the operands cannot underflow because of a previous require() or if-statement"
+    },
+    {
+        "Hound": "Array length is not cached",
+        "IllIllI": "<array>.length should not be looked up in every loop of a for-loop"
+    },
+    {
+        "Hound": "Lack of `unchecked` in loops",
+        "IllIllI": "++i/i++ should be unchecked{++i}/unchecked{i++} when it is not possible for them to overflow, as is the case when used in for- and while-loops"
+    },
+    {
+        "Hound": "Long revert strings",
+        "IllIllI": "require()/revert() strings longer than 32 bytes cost extra gas"
+    },
+    {
+        "Hound": "Cache `keccak256` with static arguments",
+        "IllIllI": "keccak256() should only need to be called on a specific string literal once"
+    },
+    {
+        "Hound": "Function names can be optimized",
+        "IllIllI": "Optimize names to save gas"
+    },
+    {
+        "Hound": "Using bool for storage incurs overhead",
+        "IllIllI": "Using bools for storage incurs overhead"
+    },
+    {
+        "Hound": "Old Solidity version",
+        "IllIllI": "Use a more recent version of solidity"
+    },
+    {
+        "Hound": "uint comparison with zero can be cheaper",
+        "IllIllI": "Using > 0 costs more gas than != 0 when used on a uint in a require() statement"
+    },
+    {
+        "Hound": ">=/<= costs less gas than >/<",
+        "IllIllI": ">= costs less gas than >"
+    },
+    {
+        "Hound": "Using pre instead of post increments/decrements",
+        "IllIllI": "++i costs less gas than i++, especially when it's used in for-loops (--i/i-- too)"
+    },
+    {
+        "Hound": "Splitting `require` statements that use `&&` saves gas",
+        "IllIllI": "Splitting require() statements that use && saves gas"
+    },
+    {
+        "Hound": "Usage of `uints`/`ints` smaller than 32 bytes (256 bits) incurs overhead",
+        "IllIllI": "Usage of uints/ints smaller than 32 bytes (256 bits) incurs overhead"
+    },
+    {
+        "Hound": "Using `private` for constants saves gas",
+        "IllIllI": "Using private rather than public for constants, saves gas"
+    },
+    {
+        "Hound": "Boolean comparison with boolean literals is unnecessary",
+        "IllIllI": "Don't compare boolean expressions to boolean literals"
+    },
+    {
+        "Hound": "`SafeMath` usage with Solidity version >`0.8.0`",
+        "IllIllI": "Don't use SafeMath once the solidity version is 0.8.0 or greater"
+    },
+    {
+        "IllIllI": "require() or revert() statements that check input arguments should be at the top of the function"
+    },
+    {
+        "Hound": "Empty blocks should be removed or emit something",
+        "IllIllI": "Empty blocks should be removed or emit something"
+    },
+    {
+        "Hound": "Redundant `event` fields can be removed",
+        "IllIllI": "Superfluous event fields"
+    },
+    {
+        "Hound": "Use custom `error`s instead of `require`/`assert`",
+        "IllIllI": "Use custom errors rather than revert()/require() strings to save gas"
+    },
+    {
+        "Hound": "Functions that revert when called by normal users can be `payable`",
+        "IllIllI": "Functions guaranteed to revert when called by normal users can be marked payable"
+    },
+    {
+        "Hound": "Constructors can be marked `payable`",
+        "IllIllI": "Constructors can be marked payable"
+    },
+    {
+        "Hound": "Avoid using `_msgSender` if not supporting `EIP-2771`",
+        "IllIllI": "Don't use _msgSender() if not supporting EIP-2771"
+    },
+    {
+        "Hound": "Unused named return variables without optimizer waste gas",
+        "IllIllI": "Not using the named return variables anywhere in the function is confusing"
     }
 ]
