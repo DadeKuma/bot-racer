@@ -10,14 +10,6 @@ const App: React.FC = () => {
   const [matchingTitles, setMatchingTitles] = useState<IssueData[]>([]);
   const [data, setData] = useState<IssueData[]>([]);
 
-  useEffect(() => {
-    loadData();
-  }, []);
-
-  useEffect(() => {
-    handleSearch();
-  }, [searchText, data]);
-
   const loadData = async () => {
     const findingsUrl = "/findings.json";
     try {
@@ -36,7 +28,6 @@ const App: React.FC = () => {
     }
 
     const matchedTitles: IssueData[] = [];
-
     data.forEach((item) => {
       let matched = false;
       Object.entries(item).forEach(([, message]) => {
@@ -51,6 +42,14 @@ const App: React.FC = () => {
 
     setMatchingTitles(matchedTitles);
   };
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  useEffect(() => {
+    handleSearch();
+  }, [searchText, data]);
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement>
