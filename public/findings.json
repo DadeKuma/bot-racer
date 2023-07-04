@@ -1,0 +1,163 @@
+[
+    {
+        "Hound": "x",
+        "IllIllI": "Events are missing sender information"
+    },
+    {
+        "Hound": "Variable initialization with default value",
+        "IllIllI": "Variables need not be initialized to zero"
+    },
+    {
+        "Hound": "Use named mappings to improve code readability",
+        "IllIllI": "Consider using named mappings"
+    },
+    {
+        "Hound": "Some functions don't follow the Solidity naming conventions",
+        "IllIllI": "Non-external/public variable and function names should begin with an underscore"
+    },
+    {
+        "Hound": "Missing/malformed underscores for large numeric literals",
+        "IllIllI": "Large numeric literals should use underscores for readability"
+    },
+    {
+        "Hound": "Constants in comparisons should appear on the left side",
+        "IllIllI": "Constants in comparisons should appear on the left side"
+    },
+    {
+        "Hound": "Consider disabling renounceOwnership",
+        "IllIllI": "Consider disabling renounceOwnership()"
+    },
+    {
+        "Hound": "else block is not required",
+        "IllIllI": "else-block not required"
+    },
+    {
+        "Hound": "Declare interfaces on separate files",
+        "IllIllI": "Interfaces should be defined in separate files from their usage"
+    },
+    {
+        "Hound": "Imports should be organized more systematically",
+        "IllIllI": "Imports could be organized more systematically"
+    },
+    {
+        "Hound": "Mixed usage of int/uint with int256/uint256",
+        "IllIllI": "Mixed usage of int/uint with int256/uint256"
+    },
+    {
+        "Hound": "Public functions not called internally",
+        "IllIllI": "public functions not called by the contract should be declared external instead"
+    },
+    {
+        "Hound": "Use of non-named numeric constants",
+        "IllIllI": "constants should be defined rather than using magic numbers"
+    },
+    {
+        "Hound": "Event does not have proper indexed fields",
+        "IllIllI": "Event is not properly indexed"
+    },
+    {
+        "Hound": "Duplicated require/if statements should be refactored",
+        "IllIllI": "Duplicated require()/revert() checks should be refactored to a modifier or function"
+    },
+    {
+        "Hound": "Lack of specific import identifier",
+        "IllIllI": "Import declarations should import specific identifiers, rather than the whole file"
+    },
+    {
+        "Hound": "???",
+        "IllIllI": "Contract implements interface without extending the interface"
+    },
+    {
+        "Hound": "require/revert without any message",
+        "IllIllI": "require()/revert() statements should have descriptive reason strings"
+    },
+    {
+        "Hound": "Missing events in sensitive functions",
+        "IllIllI": "Missing event and or timelock for critical parameter change"
+    },
+    {
+        "Hound": "Same constant is redefined elsewhere",
+        "IllIllI": "Constant redefined elsewhere"
+    },
+    {
+        "Hound": "Lines are too long",
+        "IllIllI": "Lines are too long"
+    },
+    {
+        "Hound": "Uppercase non constant/immutable variables",
+        "IllIllI": "Variable names that consist of all capital letters should be reserved for constant/immutable variables"
+    },
+    {
+        "Hound": "Typos in comments",
+        "IllIllI": "Typos"
+    },
+    {
+        "Hound": "Missing NatSpec",
+        "IllIllI": "File is missing NatSpec"
+    },
+    {
+        "Hound": "Missing NatSpec @param",
+        "IllIllI": "NatSpec @param is missing"
+    },
+    {
+        "Hound": "Incomplete NatSpec @return",
+        "IllIllI": "NatSpec @return argument is missing"
+    },
+    {
+        "Hound": "Function visibility order does not comply with best practices",
+        "IllIllI": "Function ordering does not follow the Solidity style guide"
+    },
+    {
+        "Hound": "Layout order does not comply with best practices",
+        "IllIllI": "Contract does not follow the Solidity style guide's suggested layout ordering"
+    },
+    {
+        "Hound": "Interfaces should have an I prefix in the contract name",
+        "IllIllI": "Interfaces should be indicated with an I prefix in the contract name"
+    },
+    {
+        "Hound": "???",
+        "IllIllI": "Control structures do not follow the Solidity Style Guide"
+    },
+    {
+        "Hound": "Use of constant variables instead of immutable",
+        "IllIllI": "Expressions for constant values such as a call to keccak256(), should use immutable rather than constant"
+    },
+    {
+        "Hound": "Time related variables should use time units instead of numbers",
+        "IllIllI": "Numeric values having to do with time should use time units for readability"
+    },
+    {
+        "Hound": "Consider using delete instead of assigning zero/false to clear values",
+        "IllIllI": "Consider using delete rather than assigning zero/false to clear values"
+    },
+    {
+        "Hound": "Contracts should have full test coverage",
+        "IllIllI": "Contracts should have full test coverage"
+    },
+    {
+        "Hound": "Large or complicated code bases should implement invariant tests",
+        "IllIllI": "Large or complicated code bases should implement invariant tests"
+    },
+    {
+        "IllIllI": "addresss shouldn't be hard-coded"
+    },
+    {
+        "IllIllI": "Events that mark critical parameter changes should contain both the old and the new value"
+    },
+    {
+        "IllIllI": "Use @inheritdoc rather than using a non-standard annotation"
+    },
+    {
+        "IllIllI": "Inconsistent spacing in comments"
+    },
+    {
+        "IllIllI": "Non-library/interface files should use fixed compiler versions, not floating ones"
+    },
+    {
+        "IllIllI": "Visibility should be set explicitly rather than defaulting to internal"
+    },
+    {
+        "IllIllI": "mapping definitions do not follow the Solidity Style Guide"
+    }
+]
