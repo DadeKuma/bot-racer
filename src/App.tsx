@@ -10,44 +10,41 @@ const App: React.FC = () => {
   const [matchingTitles, setMatchingTitles] = useState<IssueData[]>([]);
   const [data, setData] = useState<IssueData[]>([]);
 
-  const loadData = async () => {
-    const findingsUrl = "/findings.json";
-    try {
-      const response = await fetch(findingsUrl);
-      const responseData = await response.json();
-      setData(responseData);
-    } catch (error) {
-      console.error("Error loading and searching JSON file:", error);
-    }
-  };
-
-  const handleSearch = () => {
-    if (searchText === "") {
-      setMatchingTitles([]);
-      return;
-    }
-
-    const matchedTitles: IssueData[] = [];
-    data.forEach((item) => {
-      let matched = false;
-      Object.entries(item).forEach(([, message]) => {
-        if (message.toLowerCase().includes(searchText.toLowerCase())) {
-          if (!matched) {
-            matchedTitles.push(item);
-            matched = true;
-          }
-        }
-      });
-    });
-
-    setMatchingTitles(matchedTitles);
-  };
-
   useEffect(() => {
+    const loadData = async () => {
+      const findingsUrl = "/findings.json";
+      try {
+        const response = await fetch(findingsUrl);
+        const responseData = await response.json();
+        setData(responseData);
+        console.log(responseData);
+      } catch (error) {
+        console.error("Error loading and searching JSON file:", error);
+      }
+    };
     loadData();
   }, []);
 
   useEffect(() => {
+    const handleSearch = () => {
+      if (searchText === "") {
+        setMatchingTitles([]);
+        return;
+      }
+      const matchedTitles: IssueData[] = [];
+      data.forEach((item) => {
+        let matched = false;
+        Object.entries(item).forEach(([, message]) => {
+          if (message.toLowerCase().includes(searchText.toLowerCase())) {
+            if (!matched) {
+              matchedTitles.push(item);
+              matched = true;
+            }
+          }
+        });
+      });
+      setMatchingTitles(matchedTitles);
+    };
     handleSearch();
   }, [searchText, data]);
 
