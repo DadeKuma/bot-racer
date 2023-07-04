@@ -1,5 +1,7 @@
 # Botrace Judge Helper
 
+![Project preview](bot-judging-helper.gif)
+
 This project was created to assist judges in Code4rena bot races.
 
 A live website is available [here](https://botrace-judging-helper.netlify.app/).
