@@ -425,7 +425,7 @@
         "IllIllI": "Adding a return statement when the function defines a named return variable, is redundant"
     },
     {
-        "Hound": "",
+        "Hound": "Some casts are more restrictive than the type assigned to the variable",
         "IllIllI": "Cast is more restrictive than the type of the variable being assigned"
     },
     {
@@ -478,6 +478,7 @@
     },
     {
         "Hound": "Possible division by 0 is not prevented",
+        "IllIllI": "Division by zero not prevented",
         "znBotty": "Prevent division by 0"
     },
     {
@@ -485,7 +486,7 @@
         "znBotty": "Use safetransfer Instead Of transfer"
     },
     {
-        "Hound": "Array lacks use of the `pop` function",
+        "Hound": "Array lacks use of the pop function",
         "znBotty": "Unbounded loop"
     },
     {
@@ -505,11 +506,11 @@
         "znBotty": "Use bytes.concat()"
     },
     {
-        "Hound": "",
+        "Hound": "Transferred ERC721 can be stuck permanently",
         "IllIllI": "Use of transferFrom() rather than safeTransferFrom() for NFTs in will lead to the loss of NFTs"
     },
     {
-        "Hound": "Use of `mint` instead of `safeMint` for `IERC721`",
+        "Hound": "Use of mint instead of safeMint for IERC721",
         "IllIllI": "_safeMint() should be used rather than _mint() wherever possible"
     },
     {
@@ -519,5 +520,46 @@
     {
         "Hound": "Use of exponentiation instead of scientific notation",
         "IllIllI": "Use scientific notation (e.g. 1e18) rather than exponentiation (e.g. 10**18)"
+    },
+    {
+        "Hound": "assert is deprecated and it should not be used",
+        "IllIllI": "require() should be used instead of assert()"
+    },
+    {
+        "Hound": "safeApprove is deprecated and may revert if approval is not zero",
+        "IllIllI": "safeApprove() is deprecated"
+    },
+    {
+        "Hound": "Variable names don't follow the Solidity naming convention",
+        "IllIllI": "Variable names don't follow the Solidity style guide"
+    },
+    {
+        "IllIllI": "Events may be emitted out of order due to reentrancy"
+    },
+    {
+        "Hound": "Use a ternary statement instead of if/else when appropriate",
+        "IllIllI": "if-statement can be converted to a ternary"
+    },
+    {
+        "Hound": "2**<n> - 1 should be re-written as type(uint<n>).max",
+        "IllIllI": "2**<n> - 1 should be re-written as type(uint<n>).max"
+    },
+    {
+        "Hound": "internal functions not called by the contract should be removed",
+        "IllIllI": "internal functions not called by the contract should be removed"
+    },
+    {
+        "Hound": "Structs can be packed into fewer storage slots",
+        "IllIllI": "Structs can be packed into fewer storage slots"
+    },
+    {
+        "IllIllI": "The result of function calls should be cached rather than re-calling the function"
+    },
+    {
+        "Hound": "internal functions not called by the contract should be removed to save deployment gas",
+        "IllIllI": "internal functions not called by the contract should be removed to save deployment gas"
+    },
+    {
+        "IllIllI": "Stack variable used as a cheaper cache for a state variable is only used once"
     }
 ]
