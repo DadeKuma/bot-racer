@@ -466,10 +466,12 @@
     },
     {
         "Hound": "Use of ecrecover is susceptible to signature malleability",
+        "IllIllI": "Missing checks for ecrecover() signature malleability",
         "znBotty": "Use of ecrecover is susceptible to signature malleability"
     },
     {
         "Hound": "Low level calls with Solidity before 0.8.14 result in an optimiser bug",
+        "IllIllI": "File allows a version of solidity that is susceptible to an assembly optimizer bug",
         "znBotty": "Low Level Calls With Solidity Version 0.8.14 Can Result In Optimiser Bug"
     },
     {
@@ -561,5 +563,126 @@
     },
     {
         "IllIllI": "Stack variable used as a cheaper cache for a state variable is only used once"
+    },
+    {
+        "Hound": "Fee-on-transfer/rebasing tokens will have problems when swapping",
+        "IllIllI": "Fee-on-transfer/rebasing tokens will have problems when swapping"
+    },
+    {
+        "Hound": "Using a vulnerable dependency from some libraries",
+        "IllIllI": "Vulnerable versions of packages are being used"
+    },
+    {
+        "Hound": "Some functions don't follow the Solidity naming conventions",
+        "IllIllI": "Non-external variable and function names should begin with an underscore"
+    },
+    {
+        "IllIllI": "override function arguments that are unused should have the variable name removed or commented out to avoid compiler warnings"
+    },
+    {
+        "Hound": "transfer/send instead of call may fail in some scenarios",
+        "IllIllI": "Don't use payable.transfer()/payable.send()"
+    },
+    {
+        "Hound": "Owner can renounce ownership while system is paused",
+        "IllIllI": "Owner can renounce while system is paused"
+    },
+    {
+        "IllIllI": "Use OpenZeppelin's MerkleProof rather than rolling your own"
+    },
+    {
+        "Hound": "Use of abi.encodeWithSignature/abi.encodeWithSelector instead of abi.encodeCall",
+        "IllIllI": "Use abi.encodeCall() instead of abi.encodeSignature()/abi.encodeSelector()"
+    },
+    {
+        "Hound": "Custom error without details",
+        "IllIllI": "Custom error has no error details"
+    },
+    {
+        "Hound": "Long functions should be refactored into multiple functions",
+        "IllIllI": "Long functions should be refactored into multiple, smaller, functions"
+    },
+    {
+        "IllIllI": "Unsafe conversion from unsigned to signed values"
+    },
+    {
+        "IllIllI": "Non-assembly method available"
+    },
+    {
+        "IllIllI": "Constructor visibility is ignored"
+    },
+    {
+        "Hound": "Use a more recent version of Solidity",
+        "IllIllI": "Use a more recent version of solidity"
+    },
+    {
+        "Hound": "Using a minimum pragma without an upper bound is dangerous",
+        "IllIllI": "Using >/>= without specifying an upper bound is unsafe"
+    },
+    {
+        "IllIllI": "Inverting the condition of an if-else-statement wastes gas"
+    },
+    {
+        "Hound": "Initializers could be front-run",
+        "IllIllI": "Initialization can be front-run"
+    },
+    {
+        "IllIllI": "Redundant inheritance specifier"
+    },
+    {
+        "Hound": "Unused struct definition",
+        "IllIllI": "Unused struct definition"
+    },
+    {
+        "Hound": "Use of abi.encodePacked instead of casting directly",
+        "IllIllI": "Cast to bytes or bytes32 for clearer semantic meaning"
+    },
+    {
+        "Hound": "Use of abi.encodePacked instead of bytes.concat",
+        "IllIllI": "Use bytes.concat() on bytes instead of abi.encodePacked() for clearer semantic meaning"
+    },
+    {
+        "IllIllI": "Unusual loop variable"
+    },
+    {
+        "Hound": "Return values of approve not checked",
+        "IllIllI": "Return values of approve() not checked"
+    },
+    {
+        "Hound": "Strings should use double quotes rather than single quotes",
+        "IllIllI": "Strings should use double quotes rather than single quotes"
+    },
+    {
+        "Hound": "Remove or replace unused state variables",
+        "IllIllI": "Remove or replace unused state variables"
+    },
+    {
+        "IllIllI": "approve()/safeApprove() may revert if the current approval is not zero"
+    },
+    {
+        "Hound": "image_data should be used for raw svg",
+        "IllIllI": "image_data should be used for raw svg"
+    },
+    {
+        "Hound": "tokenURI does not follow EIP-721",
+        "IllIllI": "tokenURI() does not follow EIP-721"
+    },
+    {
+        "Hound": "No access control on receive/payable fallback",
+        "IllIllI": "Empty receive()/payable fallback() function does not authorize requests"
+    },
+    {
+        "IllIllI": "Contracts containing only utility functions should be made into libraries"
+    },
+    {
+        "IllIllI": "Consider implementing EIP-5267 to securely describe EIP-712 domains being used"
+    },
+    {
+        "Hound": "Inconsistent method of specifying a floating pragma",
+        "IllIllI": "Inconsistent method of specifying a floating pragma"
+    },
+    {
+        "Hound": "Avoid contract existence checks by using low level calls",
+        "IllIllI": "Avoid contract existence checks by using low level calls"
     }
 ]
