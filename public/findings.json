@@ -503,5 +503,21 @@
     {
         "Hound": "Use of abi.encodePacked instead of bytes.concat",
         "znBotty": "Use bytes.concat()"
+    },
+    {
+        "Hound": "",
+        "IllIllI": "Use of transferFrom() rather than safeTransferFrom() for NFTs in will lead to the loss of NFTs"
+    },
+    {
+        "Hound": "Use of `mint` instead of `safeMint` for `IERC721`",
+        "IllIllI": "_safeMint() should be used rather than _mint() wherever possible"
+    },
+    {
+        "Hound": "External calls in an unbounded loop can result in a DoS",
+        "IllIllI": "External calls in an un-bounded for-loop may result in a DOS"
+    },
+    {
+        "Hound": "Use of exponentiation instead of scientific notation",
+        "IllIllI": "Use scientific notation (e.g. 1e18) rather than exponentiation (e.g. 10**18)"
     }
 ]
