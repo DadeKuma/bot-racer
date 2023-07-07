@@ -528,7 +528,7 @@
         "IllIllI": "require() should be used instead of assert()"
     },
     {
-        "Hound": "safeApprove is deprecated and may revert if approval is not zero",
+        "Hound": "safeApprove is deprecated",
         "IllIllI": "safeApprove() is deprecated"
     },
     {
@@ -577,6 +577,7 @@
         "IllIllI": "Non-external variable and function names should begin with an underscore"
     },
     {
+        "Hound": "Unused arguments in overrided functions",
         "IllIllI": "override function arguments that are unused should have the variable name removed or commented out to avoid compiler warnings"
     },
     {
@@ -588,6 +589,7 @@
         "IllIllI": "Owner can renounce while system is paused"
     },
     {
+        "Hound": "Use an already existing `MerkleProof` implementation",
         "IllIllI": "Use OpenZeppelin's MerkleProof rather than rolling your own"
     },
     {
@@ -606,6 +608,7 @@
         "IllIllI": "Unsafe conversion from unsigned to signed values"
     },
     {
+        "Hound": "Non-assembly method available",
         "IllIllI": "Non-assembly method available"
     },
     {
@@ -627,6 +630,7 @@
         "IllIllI": "Initialization can be front-run"
     },
     {
+        "Hound": "Some inherited contracts are redundant",
         "IllIllI": "Redundant inheritance specifier"
     },
     {
@@ -657,6 +661,7 @@
         "IllIllI": "Remove or replace unused state variables"
     },
     {
+        "Hound": "approve can revert if the current approval is not zero",
         "IllIllI": "approve()/safeApprove() may revert if the current approval is not zero"
     },
     {
@@ -672,9 +677,11 @@
         "IllIllI": "Empty receive()/payable fallback() function does not authorize requests"
     },
     {
+        "Hound": "Contracts with only utility functions should be libraries",
         "IllIllI": "Contracts containing only utility functions should be made into libraries"
     },
     {
+        "Hound": "Use EIP-5627 to describe EIP-712 domains",
         "IllIllI": "Consider implementing EIP-5267 to securely describe EIP-712 domains being used"
     },
     {
