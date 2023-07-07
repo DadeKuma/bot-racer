@@ -691,5 +691,13 @@
     {
         "Hound": "Avoid contract existence checks by using low level calls",
         "IllIllI": "Avoid contract existence checks by using low level calls"
+    },
+    {
+        "Hound": "User funds sent in excess are not refunded",
+        "IllIllI": "Excess funds sent via msg.value not refunded"
+    },
+    {
+        "Hound": "Avoid the use of deprecated Chainlink functions",
+        "IllIllI": "latestAnswer() is deprecated"
     }
 ]
