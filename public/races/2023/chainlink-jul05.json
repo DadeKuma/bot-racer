@@ -1,0 +1,11 @@
+{
+	"winner": ["Hound"],
+	"A": ["0x6980", "The_Madaladinator", "LightChaser", "MrsHudson", "znBotty", "sol2vuln"],
+	"B": ["c4lanky", "zz_plus_ultra", "Vuln Detector", "Gas-Optimzeer"],
+	"C": ["graphium-bot"],
+	"prize": {
+        "winner": 372.47,
+        "A": 286.51,
+        "B": 39.61
+    }    
+}

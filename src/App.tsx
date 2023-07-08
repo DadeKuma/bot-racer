@@ -1,85 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-
-type IssueData = {
-  [submitter: string]: string;
-};
+import DuplicateFinderTab from "./components/DuplicateFinderTab";
+import StatsTab from "./components/StatsTab";
 
 const App: React.FC = () => {
-  const [searchText, setSearchText] = useState("");
-  const [matchingTitles, setMatchingTitles] = useState<IssueData[]>([]);
-  const [data, setData] = useState<IssueData[]>([]);
+  const [activeTab, setActiveTab] = useState("duplicateFinder");
 
-  useEffect(() => {
-    const loadData = async () => {
-      const findingsUrl = "/findings.json";
-      try {
-        const response = await fetch(findingsUrl);
-        const responseData = await response.json();
-        setData(responseData);
-        console.log(responseData);
-      } catch (error) {
-        console.error("Error loading and searching JSON file:", error);
-      }
-    };
-    loadData();
-  }, []);
-
-  useEffect(() => {
-    const handleSearch = () => {
-      if (searchText === "") {
-        setMatchingTitles([]);
-        return;
-      }
-      const matchedTitles: IssueData[] = [];
-      data.forEach((item) => {
-        let matched = false;
-        Object.entries(item).forEach(([, message]) => {
-          if (message.toLowerCase().includes(searchText.toLowerCase())) {
-            if (!matched) {
-              matchedTitles.push(item);
-              matched = true;
-            }
-          }
-        });
-      });
-      setMatchingTitles(matchedTitles);
-    };
-    handleSearch();
-  }, [searchText, data]);
-
-  const handleInputChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    setSearchText(event.target.value);
+  const handleTabChange = (tabName: string) => {
+    setActiveTab(tabName);
   };
 
   return (
     <div className="container">
-      <h1 className="title">Botrace Judging Helper</h1>
-      <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search..."
-          value={searchText}
-          onChange={handleInputChange}
-        />
+      <h1 className="title">🤖 Bot Racer 🏁 </h1>
+      <div className="tab-container">
+        <div
+          className={`tab ${activeTab === "duplicateFinder" ? "active" : ""}`}
+          onClick={() => handleTabChange("duplicateFinder")}
+        >
+          Duplicate Finder
+        </div>
+        <div
+          className={`tab ${activeTab === "statistics" ? "active" : ""}`}
+          onClick={() => handleTabChange("statistics")}
+        >
+          Statistics
+        </div>
       </div>
-      <div className="results-container">
-        {matchingTitles.length > 0 ? (
-          matchingTitles.map((issue, idx) => (
-            <div className="result-item" key={idx}>
-              {Object.entries(issue).map(([submitter, message]) => (
-                <div key={`${submitter}-${message}`}>
-                  <p className="submitter">Bot: {submitter}</p>
-                  <p className="message">{message}</p>
-                </div>
-              ))}
-            </div>
-          ))
+      <div className="content-container">
+        {activeTab === "duplicateFinder" ? (
+          <DuplicateFinderTab />
         ) : (
-          <p className="no-results">No results found.</p>
+          <StatsTab />
         )}
       </div>
     </div>
