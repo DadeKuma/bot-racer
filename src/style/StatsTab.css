@@ -1,0 +1,38 @@
+.stats-tab {
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.statistics {
+    text-align: center;
+}
+
+.ranks-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.ranks-list-item {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ranks-list-item-title {
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+.ranks-list-item-names {
+    color: #fff;
+    font-size: 16px;
+}

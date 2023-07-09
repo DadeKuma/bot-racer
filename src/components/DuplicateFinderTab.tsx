@@ -11,7 +11,7 @@ const DuplicateFinderTab: React.FC = () => {
 
   useEffect(() => {
     const loadData = async () => {
-      const findingsUrl = "/findings.json";
+      const findingsUrl = "/data/findings.json";
       try {
         const response = await fetch(findingsUrl);
         const responseData = await response.json();
