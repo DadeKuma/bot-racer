@@ -24,21 +24,23 @@ body {
 
 .tabContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
-}
 
-.tab {
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #555;
-  color: $text-primary-color;
-  border-radius: 4px 4px 0 0;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #555;
+    color: $text-primary-color;
+    border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin between rows */
+    transition: background-color 0.3s ease;
 
-  &.active {
-    background-color: #222;
+    &.active {
+      background-color: #222;
+    }
   }
 }
 

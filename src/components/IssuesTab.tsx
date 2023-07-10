@@ -68,7 +68,7 @@ const IssuesTab: React.FC = () => {
             <div className={styles.resultItem} key={idx}>
               {Object.entries(issue).map(([submitter, message]) => (
                 <div key={`${submitter}-${message}`}>
-                  <p className={styles.submitter}>Bot: {submitter}</p>
+                  <p className={styles.submitter}>{submitter}</p>
                   <p className={styles.message}>{message}</p>
                 </div>
               ))}

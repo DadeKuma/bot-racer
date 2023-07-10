@@ -2,6 +2,7 @@
 
 .leaderboardTab {
     padding: 20px;
+    overflow-x: auto;
 }
 
 .leaderboardTable {
@@ -21,5 +22,13 @@
     td {
         padding: 10px;
         border: 1px solid $background-color;
+    }
+
+    @media (max-width: 768px) {
+        th,
+        td {
+            font-size: 14px;
+            padding: 8px;
+        }
     }
 }
