@@ -17,7 +17,7 @@ const AboutTab: React.FC<TabProps> = ({ handleTabChange }) => {
         </a>{" "} bot races. It provides statistics and information to enhance your racing experience.
       </p>
       <p>
-        With Bot Racer, you can access race results, rankings, and other relevant data to analyze your performance and gain insights. It aims to support your decision-making and improve your bot's performance in Code4rena races.
+        With Bot Racer, you can access race results, rankings, and other relevant data to analyze your performance and gain insights.
       </p>
     </div>
   );
