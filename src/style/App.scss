@@ -1,0 +1,75 @@
+@import "./variables";
+
+body {
+  background-color: $background-color;
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #333;
+  color: $text-primary-color;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
+}
+
+.tabContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #555;
+    color: $text-primary-color;
+    border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    outline: none;
+
+    &.active {
+      background-color: #222;
+    }
+
+    &:hover {
+      background-color: #222;
+    }
+  }
+}
+
+.title {
+  font-family: $font-family;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: $primary-color;
+  text-align: center;
+}
+
+.no-results {
+  font-style: italic;
+  color: #888;
+}
+
+a {
+  color: $text-primary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary-color;
+  text-decoration: none;
+}

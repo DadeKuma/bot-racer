@@ -1,0 +1,37 @@
+@import "./variables";
+
+.raceResults {
+    display: flex;
+    flex-direction: column;
+    gap: $font-size;
+
+    .botRow {
+        display: flex;
+        flex-direction: column;
+
+        .rowName {
+            font-weight: bold;
+            color: $primary-color;
+            margin-bottom: $font-size;
+        }
+
+        .botLinks {
+            display: flex;
+            flex-direction: column;
+            gap: $font-size;
+
+            .botLink {
+                background-color: $background-panel-secondary-color;
+                padding: $font-size;
+                border-radius: 5px;
+                color: $text-primary-color;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $background-color;
+                }
+            }
+        }
+    }
+}

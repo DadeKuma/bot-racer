@@ -1,5 +1,5 @@
 {
-  "name": "botrace-judge-helper",
+  "name": "bot-racer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,14 @@
     "@types/react-dom": "^18.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.3",
+    "react-spring": "^9.7.2",
+    "recharts": "^2.7.2",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },

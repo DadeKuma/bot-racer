@@ -1,88 +1,91 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
-
-type IssueData = {
-  [submitter: string]: string;
-};
+import { Link, Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import AboutTab from "./components/AboutTab";
+import BotsTab from "./components/BotsTab";
+import IssuesTab from "./components/IssuesTab";
+import LeaderboardTab from "./components/LeaderboardTab";
+import RacesTab from "./components/RacesTab";
+import "./style/App.scss";
 
 const App: React.FC = () => {
-  const [searchText, setSearchText] = useState("");
-  const [matchingTitles, setMatchingTitles] = useState<IssueData[]>([]);
-  const [data, setData] = useState<IssueData[]>([]);
+  const [activeTab, setActiveTab] = useState("");
 
   useEffect(() => {
-    const loadData = async () => {
-      const findingsUrl = "/findings.json";
-      try {
-        const response = await fetch(findingsUrl);
-        const responseData = await response.json();
-        setData(responseData);
-        console.log(responseData);
-      } catch (error) {
-        console.error("Error loading and searching JSON file:", error);
-      }
-    };
-    loadData();
+    setActiveTab(window.location.pathname);
   }, []);
 
-  useEffect(() => {
-    const handleSearch = () => {
-      if (searchText === "") {
-        setMatchingTitles([]);
-        return;
-      }
-      const matchedTitles: IssueData[] = [];
-      data.forEach((item) => {
-        let matched = false;
-        Object.entries(item).forEach(([, message]) => {
-          if (message.toLowerCase().includes(searchText.toLowerCase())) {
-            if (!matched) {
-              matchedTitles.push(item);
-              matched = true;
-            }
-          }
-        });
-      });
-      setMatchingTitles(matchedTitles);
-    };
-    handleSearch();
-  }, [searchText, data]);
-
-  const handleInputChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    setSearchText(event.target.value);
+  const handleTabChange = (tabName: string) => {
+    setActiveTab(tabName);
   };
 
   return (
-    <div className="container">
-      <h1 className="title">Botrace Judging Helper</h1>
-      <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search..."
-          value={searchText}
-          onChange={handleInputChange}
-        />
+    <Router>
+      <div className="container">
+        <h1 className="title">🤖 Bot Racer 🏁</h1>
+        <div className="tabContainer">
+          <Link
+            to="/issues"
+            className={`tab ${activeTab === "/issues" ? "active" : ""}`}
+            onClick={() => handleTabChange("/issues")}
+          >
+            Issues
+          </Link>
+          <Link
+            to="/races"
+            className={`tab ${activeTab === "/races" ? "active" : ""}`}
+            onClick={() => handleTabChange("/races")}
+          >
+            Races
+          </Link>
+          <Link
+            to="/bots"
+            className={`tab ${activeTab === "/bots" ? "active" : ""}`}
+            onClick={() => handleTabChange("/bots")}
+          >
+            Bots
+          </Link>
+          <Link
+            to="/leaderboard"
+            className={`tab ${activeTab === "/leaderboard" ? "active" : ""}`}
+            onClick={() => handleTabChange("/leaderboard")}
+          >
+            Leaderboard
+          </Link>
+          <Link
+            to="/about"
+            className={`tab ${activeTab === "/about" ? "active" : ""}`}
+            onClick={() => handleTabChange("/about")}
+          >
+            About
+          </Link>
+        </div>
+        <div className="contentContainer">
+          <Routes>
+            <Route
+              path="/issues"
+              element={<IssuesTab handleTabChange={handleTabChange} />}
+            />
+            <Route
+              path="/races"
+              element={<RacesTab handleTabChange={handleTabChange} />}
+            />
+            <Route
+              path="/bots"
+              element={<BotsTab handleTabChange={handleTabChange} />}
+            />
+            <Route
+              path="/leaderboard"
+              element={<LeaderboardTab handleTabChange={handleTabChange} />}
+            />
+            <Route
+              path="/about"
+              element={<AboutTab handleTabChange={handleTabChange} />}
+            />
+            <Route path="/" element={<Navigate to="/issues" replace />} />
+          </Routes>
+        </div>
       </div>
-      <div className="results-container">
-        {matchingTitles.length > 0 ? (
-          matchingTitles.map((issue, idx) => (
-            <div className="result-item" key={idx}>
-              {Object.entries(issue).map(([submitter, message]) => (
-                <div key={`${submitter}-${message}`}>
-                  <p className="submitter">Bot: {submitter}</p>
-                  <p className="message">{message}</p>
-                </div>
-              ))}
-            </div>
-          ))
-        ) : (
-          <p className="no-results">No results found.</p>
-        )}
-      </div>
-    </div>
+    </Router>
   );
 };
 

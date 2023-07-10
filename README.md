@@ -1,17 +1,40 @@
-# Botrace Judge Helper
+# Bot Racer
 
-![Project preview](bot-judging-helper.gif)
-
-This project was created to assist judges in Code4rena bot races.
+This project was created to support Code4rena Bot Races with useful stats and tools.
 
 A live website is available [here](https://botrace-judging-helper.netlify.app/).
 
 ## Contributing
 
+### Races
+To add a new race, follow these steps:
+
+1. Fork this project
+2. Modify `public/data/races.json`
+3. Keep the same format as this template:
+```js
+{
+    "name": "",
+    "data": {
+        "winner": [ ],
+        "A": [ ],
+        "B": [ ],
+        "C": [ ],
+        "prize": {
+            "winner": 0,
+            "A": 0,
+            "B": 0
+        }
+    }
+}
+```
+5. Open a pull request
+
+### Findings
 To add a finding for your bot, follow these steps:
 
 1. Fork this project
-2. Modify `public/findings.json`
+2. Modify `public/data/findings.json`
 3. Find an existing issue to match your bot
 4. Add your bot name as key and the message as value (follow the issue [rules](#issue-rules) below)
 5. Open a pull request
@@ -25,12 +48,12 @@ To add a finding for your bot, follow these steps:
 // good
 {
     "Hound": "Incomplete NatSpec @return",
-    "IllIllI": "NatSpec @return argument is missing"
+    "IllIllI-bot": "NatSpec @return argument is missing"
 }
 
 // bad
 {
-    "IllIllI": "NatSpec @return argument is missing",
+    "IllIllI-bot": "NatSpec @return argument is missing",
     "Hound": "Incomplete NatSpec @return"    
 }
 ```
@@ -41,13 +64,13 @@ To add a finding for your bot, follow these steps:
 // good
 {
     "Hound": "Incomplete NatSpec @return",
-    "IllIllI": "NatSpec @return argument is missing"
+    "IllIllI-bot": "NatSpec @return argument is missing"
 }
 
 // bad
 {
     "Hound": "Incomplete NatSpec `@return`",
-    "IllIllI": "NatSpec `@return` argument is missing"      
+    "IllIllI-bot": "NatSpec `@return` argument is missing"      
 }
 ```
 
