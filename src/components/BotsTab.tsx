@@ -5,11 +5,13 @@ import { animated, useSpring } from "react-spring";
 import { selectStyle } from "../customStyle";
 import styles from "../style/BotsTab.module.scss";
 import { BotStats, Option, RaceData, TabProps } from "../types";
+import RaceGraph from "./subcomponents/RaceGraph";
 
 const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [entries, setEntries] = useState<Option[]>([]);
   const [botStats, setBotStats] = useState<BotStats[]>([]);
+  const [raceData, setRaceData] = useState<RaceData[]>([]);
 
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -53,6 +55,8 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
       try {
         const response = await fetch("/data/races.json");
         const data: RaceData[] = await response.json();
+
+        setRaceData(data);
 
         const botStatsMap = new Map<string, BotStats>();
 
@@ -148,6 +152,12 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
       />
       {renderDashboard(
         botStats.find((stats) => stats.bot === selectedOption?.value)
+      )}
+      {selectedOption && (
+        <RaceGraph
+          bot={selectedOption.value}
+          raceData={raceData}
+        />
       )}
     </div>
   );
