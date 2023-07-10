@@ -5,6 +5,7 @@
     padding: 20px;
     color: $text-primary-color;
     font-family: $font-family;
+    border-radius: 5px;
 
     h2 {
         color: $primary-color;
@@ -15,6 +16,7 @@
     p {
         margin-bottom: 15px;
         line-height: 1.5;
+        font-family: $font-family;
     }
 
     a {
