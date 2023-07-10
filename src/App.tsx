@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import AboutTab from "./components/AboutTab";
 import BotsTab from "./components/BotsTab";
 import IssuesTab from "./components/IssuesTab";
 import LeaderboardTab from "./components/LeaderboardTab";
@@ -50,6 +51,13 @@ const App: React.FC = () => {
           >
             Leaderboard
           </Link>
+          <Link
+            to="/about"
+            className={`tab ${activeTab === "/about" ? "active" : ""}`}
+            onClick={() => handleTabChange("/about")}
+          >
+            About
+          </Link>
         </div>
         <div className="contentContainer">
           <Routes>
@@ -68,6 +76,10 @@ const App: React.FC = () => {
             <Route
               path="/leaderboard"
               element={<LeaderboardTab handleTabChange={handleTabChange} />}
+            />
+            <Route
+              path="/about"
+              element={<AboutTab handleTabChange={handleTabChange} />}
             />
             <Route path="/" element={<Navigate to="/issues" replace />} />
           </Routes>

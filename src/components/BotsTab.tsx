@@ -125,15 +125,15 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
             <AnimatedNumber value={winner} />
           </div>
           <div className={styles.statBubble}>
-            <p>A Ranks</p>
+            <p>A Rank</p>
             <AnimatedNumber value={A} />
           </div>
           <div className={styles.statBubble}>
-            <p>B Ranks</p>
+            <p>B Rank</p>
             <AnimatedNumber value={B} />
           </div>
           <div className={styles.statBubble}>
-            <p>C Ranks</p>
+            <p>C Rank</p>
             <AnimatedNumber value={C} />
           </div>
         </div>

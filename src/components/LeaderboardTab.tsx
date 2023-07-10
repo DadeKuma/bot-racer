@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import styles from "../style/LeaderboardTab.module.scss";
 import { Contestant, RaceData, TabProps } from "../types";
 
-
-
 const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
     const [leaderboard, setLeaderboard] = useState<Contestant[]>([]);
 

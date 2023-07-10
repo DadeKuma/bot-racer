@@ -1,0 +1,23 @@
+@import "./variables";
+
+.infoContainer {
+    background-color: $background-color;
+    padding: 20px;
+    color: $text-primary-color;
+    font-family: $font-family;
+
+    h2 {
+        color: $primary-color;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    a {
+        color: $primary-color;
+    }
+}

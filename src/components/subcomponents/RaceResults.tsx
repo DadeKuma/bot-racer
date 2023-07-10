@@ -38,9 +38,9 @@ const RaceResults: React.FC<RaceResultsProps> = ({ race, handleTabChange }) => {
     return (
         <div className={styles.raceResults}>
             {renderBotLinks(data.winner, "👑 Winner")}
-            {renderBotLinks(data.A, "A Ranks")}
-            {renderBotLinks(data.B, "B Ranks")}
-            {renderBotLinks(data.C, "C Ranks")}
+            {renderBotLinks(data.A, "A Rank")}
+            {renderBotLinks(data.B, "B Rank")}
+            {renderBotLinks(data.C, "C Rank")}
         </div>
     );
 };
