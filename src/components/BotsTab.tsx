@@ -49,10 +49,12 @@ const BotsTab: React.FC = () => {
         const botStatsArr = Array.from(botStatsMap.values());
         setBotStats(botStatsArr);
 
-        const options = botStatsArr.map((stats) => ({
-          value: stats.bot,
-          label: stats.bot,
-        }));
+        const options = botStatsArr
+          .sort((s1, s2) => s1.bot.localeCompare(s2.bot))
+          .map((stats) => ({
+            value: stats.bot,
+            label: stats.bot,
+          }));
 
         setEntries(options);
       } catch (error) {
