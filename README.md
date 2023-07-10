@@ -1,7 +1,5 @@
 # Bot Racer
 
-![Project preview](project.gif)
-
 This project was created to support Code4rena Bot Races with useful stats and tools.
 
 A live website is available [here](https://botrace-judging-helper.netlify.app/).

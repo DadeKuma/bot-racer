@@ -8,11 +8,11 @@ const AboutTab: React.FC<TabProps> = ({ handleTabChange }) => {
       <h2>About Bot Racer</h2>
       <p>
         Bot Racer is a tool created and maintained by{" "}
-        <a href="https://twitter.com/DadeKuma" target="_blank">
+        <a href="https://twitter.com/DadeKuma" target="_blank" rel="noreferrer">
           @DadeKuma
         </a>{" "}
         to assist participants in{" "}
-        <a href="https://code4rena.com/register/bot" target="_blank">
+        <a href="https://code4rena.com/register/bot" target="_blank" rel="noreferrer">
           Code4rena
         </a>{" "} bot races. It provides statistics and information to enhance your racing experience.
       </p>
