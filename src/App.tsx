@@ -4,7 +4,7 @@ import RacesTab from "./components/RacesTab";
 import "./style/App.scss";
 
 const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("duplicateFinder");
+  const [activeTab, setActiveTab] = useState("issues");
 
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
