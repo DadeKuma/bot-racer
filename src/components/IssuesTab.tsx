@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../style/IssuesTab.module.scss";
-
-type IssueData = {
-  [submitter: string]: string;
-};
+import { IssueData } from "../types";
 
 const IssuesTab: React.FC = () => {
   const [searchText, setSearchText] = useState("");

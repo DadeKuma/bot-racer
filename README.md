@@ -25,12 +25,12 @@ To add a finding for your bot, follow these steps:
 // good
 {
     "Hound": "Incomplete NatSpec @return",
-    "IllIllI": "NatSpec @return argument is missing"
+    "IllIllI-bot": "NatSpec @return argument is missing"
 }
 
 // bad
 {
-    "IllIllI": "NatSpec @return argument is missing",
+    "IllIllI-bot": "NatSpec @return argument is missing",
     "Hound": "Incomplete NatSpec @return"    
 }
 ```
@@ -41,13 +41,13 @@ To add a finding for your bot, follow these steps:
 // good
 {
     "Hound": "Incomplete NatSpec @return",
-    "IllIllI": "NatSpec @return argument is missing"
+    "IllIllI-bot": "NatSpec @return argument is missing"
 }
 
 // bad
 {
     "Hound": "Incomplete NatSpec `@return`",
-    "IllIllI": "NatSpec `@return` argument is missing"      
+    "IllIllI-bot": "NatSpec `@return` argument is missing"      
 }
 ```
 

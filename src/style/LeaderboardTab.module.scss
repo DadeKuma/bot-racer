@@ -1,0 +1,25 @@
+@import "./variables";
+
+.leaderboardTab {
+    padding: 20px;
+}
+
+.leaderboardTable {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+
+    th {
+        background-color: $background-panel-color;
+        color: $primary-color;
+        font-weight: bold;
+        padding: 10px;
+        border: 1px solid $background-color;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid $background-color;
+    }
+}

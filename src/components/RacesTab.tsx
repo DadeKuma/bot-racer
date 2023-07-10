@@ -1,59 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
+import { selectStyle } from "../customStyle";
 import styles from "../style/RacesTab.module.scss";
-
-type Option = {
-  value: string;
-  label: string;
-};
-
-type RaceData = {
-  name: string;
-  data: {
-    winner: string[];
-    A: string[];
-    B: string[];
-    C: string[];
-    prize: {
-      winner: number;
-      A: number;
-      B: number;
-    };
-  };
-};
-
-const selectStyle = {
-  control: (provided: any, state: any) => ({
-    ...provided,
-    borderRadius: 0,
-    borderColor: state.isFocused ? '#ffcc00' : provided.borderColor,
-    backgroundColor: "#444",
-    color: state.selectProps.inputValue ? '#fff' : '#444',
-  }),
-  option: (provided: any, state: any) => ({
-    ...provided,
-    backgroundColor: state.isSelected ? '#ffcc00' : "#555",
-    color: "#fff",
-  }),
-  singleValue: (provided: any) => ({
-    ...provided,
-    color: "#fff",
-  }),
-  input: (provided: any) => ({
-    ...provided,
-    color: "#fff",
-  }),
-  noOptionsMessage: (provided: any) => ({
-    ...provided,
-    backgroundColor: "#555",
-    color: "#fff",
-  }),
-  menu: (provided: any) => ({
-    ...provided,
-    background: "#444"
-  }),
-};
-
+import { Option, RaceData } from "../types";
 
 const RacesTab: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);

@@ -2,156 +2,212 @@
     {
         "name": "eigenlayer-apr27",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["znBotty"],
-            "B": ["MrsHudson", "zz_plus_ultra", "LightChaser", "Hound", "The_Madaladinator"],
-            "C": ["4lpine", "iceBearRobot", "c4lanky", "Narya", "sol2vuln", "SolidityScanTeam"],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "znBotty" ],
+            "B": [ "MrsHudson", "zz_plus_ultra", "LightChaser", "Hound", "The_Madaladinator" ],
+            "C": [ "4lpine", "iceBearRobot", "c4lanky", "Narya", "sol2vuln", "SolidityScanTeam" ],
             "prize": {
                 "winner": 3054.66,
                 "A": 2349.74,
                 "B": 419.12
-            }    
-        }        
+            }
+        }
     },
     {
         "name": "ajna-may03",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["MrsHudson", "Hound", "LightChaser"],
-            "B": ["c4lanky", "The_Madaladinator"],
-            "C": ["znBotty", "iceBearRobot", "Gas-Optimzeer", "sol2vuln"],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "MrsHudson", "Hound", "LightChaser" ],
+            "B": [ "c4lanky", "The_Madaladinator" ],
+            "C": [ "znBotty", "iceBearRobot", "Gas-Optimzeer", "sol2vuln" ],
             "prize": {
                 "winner": 1381.61,
                 "A": 1062.78,
                 "B": 215.03
-            }    
+            }
         }
-        
+
     },
     {
         "name": "venus-may08",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["znBotty"],
-            "B": ["LightChaser", "Hound", "zz_plus_ultra", "MrsHudson", "c4lanky", "The_Madaladinator"],
-            "C": ["Gas-Optimzeer", "Narya", "pyaduit", "sol2vuln"],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "znBotty" ],
+            "B": [ "LightChaser", "Hound", "zz_plus_ultra", "MrsHudson", "c4lanky", "The_Madaladinator" ],
+            "C": [ "Gas-Optimzeer", "Narya", "pyaduit", "sol2vuln" ],
             "prize": {
                 "winner": 3004.03,
                 "A": 2310.80,
                 "B": 364.19
-            }    
+            }
         }
     },
     {
-        "name": "⁠juicebox-may18",
+        "name": "juicebox-may18",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["Gas-Optimzeer", "znBotty", "MrsHudson", "c4lanky", "zz_plus_ultra"],
-            "B": ["Hound"],
-            "C": ["iceBearRobot", "The_Madaladinator", "LightChaser", "sol2vuln"],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "Gas-Optimzeer", "znBotty", "MrsHudson", "c4lanky", "zz_plus_ultra" ],
+            "B": [ "Hound" ],
+            "C": [ "iceBearRobot", "The_Madaladinator", "LightChaser", "sol2vuln" ],
             "prize": {
                 "winner": 401.02,
                 "A": 308.48,
                 "B": 56.59
-            }    
-        }  
+            }
+        }
     },
     {
         "name": "chainlink-may26",
         "data": {
-            "winner": ["IllIllI-bot", "LightChaser", "zz_plus_ultra"],
-            "A": ["The_Madaladinator", "MrsHudson", "c4lanky", "znBotty"],
-            "B": ["Hound"],
-            "C": ["Gas-Optimzeer"],
+            "winner": [ "IllIllI-bot", "LightChaser", "zz_plus_ultra" ],
+            "A": [ "The_Madaladinator", "MrsHudson", "c4lanky", "znBotty" ],
+            "B": [ "Hound" ],
+            "C": [ "Gas-Optimzeer" ],
             "prize": {
                 "winner": 802.02,
                 "A": 616.94,
                 "B": 126.17
-            }    
+            }
         }
     },
     {
         "name": "maia-may30",
         "data": {
-            "winner": ["c4lanky"],
-            "A": ["IllIllI-bot", "The_Madaladinator"],
-            "B": ["Hound", "LightChaser"],
-            "C": ["MrsHudson", "Gas-Optimzeer", "znBotty", "sol2vuln"],
+            "winner": [ "c4lanky" ],
+            "A": [ "IllIllI-bot", "The_Madaladinator" ],
+            "B": [ "Hound", "LightChaser" ],
+            "C": [ "MrsHudson", "Gas-Optimzeer", "znBotty", "sol2vuln" ],
             "prize": {
                 "winner": 2645.37,
                 "A": 3438.99,
                 "B": 635.13
-            }    
-        }        
+            }
+        }
+    },
+    {
+        "name": "stader-jun02",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "c4lanky", "LightChaser", "The_Madaladinator", "znBotty" ],
+            "B": [ "Hound", "zz_plus_ultra", "MrsHudson" ],
+            "C": [ "0x6980" ],
+            "prize": {
+                "winner": 1399.43,
+                "A": 1076.49,
+                "B": 173.21
+            }
+        }
+    },
+    {
+        "name": "llama-jun06",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "MrsHudson", "Hound", "Gas-Optimzeer", "c4lanky", "zz_plus_ultra", "The_Madaladinator" ],
+            "B": [ "znBotty", "LightChaser" ],
+            "C": [ "0x6980", "sol2vuln", "Decurity_AI_v0" ],
+            "prize": {
+                "winner": 640.24,
+                "A": 492.49,
+                "B": 77.41
+            }
+        }
     },
     {
         "name": "lybra-jun23",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["LightChaser", "znBotty", "MrsHudson"],
-            "B": ["Hound", "zz_plus_ultra", "c4lanky", "The_Madaladinator"],
-            "C": ["Gas-Optimzeer", "Regast"],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "LightChaser", "znBotty", "MrsHudson" ],
+            "B": [ "Hound", "zz_plus_ultra", "c4lanky", "The_Madaladinator" ],
+            "C": [ "Gas-Optimzeer", "Regast" ],
             "prize": {
                 "winner": 988.86,
                 "A": 760.66,
                 "B": 119.79
-            }    
-        }        
+            }
+        }
     },
     {
         "name": "lukso-jun30",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["zz_plus_ultra", "MrsHudson", "The_Madaladinator", "LightChaser", "Hound", "znBotty"],
-            "B": ["c4lanky", "Gas-Optimzeer"],
-            "C": [],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "zz_plus_ultra", "MrsHudson", "The_Madaladinator", "LightChaser", "Hound", "znBotty" ],
+            "B": [ "c4lanky", "Gas-Optimzeer" ],
+            "C": [ ],
             "prize": {
                 "winner": 1082.00,
                 "A": 832.31,
                 "B": 130.82
-            }    
-        }        
+            }
+        }
     },
     {
         "name": "nounsdao-jul03",
         "data": {
-            "winner": ["znBotty"],
-            "A": ["LightChaser", "Hound", "0x6980", "zz_plus_ultra", "Gas-Optimzeer"],
-            "B": ["MrsHudson"],
-            "C": ["The_Madaladinator", "c4lanky"],
+            "winner": [ "znBotty" ],
+            "A": [ "LightChaser", "Hound", "0x6980", "zz_plus_ultra", "Gas-Optimzeer" ],
+            "B": [ "MrsHudson" ],
+            "C": [ "The_Madaladinator", "c4lanky" ],
             "prize": {
                 "winner": 1270.74,
                 "A": 977.49,
                 "B": 179.31
-            }    
-        }        
+            }
+        }
     },
     {
         "name": "basin-jul03",
         "data": {
-            "winner": ["0x6980"],
-            "A": ["zz_plus_ultra"],
-            "B": ["MrsHudson", "sol2vuln", "c4lanky"],
-            "C": ["The_Madaladinator", "LightChaser", "Hound", "znBotty", "Gas-Optimzeer", "Decurity_AI_v0"],
+            "winner": [ "0x6980" ],
+            "A": [ "zz_plus_ultra" ],
+            "B": [ "MrsHudson", "sol2vuln", "c4lanky" ],
+            "C": [ "The_Madaladinator", "LightChaser", "Hound", "znBotty", "Gas-Optimzeer", "Decurity_AI_v0" ],
             "prize": {
                 "winner": 1075.79,
                 "A": 827.53,
                 "B": 203.06
-            }    
-        }        
+            }
+        }
+    },
+    {
+        "name": "chainlink-jul05",
+        "data": {
+            "winner": [ "Hound" ],
+            "A": [ "0x6980", "The_Madaladinator", "LightChaser", "MrsHudson", "znBotty", "sol2vuln" ],
+            "B": [ "c4lanky", "zz_plus_ultra", "vuln-detector", "Gas-Optimzeer" ],
+            "C": [ "graphium-bot" ],
+            "prize": {
+                "winner": 372.47,
+                "A": 286.51,
+                "B": 39.61
+            }
+        }
     },
     {
         "name": "tapioca-jul05",
         "data": {
-            "winner": ["IllIllI-bot"],
-            "A": ["The_Madaladinator", "MrsHudson", "Hound", "znBotty"],
-            "B": ["LightChaser", "c4lanky", "zz_plus_ultra", "sol2vuln", "graphium-bot"],
-            "C": ["Gas-Optimzeer"],
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "The_Madaladinator", "MrsHudson", "Hound", "znBotty" ],
+            "B": [ "graphium-bot", "LightChaser", "zz_plus_ultra", "c4lanky", "sol2vuln", "vuln-detector" ],
+            "C": [ "Gas-Optimzeer" ],
             "prize": {
                 "winner": 4335.53,
                 "A": 3335.02,
                 "B": 422.73
-            }    
-        }        
+            }
+        }
+    },
+    {
+        "name": "pooltogether-jul07",
+        "data": {
+            "winner": [ "LightChaser" ],
+            "A": [ "zz_plus_ultra", "The_Madaladinator", "IllIllI-bot", "Hound", "MrsHudson" ],
+            "B": [ "c4lanky", "Gas-Optimzeer", "znBotty", "graphium-bot", "vuln-detector", "sol2vuln" ],
+            "C": [ "Gas-Optimzeer" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
     }
 ]

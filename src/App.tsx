@@ -2,12 +2,24 @@ import React, { useState } from "react";
 import IssuesTab from "./components/IssuesTab";
 import RacesTab from "./components/RacesTab";
 import "./style/App.scss";
+import LeaderboardTab from "./components/LeaderboardTab";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState("issues");
 
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
+  };
+
+  const getTab = (name: string) => {
+    switch (name) {
+      case "issues":
+        return <IssuesTab />;
+      case "races":
+        return <RacesTab />;
+      case "leaderboard":
+        return <LeaderboardTab />;
+    }
   };
 
   return (
@@ -26,13 +38,15 @@ const App: React.FC = () => {
         >
           Races
         </div>
+        <div
+          className={`tab ${activeTab === "leaderboard" ? "active" : ""}`}
+          onClick={() => handleTabChange("leaderboard")}
+        >
+          Leaderboard
+        </div>
       </div>
       <div className="contentContainer">
-        {activeTab === "issues" ? (
-          <IssuesTab />
-        ) : (
-          <RacesTab />
-        )}
+        {getTab(activeTab)}
       </div>
     </div>
   );
