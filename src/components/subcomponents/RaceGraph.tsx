@@ -16,15 +16,15 @@ const RaceGraph: React.FC<RaceGraphProps> = ({ bot, raceData }) => {
         }
         const aRank = A.indexOf(bot);
         if (aRank !== -1) {
-            return 1 + winner.length + aRank + 1;
+            return 1 + winner.length + aRank;
         }
         const bRank = B.indexOf(bot);
         if (bRank !== -1) {
-            return 1 + winner.length + A.length + bRank + 1;
+            return 1 + winner.length + A.length + bRank;
         }
         const cRank = C.indexOf(bot);
         if (cRank !== -1) {
-            return 1 + winner.length + A.length + B.length + cRank + 1;
+            return 1 + winner.length + A.length + B.length + cRank;
         }
         return 0;
     };
