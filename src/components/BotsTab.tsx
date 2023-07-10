@@ -33,14 +33,17 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
   ) => {
     const botStat = botStatsMap.get(bot);
     if (botStat) {
+      if (!(statKey in botStat)) {
+        (botStat[statKey] as number) = 0;
+      }
       (botStat[statKey] as number) += 1;
     } else {
       botStatsMap.set(bot, {
         bot,
         winner: 0,
-        A: 0,
-        B: 0,
-        C: 0,
+        A: statKey === "A" ? 1 : 0,
+        B: statKey === "B" ? 1 : 0,
+        C: statKey === "C" ? 1 : 0,
       });
     }
   };
@@ -81,6 +84,9 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
   }, []);
 
   const handleSelectChange = (option: Option | null) => {
+    if (selectedOption && option && selectedOption.value === option.value) {
+      return;
+    }
     setSelectedOption(option);
 
     const newSearchQuery = option ? option.value : "";
@@ -94,7 +100,7 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
     return (
       <animated.span>
-        {numberProps.value.interpolate((val) => val.toFixed(0))}
+        {numberProps.value.to((val) => val.toFixed(0))}
       </animated.span>
     );
   };

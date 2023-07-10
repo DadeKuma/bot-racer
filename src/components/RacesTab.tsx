@@ -47,6 +47,9 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange }) => {
   }, [searchQuery, racesData]);
 
   const handleSelectChange = (option: Option | null) => {
+    if (selectedOption && option && selectedOption.value === option.value) {
+      return;
+    }
     setSelectedOption(option);
 
     const newSearchQuery = option ? option.value : "";

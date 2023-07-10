@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, Route, BrowserRouter as Router, Routes, Navigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import BotsTab from "./components/BotsTab";
 import IssuesTab from "./components/IssuesTab";
 import LeaderboardTab from "./components/LeaderboardTab";
@@ -7,7 +7,11 @@ import RacesTab from "./components/RacesTab";
 import "./style/App.scss";
 
 const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("issues");
+  const [activeTab, setActiveTab] = useState("");
+
+  useEffect(() => {
+    setActiveTab(window.location.pathname);
+  }, []);
 
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
@@ -20,29 +24,29 @@ const App: React.FC = () => {
         <div className="tabContainer">
           <Link
             to="/issues"
-            className={`tab ${activeTab === "issues" ? "active" : ""}`}
-            onClick={() => handleTabChange("issues")}
+            className={`tab ${activeTab === "/issues" ? "active" : ""}`}
+            onClick={() => handleTabChange("/issues")}
           >
             Issues
           </Link>
           <Link
             to="/races"
-            className={`tab ${activeTab === "races" ? "active" : ""}`}
-            onClick={() => handleTabChange("races")}
+            className={`tab ${activeTab === "/races" ? "active" : ""}`}
+            onClick={() => handleTabChange("/races")}
           >
             Races
           </Link>
           <Link
             to="/bots"
-            className={`tab ${activeTab === "bots" ? "active" : ""}`}
-            onClick={() => handleTabChange("bots")}
+            className={`tab ${activeTab === "/bots" ? "active" : ""}`}
+            onClick={() => handleTabChange("/bots")}
           >
             Bots
           </Link>
           <Link
             to="/leaderboard"
-            className={`tab ${activeTab === "leaderboard" ? "active" : ""}`}
-            onClick={() => handleTabChange("leaderboard")}
+            className={`tab ${activeTab === "/leaderboard" ? "active" : ""}`}
+            onClick={() => handleTabChange("/leaderboard")}
           >
             Leaderboard
           </Link>
