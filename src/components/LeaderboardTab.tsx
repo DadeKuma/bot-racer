@@ -96,7 +96,7 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
                                     <Link
                                         to={`/bots/?search=${contestant.name}`}
                                         className={styles.botLink}
-                                        onClick={() => handleTabChange("bots")}
+                                        onClick={() => handleTabChange("/bots")}
                                     >
                                         {contestant.name}
                                     </Link>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import { selectStyle } from "../customStyle";
 import styles from "../style/RacesTab.module.scss";
@@ -65,29 +65,48 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
     const { data } = selectedRace;
 
+    const renderBotLinks = (bots: string[]) =>
+      bots.map((bot) => (
+        <Link
+          to={`/bots?search=${encodeURIComponent(bot)}`}
+          key={bot}
+          className={styles.botLink}
+          onClick={() => handleTabChange("/bots")}
+        >
+          {bot}
+        </Link>
+      ));
+
     return (
       <div className={styles.ranksList}>
         <div className={styles.ranksListItem}>
           <p className={styles.ranksListItemTitle}>👑 Winner</p>
           <p className={styles.ranksListItemNames}>
-            {data.winner.join(", ")}
+            {renderBotLinks(data.winner)}
           </p>
         </div>
         <div className={styles.ranksListItem}>
           <p className={styles.ranksListItemTitle}>A Ranks</p>
-          <p className={styles.ranksListItemNames}>{data.A.join(", ")}</p>
+          <p className={styles.ranksListItemNames}>
+            {renderBotLinks(data.A)}
+          </p>
         </div>
         <div className={styles.ranksListItem}>
           <p className={styles.ranksListItemTitle}>B Ranks</p>
-          <p className={styles.ranksListItemNames}>{data.B.join(", ")}</p>
+          <p className={styles.ranksListItemNames}>
+            {renderBotLinks(data.B)}
+          </p>
         </div>
         <div className={styles.ranksListItem}>
           <p className={styles.ranksListItemTitle}>C Ranks</p>
-          <p className={styles.ranksListItemNames}>{data.C.join(", ")}</p>
+          <p className={styles.ranksListItemNames}>
+            {renderBotLinks(data.C)}
+          </p>
         </div>
       </div>
     );
   };
+
 
   return (
     <div className={styles.statsTab}>
