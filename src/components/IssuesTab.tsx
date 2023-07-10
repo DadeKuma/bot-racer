@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "../style/IssuesTab.module.scss";
-import { IssueData } from "../types";
+import { IssueData, TabProps } from "../types";
 
-const IssuesTab: React.FC = () => {
+const IssuesTab: React.FC<TabProps> = ({ handleTabChange }) => {
   const [searchText, setSearchText] = useState("");
   const [matchingTitles, setMatchingTitles] = useState<IssueData[]>([]);
   const [data, setData] = useState<IssueData[]>([]);

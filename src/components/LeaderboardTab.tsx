@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../style/LeaderboardTab.module.scss";
-import { Contestant, RaceData } from "../types";
+import { Contestant, RaceData, TabProps } from "../types";
 
-const LeaderboardTab: React.FC = () => {
+
+
+const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
     const [leaderboard, setLeaderboard] = useState<Contestant[]>([]);
 
     const formatUSD = (amount: number): string => {
@@ -12,7 +14,6 @@ const LeaderboardTab: React.FC = () => {
             currency: 'USD',
             minimumFractionDigits: 2,
         });
-
         return formatter.format(amount);
     };
 
@@ -92,7 +93,11 @@ const LeaderboardTab: React.FC = () => {
                             <tr key={contestant.name}>
                                 <td>{index + 1}</td>
                                 <td>
-                                    <Link to={`/bots/${contestant.name}`} className={styles.botLink}>
+                                    <Link
+                                        to={`/bots/?search=${contestant.name}`}
+                                        className={styles.botLink}
+                                        onClick={() => handleTabChange("bots")}
+                                    >
                                         {contestant.name}
                                     </Link>
                                 </td>

@@ -36,3 +36,7 @@ export type BotStats = {
     B: number;
     C: number;
 };
+
+export interface TabProps {
+    handleTabChange: (tabName: string) => void;
+}

@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import { selectStyle } from "../customStyle";
 import styles from "../style/RacesTab.module.scss";
-import { Option, RaceData } from "../types";
+import { Option, RaceData, TabProps } from "../types";
 
-const RacesTab: React.FC = () => {
+const RacesTab: React.FC<TabProps> = ({ handleTabChange }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [entries, setEntries] = useState<Option[]>([]);
   const [racesData, setRacesData] = useState<RaceData[]>([]);
+
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const searchQuery = searchParams.get("search");
+
+  const navigate = useNavigate();
 
   const fetchData = async () => {
     try {
@@ -30,8 +37,22 @@ const RacesTab: React.FC = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (searchQuery) {
+      const selectedRace = racesData.find((race) => race.name === searchQuery);
+      if (selectedRace) {
+        setSelectedOption({ value: selectedRace.name, label: selectedRace.name.replace(/-/g, " ").toUpperCase() });
+      }
+    }
+  }, [searchQuery, racesData]);
+
   const handleSelectChange = (option: Option | null) => {
     setSelectedOption(option);
+
+    const newSearchQuery = option ? option.value : "";
+    const newSearchParams = new URLSearchParams();
+    newSearchParams.set("search", newSearchQuery);
+    navigate(`?${newSearchParams.toString()}`);
   };
 
   const renderStatistics = (selectedRace: RaceData | null | undefined) => {

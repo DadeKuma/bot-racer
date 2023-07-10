@@ -1,14 +1,30 @@
 import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import { animated, useSpring } from "react-spring";
 import { selectStyle } from "../customStyle";
 import styles from "../style/BotsTab.module.scss";
-import { BotStats, Option, RaceData } from "../types";
+import { BotStats, Option, RaceData, TabProps } from "../types";
 
-const BotsTab: React.FC = () => {
+const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [entries, setEntries] = useState<Option[]>([]);
   const [botStats, setBotStats] = useState<BotStats[]>([]);
+
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const searchQuery = searchParams.get("search");
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (searchQuery) {
+      const selectedBot = botStats.find((stats) => stats.bot === searchQuery);
+      if (selectedBot) {
+        setSelectedOption({ value: selectedBot.bot, label: selectedBot.bot });
+      }
+    }
+  }, [searchQuery, botStats]);
 
   const incrementBotStat = (
     botStatsMap: Map<string, BotStats>,
@@ -66,6 +82,11 @@ const BotsTab: React.FC = () => {
 
   const handleSelectChange = (option: Option | null) => {
     setSelectedOption(option);
+
+    const newSearchQuery = option ? option.value : "";
+    const newSearchParams = new URLSearchParams();
+    newSearchParams.set("search", newSearchQuery);
+    navigate(`?${newSearchParams.toString()}`);
   };
 
   const AnimatedNumber: React.FC<{ value: number; }> = ({ value }) => {
