@@ -35,10 +35,16 @@ body {
     color: $text-primary-color;
     border-radius: 4px 4px 0 0;
     margin-right: 10px;
-    margin-bottom: 10px; /* Add margin between rows */
+    margin-bottom: 10px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    outline: none;
 
     &.active {
+      background-color: #222;
+    }
+
+    &:hover {
       background-color: #222;
     }
   }
@@ -56,4 +62,14 @@ body {
 .no-results {
   font-style: italic;
   color: #888;
+}
+
+a {
+  color: $text-primary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary-color;
+  text-decoration: none;
 }

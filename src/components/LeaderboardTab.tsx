@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "../style/LeaderboardTab.module.scss";
 import { Contestant, RaceData } from "../types";
 
@@ -90,7 +91,11 @@ const LeaderboardTab: React.FC = () => {
                         return (
                             <tr key={contestant.name}>
                                 <td>{index + 1}</td>
-                                <td>{contestant.name}</td>
+                                <td>
+                                    <Link to={`/bots/${contestant.name}`} className={styles.botLink}>
+                                        {contestant.name}
+                                    </Link>
+                                </td>
                                 <td>{formatUSD(contestant.earnings)}</td>
                                 <td>{contestant.races}</td>
                                 <td>{avgPosition.toFixed(1)}</td>
