@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
-import "../style/StatsTab.css";
+import styles from "../style/RacesTab.module.scss";
 
 type Option = {
   value: string;
@@ -86,42 +86,38 @@ const RacesTab: React.FC = () => {
   };
 
   const renderStatistics = (selectedRace: RaceData | null | undefined) => {
-    if (selectedRace === undefined) {
-      return <p>Please select a race.</p>;
-    }
-
-    if (selectedRace === null) {
+    if (!selectedRace) {
       return null;
     }
 
     const { data } = selectedRace;
 
     return (
-      <div className="ranks-list">
-        <div className="ranks-list-item">
-          <p className="ranks-list-item-title">👑 Winner</p>
-          <p className="ranks-list-item-names winner-list">
+      <div className={styles.ranksList}>
+        <div className={styles.ranksListItem}>
+          <p className={styles.ranksListItemTitle}>👑 Winner</p>
+          <p className={styles.ranksListItemNames}>
             {data.winner.join(", ")}
           </p>
         </div>
-        <div className="ranks-list-item">
-          <p className="ranks-list-item-title">A Ranks</p>
-          <p className="ranks-list-item-names">{data.A.join(", ")}</p>
+        <div className={styles.ranksListItem}>
+          <p className={styles.ranksListItemTitle}>A Ranks</p>
+          <p className={styles.ranksListItemNames}>{data.A.join(", ")}</p>
         </div>
-        <div className="ranks-list-item">
-          <p className="ranks-list-item-title">B Ranks</p>
-          <p className="ranks-list-item-names">{data.B.join(", ")}</p>
+        <div className={styles.ranksListItem}>
+          <p className={styles.ranksListItemTitle}>B Ranks</p>
+          <p className={styles.ranksListItemNames}>{data.B.join(", ")}</p>
         </div>
-        <div className="ranks-list-item">
-          <p className="ranks-list-item-title">C Ranks</p>
-          <p className="ranks-list-item-names">{data.C.join(", ")}</p>
+        <div className={styles.ranksListItem}>
+          <p className={styles.ranksListItemTitle}>C Ranks</p>
+          <p className={styles.ranksListItemNames}>{data.C.join(", ")}</p>
         </div>
       </div>
     );
   };
 
   return (
-    <div className="stats-tab">
+    <div className={styles.statsTab}>
       <Select
         options={entries}
         value={selectedOption}
@@ -129,7 +125,7 @@ const RacesTab: React.FC = () => {
         placeholder="Select a race"
         styles={selectStyle}
       />
-      <div className="statistics">
+      <div className={styles.statistics}>
         {renderStatistics(
           racesData.find((race) => race.name === selectedOption?.value)
         )}

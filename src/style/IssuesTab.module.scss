@@ -1,0 +1,36 @@
+@import "./variables";
+
+.searchContainer {
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: $background-panel-color;
+    border: none;
+    border-radius: 4px;
+    color: $text-primary-color;
+}
+
+.resultsContainer {
+    text-align: left;
+}
+
+.resultItem {
+    margin-bottom: 20px;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.submitter {
+    font-weight: bold;
+    color: $primary-color;
+}
+
+.message {
+    margin-bottom: 8px;
+}

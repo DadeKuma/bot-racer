@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import styles from "../style/IssuesTab.module.scss";
 
 type IssueData = {
   [submitter: string]: string;
 };
 
-const DuplicateFinderTab: React.FC = () => {
+const IssuesTab: React.FC = () => {
   const [searchText, setSearchText] = useState("");
   const [matchingTitles, setMatchingTitles] = useState<IssueData[]>([]);
   const [data, setData] = useState<IssueData[]>([]);
@@ -54,24 +55,24 @@ const DuplicateFinderTab: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      <div className="search-container">
+    <div className={styles.duplicateTab}>
+      <div className={styles.searchContainer}>
         <input
           type="text"
-          className="search-input"
+          className={styles.searchInput}
           placeholder="Search..."
           value={searchText}
           onChange={handleInputChange}
         />
       </div>
-      <div className="results-container">
+      <div className={styles.resultsContainer}>
         {matchingTitles.length > 0 ? (
           matchingTitles.map((issue, idx) => (
-            <div className="result-item" key={idx}>
+            <div className={styles.resultItem} key={idx}>
               {Object.entries(issue).map(([submitter, message]) => (
                 <div key={`${submitter}-${message}`}>
-                  <p className="submitter">Bot: {submitter}</p>
-                  <p className="message">{message}</p>
+                  <p className={styles.submitter}>Bot: {submitter}</p>
+                  <p className={styles.message}>{message}</p>
                 </div>
               ))}
             </div>
@@ -84,4 +85,4 @@ const DuplicateFinderTab: React.FC = () => {
   );
 };
 
-export default DuplicateFinderTab;
+export default IssuesTab;

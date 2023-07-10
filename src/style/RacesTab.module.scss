@@ -1,0 +1,40 @@
+@import "./variables";
+
+.statsTab {
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.statistics {
+    text-align: center;
+}
+
+.ranksList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+
+    .ranksListItem {
+        background-color: $background-panel-color;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+        .ranksListItemTitle {
+            font-weight: bold;
+            color: $primary-color;
+            margin-bottom: 5px;
+        }
+
+        .ranksListItemNames {
+            color: $text-primary-color;
+            font-size: 16px;
+        }
+    }
+}

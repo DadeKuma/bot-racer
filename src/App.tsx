@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
-import DuplicateFinderTab from "./components/DuplicateFinderTab";
+import IssuesTab from "./components/IssuesTab";
 import RacesTab from "./components/RacesTab";
+import "./style/App.scss";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState("duplicateFinder");
@@ -12,13 +12,13 @@ const App: React.FC = () => {
 
   return (
     <div className="container">
-      <h1 className="title">🤖 Bot Racer 🏁 </h1>
-      <div className="tab-container">
+      <h1 className="title">🤖 Bot Racer 🏁</h1>
+      <div className="tabContainer">
         <div
-          className={`tab ${activeTab === "duplicateFinder" ? "active" : ""}`}
-          onClick={() => handleTabChange("duplicateFinder")}
+          className={`tab ${activeTab === "issues" ? "active" : ""}`}
+          onClick={() => handleTabChange("issues")}
         >
-          Duplicate Finder
+          Issues
         </div>
         <div
           className={`tab ${activeTab === "races" ? "active" : ""}`}
@@ -27,9 +27,9 @@ const App: React.FC = () => {
           Races
         </div>
       </div>
-      <div className="content-container">
-        {activeTab === "duplicateFinder" ? (
-          <DuplicateFinderTab />
+      <div className="contentContainer">
+        {activeTab === "issues" ? (
+          <IssuesTab />
         ) : (
           <RacesTab />
         )}
