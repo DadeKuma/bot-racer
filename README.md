@@ -2,7 +2,9 @@
 
 This project was created to support Code4rena Bot Races with useful stats and tools.
 
-A live website is available [here](https://botrace-judging-helper.netlify.app/).
+A live website is available [here](https://botracer.xyz/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0799735a-96fb-446a-9e2d-b4a490a7294f/deploy-status)](https://app.netlify.com/sites/botracer/deploys)
 
 ## Contributing
 
