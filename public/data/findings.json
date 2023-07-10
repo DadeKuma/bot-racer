@@ -279,7 +279,7 @@
         "znBotty": "<x> += <y> Costs More Gas Than <x> = <x> + <y> For State Variables"
     },
     {
-        "Hound": "internal functions only called once can be inlined to save gas",
+        "Hound": "internal/private functions only called once can be inlined to save gas",
         "IllIllI-bot": "internal functions only called once can be inlined to save gas",
         "znBotty": "internal functions only called once can be inlined to save gas"
     },
