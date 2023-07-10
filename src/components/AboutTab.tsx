@@ -19,6 +19,12 @@ const AboutTab: React.FC<TabProps> = ({ handleTabChange }) => {
       <p>
         With Bot Racer, you can access race results, rankings, and other relevant data to analyze your performance and gain insights.
       </p>
+      <p>
+        The code for this website is fully open source, and it's available {" "}
+        <a href="https://github.com/DadeKuma/bot-racer" target="_blank" rel="noreferrer">
+          here
+        </a>. Feel free to contribute, and don't forget to star the repository! 😊
+      </p>
     </div>
   );
 };
