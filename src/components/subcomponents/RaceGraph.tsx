@@ -1,5 +1,5 @@
 import React from "react";
-import { Legend, Line, LineChart, Tooltip, YAxis } from "recharts";
+import { Legend, Line, LineChart, ResponsiveContainer, Tooltip, YAxis } from "recharts";
 import styles from "../../style/RaceGraph.module.scss";
 import { RaceData } from "../../types";
 
@@ -51,28 +51,33 @@ const RaceGraph: React.FC<RaceGraphProps> = ({ bot, raceData }) => {
     return (
         <div className={styles.raceGraph}>
             <h3>Race Positions</h3>
-            <LineChart
-                width={700}
-                height={400}
-                data={filteredRaceData}
-                margin={{ top: 20, right: 30, left: 20, bottom: 30 }}
-            >
-                <YAxis
-                    type="number"
-                    domain={[1, 4]}
-                    allowDecimals={false}
-                    stroke="#fff"
-                />
-                <Tooltip content={<CustomTooltip />} />
-                <Legend />
-                <Line
-                    type="monotone"
-                    dataKey={(race) => getPositionForBot(race)}
-                    name="Position"
-                    stroke="#fff"
-                    activeDot={{ r: 8 }}
-                />
-            </LineChart>
+            <div className={styles.raceWrapper}>
+                <ResponsiveContainer>
+                    <LineChart
+                        width={800}
+                        height={400}
+                        data={filteredRaceData}
+                        margin={{ top: 20, right: 30, left: 20, bottom: 30 }}
+                    >
+                        <YAxis
+                            type="number"
+                            domain={[1]}
+                            allowDecimals={false}
+                            stroke="#fff"
+                            reversed
+                        />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend />
+                        <Line
+                            type="monotone"
+                            dataKey={(race) => getPositionForBot(race)}
+                            name="Position"
+                            stroke="#fff"
+                            activeDot={{ r: 8 }}
+                        />
+                    </LineChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     );
 };
