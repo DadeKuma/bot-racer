@@ -28,3 +28,11 @@ export type Contestant = {
     races: number;
     positions: number[];
 };
+
+export type BotStats = {
+    bot: string;
+    winner: number;
+    A: number;
+    B: number;
+    C: number;
+};

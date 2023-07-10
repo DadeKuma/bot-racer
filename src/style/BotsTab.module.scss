@@ -1,0 +1,80 @@
+@import "./variables";
+
+.botsTab {
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botName {
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.statBubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.statBubble {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-panel-color;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: $font-size;
+    color: $text-primary-color;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: $font-family;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+    p {
+        margin-top: 5px;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: "Roboto", Arial, sans-serif;
+    }
+}
+
+.animatedNumber {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Roboto", Arial, sans-serif;
+}

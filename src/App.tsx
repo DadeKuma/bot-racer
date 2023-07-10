@@ -3,6 +3,7 @@ import IssuesTab from "./components/IssuesTab";
 import RacesTab from "./components/RacesTab";
 import "./style/App.scss";
 import LeaderboardTab from "./components/LeaderboardTab";
+import BotsTab from "./components/BotsTab";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState("issues");
@@ -17,6 +18,8 @@ const App: React.FC = () => {
         return <IssuesTab />;
       case "races":
         return <RacesTab />;
+      case "bots":
+        return <BotsTab />;
       case "leaderboard":
         return <LeaderboardTab />;
     }
@@ -37,6 +40,12 @@ const App: React.FC = () => {
           onClick={() => handleTabChange("races")}
         >
           Races
+        </div>
+        <div
+          className={`tab ${activeTab === "bots" ? "active" : ""}`}
+          onClick={() => handleTabChange("bots")}
+        >
+          Bots
         </div>
         <div
           className={`tab ${activeTab === "leaderboard" ? "active" : ""}`}
