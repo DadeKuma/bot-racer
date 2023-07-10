@@ -5,6 +5,16 @@ import { Contestant, RaceData } from "../types";
 const LeaderboardTab: React.FC = () => {
     const [leaderboard, setLeaderboard] = useState<Contestant[]>([]);
 
+    const formatUSD = (amount: number): string => {
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 2,
+        });
+
+        return formatter.format(amount);
+    };
+
     const addToContestant = (
         contestantsMap: Map<string, Contestant>,
         name: string,
@@ -81,7 +91,7 @@ const LeaderboardTab: React.FC = () => {
                             <tr key={contestant.name}>
                                 <td>{index + 1}</td>
                                 <td>{contestant.name}</td>
-                                <td>{contestant.earnings.toFixed(2)}</td>
+                                <td>{formatUSD(contestant.earnings)}</td>
                                 <td>{contestant.races}</td>
                                 <td>{avgPosition.toFixed(1)}</td>
                             </tr>
