@@ -108,35 +108,35 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
     }, []);
 
     useEffect(() => {
-        const sortedLeaderboard = [...leaderboard].sort((a, b) => {
-            if (sortedColumn === "Bot") {
-                return sortOrder === "asc"
-                    ? a.name.localeCompare(b.name)
-                    : b.name.localeCompare(a.name);
-            } else if (sortedColumn === "USD") {
-                return sortOrder === "asc"
-                    ? a.earnings - b.earnings
-                    : b.earnings - a.earnings;
-            } else if (sortedColumn === "Races") {
-                return sortOrder === "asc"
-                    ? a.races - b.races
-                    : b.races - a.races;
-            } else if (sortedColumn === "Avg Position") {
-                const avgPositionA =
-                    a.positions.reduce((sum, position) => sum + position, 0) /
-                    a.positions.length;
-                const avgPositionB =
-                    b.positions.reduce((sum, position) => sum + position, 0) /
-                    b.positions.length;
-                return sortOrder === "asc"
-                    ? avgPositionA - avgPositionB
-                    : avgPositionB - avgPositionA;
-            }
-            return 0;
-        });
+        setLeaderboard(prevLeaderboard => {
+            const sortedLeaderboard = [...prevLeaderboard].sort((a, b) => {
+                if (sortedColumn === "Bot") {
+                    return sortOrder === "asc"
+                        ? a.name.localeCompare(b.name)
+                        : b.name.localeCompare(a.name);
+                } else if (sortedColumn === "USD") {
+                    return sortOrder === "asc"
+                        ? a.earnings - b.earnings
+                        : b.earnings - a.earnings;
+                } else if (sortedColumn === "Races") {
+                    return sortOrder === "asc" ? a.races - b.races : b.races - a.races;
+                } else if (sortedColumn === "Avg Position") {
+                    const avgPositionA =
+                        a.positions.reduce((sum, position) => sum + position, 0) /
+                        a.positions.length;
+                    const avgPositionB =
+                        b.positions.reduce((sum, position) => sum + position, 0) /
+                        b.positions.length;
+                    return sortOrder === "asc"
+                        ? avgPositionA - avgPositionB
+                        : avgPositionB - avgPositionA;
+                }
+                return 0;
+            });
 
-        setLeaderboard(sortedLeaderboard);
-    }, [sortedColumn, sortOrder, leaderboard]);
+            return sortedLeaderboard;
+        });
+    }, [sortedColumn, sortOrder]);
 
     return (
         <div className={styles.leaderboardTab}>
