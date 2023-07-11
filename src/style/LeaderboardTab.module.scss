@@ -17,6 +17,27 @@
         padding: 10px;
         border: 1px solid $background-color;
         text-align: left;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .arrow {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+    }
+
+    .arrow.asc {
+        border-bottom: 4px solid $primary-color;
+    }
+
+    .arrow.desc {
+        border-top: 4px solid $primary-color;
     }
 
     td {
