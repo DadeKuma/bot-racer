@@ -103,7 +103,6 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
                 console.error("Error fetching race data:", error);
             }
         };
-
         fetchData();
     }, []);
 
@@ -136,7 +135,7 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
             return sortedLeaderboard;
         });
-    }, [sortedColumn, sortOrder]);
+    }, [leaderboard, sortedColumn, sortOrder]);
 
     return (
         <div className={styles.leaderboardTab}>
