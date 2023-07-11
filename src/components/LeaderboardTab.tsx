@@ -143,7 +143,7 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
             <table className={styles.leaderboardTable}>
                 <thead>
                     <tr>
-                        <th>Rank</th>
+                        <th>#</th>
                         {columnHeadings.map((column) => (
                             <th
                                 key={column}
