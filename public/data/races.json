@@ -204,9 +204,9 @@
             "B": [ "c4lanky", "Gas-Optimzeer", "znBotty", "graphium-bot", "vuln-detector", "sol2vuln" ],
             "C": [ "Gas-Optimzeer" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 1037.09,
+                "A": 797.76,
+                "B": 99.85
             }
         }
     }
