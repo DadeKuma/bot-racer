@@ -216,7 +216,7 @@
             "winner": [ "LightChaser" ],
             "A": [ "The_Madaladinator", "0x6980-bot", "vuln-detector", "zz_plus_ultra", "znBotty", "Hound" ],
             "B": [ "c4lanky", "MrsHudson", "Gas-Optimzeer", "IllIllI-bot", "sol2vuln" ],
-            "C": [ "graphium bot" ],
+            "C": [ "graphium-bot" ],
             "prize": {
                 "winner": 0,
                 "A": 0,
