@@ -223,5 +223,20 @@
                 "B": 82.00
             }
         }
+    },
+    {
+        "name": "lens-jul17",
+        "data": {
+            "winner": [ "0x6980-bot" ],
+            "A": [ "LightChaser", "IllIllI-bot", "znBotty", "Hound", "c4lanky", "MrsHudson", "The_Madaladinator" ],
+            "B": [ "Gas-Optimzeer", "sol2vuln", "graphium-bot", "zz_plus_ultra" ],
+            "C": [ "vuln-detector" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
     }
+    
 ]
