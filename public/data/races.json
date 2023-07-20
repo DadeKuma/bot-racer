@@ -232,11 +232,11 @@
             "B": [ "Gas-Optimzeer", "sol2vuln", "graphium-bot", "zz_plus_ultra" ],
             "C": [ "vuln-detector" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 771.03,
+                "A": 593.10,
+                "B": 81.81
             }
         }
     }
-    
+
 ]
