@@ -260,9 +260,9 @@
             "B": [ "znBotty", "Hound", "graphium-bot" ],
             "C": [ "Gas-Optimzeer", "sol2vuln" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 1082.53,
+                "A": 832.72,
+                "B": 126.30
             }
         }
     }
