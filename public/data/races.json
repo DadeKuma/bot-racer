@@ -237,6 +237,33 @@
                 "B": 81.81
             }
         }
+    },
+    {
+        "name": "amphora-jul21",
+        "data": {
+            "winner": [ "Hound" ],
+            "A": [ "c4lanky", "znBotty", "LightChaser", "0x6980-bot", "MrsHudson", "sol2vuln" ],
+            "B": [ "vuln-detector", "Gas-Optimzeer" ],
+            "C": [ "graphium-bot" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
+    },
+    {
+        "name": "arcade-jul21",
+        "data": {
+            "winner": [ "c4lanky" ],
+            "A": [ "LightChaser", "MrsHudson", "vuln-detector", "0x6980-bot", "IllIllI-bot" ],
+            "B": [ "znBotty", "Hound", "graphium-bot" ],
+            "C": [ "Gas-Optimzeer", "sol2vuln" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
     }
-
 ]
