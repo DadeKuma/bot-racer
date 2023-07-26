@@ -274,9 +274,9 @@
         "B": ["graphium-bot", "c4lanky", "znBotty", "LightChaser"],
         "C": ["vuln-detector", "Gas-Optimzeer"],
         "prize": {
-            "winner": 0,
-            "A": 0,
-            "B": 0
+            "winner": 1671.17,
+            "A": 1285.52,
+            "B": 202.44
         }
     }
 }
