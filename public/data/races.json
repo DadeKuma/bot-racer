@@ -267,18 +267,59 @@
         }
     },
     {
-    "name": "moonwell-jul24",
-    "data": {
-        "winner": ["IllIllI-bot"],
-        "A": ["Hound", "MrsHudson", "0x6980-bot"],
-        "B": ["graphium-bot", "c4lanky", "znBotty", "LightChaser"],
-        "C": ["vuln-detector", "Gas-Optimzeer"],
-        "prize": {
-            "winner": 1671.17,
-            "A": 1285.52,
-            "B": 202.44
+        "name": "moonwell-jul24",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "Hound", "MrsHudson", "0x6980-bot" ],
+            "B": [ "graphium-bot", "c4lanky", "znBotty", "LightChaser" ],
+            "C": [ "vuln-detector", "Gas-Optimzeer" ],
+            "prize": {
+                "winner": 1671.17,
+                "A": 1285.52,
+                "B": 202.44
+            }
+        }
+    },
+    {
+        "name": "tangible-aug01",
+        "data": {
+            "winner": [ "0x6980-bot" ],
+            "A": [ "The_Madaladinator", "znBotty", "LightChaser", "Hound", "c4lanky", "vuln-detector", "MrsHudson", "sol2vuln" ],
+            "B": [ "Pechenkata", "graphium-bot" ],
+            "C": [ "Gas-Optimzeer", "auditbase" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
+    },
+    {
+        "name": "goodentry-aug01",
+        "data": {
+            "winner": [ "LightChaser" ],
+            "A": [ "znBotty", "The_Madaladinator", "IllIllI-bot", "vuln-detector", "0x6980-bot", "c4lanky", "sol2vuln", "Pechenkata", "MrsHudson" ],
+            "B": [ "Hound", "graphium-bot" ],
+            "C": [ "auditbase", "Gas-Optimzeer" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
+    },
+    {
+        "name": "pooltogether-aug02",
+        "data": {
+            "winner": [ "LightChaser" ],
+            "A": [ "Hound", "c4lanky", "The_Madaladinator", "znBotty", "vuln-detector", "MrsHudson" ],
+            "B": [ "0x6980-bot", "graphium-bot", "Gas-Optimzeer", "auditbase" ],
+            "C": [ "sol2vuln" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
         }
     }
-}
-
 ]
