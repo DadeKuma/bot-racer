@@ -321,5 +321,19 @@
                 "B": 0
             }
         }
+    },
+    {
+        "name": "arbitrum-aug03",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "MrsHudson", "The_Madaladinator", "Hound", "znBotty", "vuln-detector", "0x6980-bot", "c4lanky", "graphium-bot" ],
+            "B": [ "auditbase", "LightChaser", "Pechenkata" ],
+            "C": [ "Gas-Optimzeer" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
     }
 ]
