@@ -288,9 +288,9 @@
             "B": [ "Pechenkata", "graphium-bot" ],
             "C": [ "Gas-Optimzeer", "auditbase" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 507.69,
+                "A": 390.53,
+                "B": 59.05
             }
         }
     },
@@ -302,9 +302,9 @@
             "B": [ "Hound", "graphium-bot" ],
             "C": [ "auditbase", "Gas-Optimzeer" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 459.77,
+                "A": 353.67,
+                "B": 53.61
             }
         }
     },
@@ -316,9 +316,9 @@
             "B": [ "0x6980-bot", "graphium-bot", "Gas-Optimzeer", "auditbase" ],
             "C": [ "sol2vuln" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 440.75,
+                "A": 339.04,
+                "B": 46.88
             }
         }
     },
@@ -330,9 +330,9 @@
             "B": [ "auditbase", "LightChaser", "Pechenkata" ],
             "C": [ "Gas-Optimzeer" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 751.23,
+                "A": 577.87,
+                "B": 83.61
             }
         }
     }
