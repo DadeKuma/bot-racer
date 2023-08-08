@@ -335,5 +335,19 @@
                 "B": 83.61
             }
         }
+    },
+    {
+        "name": "verwa-aug07",
+        "data": {
+            "winner": [ "Hound" ],
+            "A": [ "0x6980-bot", "IllIllI-bot", "MrsHudson", "Pechenkata" ],
+            "B": [ "graphium-bot", "The_Madaladinator", "LightChaser", "vuln-detector", "c4lanky", "sol2vuln", "znBotty", "auditbase" ],
+            "C": [ "Gas-Optimzeer" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
     }
 ]
