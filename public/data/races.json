@@ -344,9 +344,9 @@
             "B": [ "graphium-bot", "The_Madaladinator", "LightChaser", "vuln-detector", "c4lanky", "sol2vuln", "znBotty", "auditbase" ],
             "C": [ "Gas-Optimzeer" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 421.27,
+                "A": 362.51,
+                "B": 41.08
             }
         }
     }
