@@ -349,5 +349,19 @@
                 "B": 41.08
             }
         }
+    },
+    {
+        "name": "chainlink-aug25",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "Hound", "vuln-detector" ],
+            "B": [ "The_Madaladinator", "znBotty", "MrsHudson", "graphium-bot", "0x6980-bot" ],
+            "C": [ "c4lanky", "Pechenkata", "auditbase", "LightChaser", "Gas-Optimzeer" ],
+            "prize": {
+                "winner": 5485.08,
+                "A": 4219.29,
+                "B": 657.77
+            }
+        }
     }
 ]
