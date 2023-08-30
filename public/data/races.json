@@ -356,7 +356,7 @@
             "winner": [ "Hound" ],
             "A": [ "IllIllI-bot", "MrsHudson", "vuln-detector", "0x6980-bot" ],
             "B": [ "Pechenkata", "The_Madaladinator", "LightChaser", "auditbase", "sol2vuln" ],
-            "C": [ "graphium-bot", "c4lanky", "Gas-Optimzeer", "znBotty"  ],
+            "C": [ "graphium-bot", "c4lanky", "Gas-Optimzeer", "znBotty" ],
             "prize": {
                 "winner": 489.26,
                 "A": 376.35,
@@ -392,5 +392,4 @@
             }
         }
     }
-
 ]
