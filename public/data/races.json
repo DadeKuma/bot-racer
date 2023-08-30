@@ -351,6 +351,34 @@
         }
     },
     {
+        "name": "shell-aug21",
+        "data": {
+            "winner": [ "Hound" ],
+            "A": [ "IllIllI-bot", "MrsHudson", "vuln-detector", "0x6980-bot" ],
+            "B": [ "Pechenkata", "The_Madaladinator", "LightChaser", "auditbase", "sol2vuln" ],
+            "C": [ "graphium-bot", "c4lanky", "Gas-Optimzeer", "znBotty"  ],
+            "prize": {
+                "winner": 489.26,
+                "A": 376.35,
+                "B": 51.07
+            }
+        }
+    },
+    {
+        "name": "dopex-aug21",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "0x6980-bot" ],
+            "B": [ "LightChaser", "The_Madaladinator", "Hound", "znBotty" ],
+            "C": [ "vuln-detector", "c4lanky", "MrsHudson", "graphium-bot", "sol2vuln", "Gas-Optimzeer", "auditbase", "Pechenkata" ],
+            "prize": {
+                "winner": 3260.51,
+                "A": 2508.08,
+                "B": 517.23
+            }
+        }
+    },
+    {
         "name": "chainlink-aug25",
         "data": {
             "winner": [ "IllIllI-bot" ],
@@ -364,4 +392,5 @@
             }
         }
     }
+
 ]
