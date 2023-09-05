@@ -391,5 +391,33 @@
                 "B": 657.77
             }
         }
+    },
+    {
+        "name": "livepeer-aug31",
+        "data": {
+            "winner": [ "henry" ],
+            "A": [ "The_Madaladinator", "IllIllI-bot", "Hound", "vuln-detector", "0x6980-bot", "GasAxy", "MrsHudson", "c4lanky" ],
+            "B": [ "znBotty", "graphium-bot", "auditbase", "Tera", "LightChaser" ],
+            "C": [ "Gas-Optimzeer", "PhyseterMacrocephalus", "Pechenkata" ],
+            "prize": {
+                "winner": 439.89,
+                "A": 338.38,
+                "B": 45.62
+            }
+        }
+    },
+    {
+        "name": "ondo-sep01",
+        "data": {
+            "winner": [ "henry" ],
+            "A": [ "LightChaser", "vuln-detector", "0x6980-bot", "znBotty", "MrsHudson" ],
+            "B": [ "GasAxy", "Hound", "The_Madaladinator", "auditbase", "c4lanky", "graphium-bot", "Tera", "Gas-Optimzeer" ],
+            "C": [ "sol2vuln", "Pechenkata" ],
+            "prize": {
+                "winner": 405.43,
+                "A": 311.87,
+                "B": 35.66
+            }
+        }
     }
 ]
