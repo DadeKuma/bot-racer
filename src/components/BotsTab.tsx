@@ -42,7 +42,7 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
     } else {
       botStatsMap.set(bot, {
         bot,
-        winner: 0,
+        winner: statKey === "winner" ? 1 : 0,
         A: statKey === "A" ? 1 : 0,
         B: statKey === "B" ? 1 : 0,
         C: statKey === "C" ? 1 : 0,
