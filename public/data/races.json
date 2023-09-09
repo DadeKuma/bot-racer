@@ -419,5 +419,19 @@
                 "B": 35.66
             }
         }
+    },
+    {
+        "name": "delegate-sep01",
+        "data": {
+            "winner": [ "Hound" ],
+            "A": [ "henry", "MrsHudson" ],
+            "B": [ "0x6980-bot", "The_Madaladinator" ],
+            "C": [ "sol2vuln", "Gas-Optimzeer", "GasAxy", "Tera", "LightChaser", "Pechenkata", "znBotty",  "auditbase", "graphium-bot", "c4lanky", "vuln-detector" ],
+            "prize": {
+                "winner": 0,
+                "A": 0,
+                "B": 0
+            }
+        }
     }
 ]
