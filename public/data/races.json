@@ -428,10 +428,25 @@
             "B": [ "0x6980-bot", "The_Madaladinator" ],
             "C": [ "sol2vuln", "Gas-Optimzeer", "GasAxy", "Tera", "LightChaser", "Pechenkata", "znBotty",  "auditbase", "graphium-bot", "c4lanky", "vuln-detector" ],
             "prize": {
-                "winner": 0,
-                "A": 0,
-                "B": 0
+                "winner": 1070.38,
+                "A": 823.37,
+                "B": 197.68
+            }
+        }
+    },
+    {
+        "name": "centrifuge-sep08",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "henry", "0x6980-bot", "LightChaser", "vuln-detector", "Hound", "Pechenkata", "MrsHudson" ],
+            "B": [ "graphium-bot", "c4lanky", "PhyseterMacrocephalus", "GasAxy", "Gas-Optimzeer", "Tera" ],
+            "C": [],
+            "prize": {
+                "winner": 623.72,
+                "A": 479.78,
+                "B": 61.30
             }
         }
     }
+
 ]
