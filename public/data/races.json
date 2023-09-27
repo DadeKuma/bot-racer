@@ -447,6 +447,20 @@
                 "B": 61.30
             }
         }
+    },
+    {
+        "name": "maiadao-sep22",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "0x6980-bot", "henry", "MrsHudson", "vuln-detector", "LightChaser" ],
+            "B": [ "graphium-bot", "Tera", "Hound", "znBotty", "The_Madaladinator", "auditbase", "c4lanky" ],
+            "C": [ "Gas-Optimzeer", "Pechenkata", "GasAxy", "PhyseterMacrocephalus"],
+            "prize": {
+                "winner": 1154.70,
+                "A": 888.23,
+                "B": 105.95
+            }
+        }
     }
 
 ]
