@@ -479,9 +479,9 @@
     {
         "name": "zksync-oct02",
         "data": {
-            "winner": [ "IllIll-bot" ],
+            "winner": [ "IllIllI-bot" ],
             "A": [ "LightChaser", "0x6980-bot", "vuln-detector", "znBotty", "henry", "The_Madaladinator", "MrsHudson" ],
-            "B": [ "Gas-Axy", "Hound", "graphium-bot", "c4lanky", "Tera" ],
+            "B": [ "GasAxy", "Hound", "graphium-bot", "c4lanky", "Tera" ],
             "C": [ "Pechenkata", "auditbase", "PhyseterMacrocephalus", "Gas-Optimzeer" ],
             "prize": {
                 "winner": 2901.13,
