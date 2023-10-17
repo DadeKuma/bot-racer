@@ -517,5 +517,19 @@
                 "B": 23.37
             }
         }
+    },
+    {
+        "name": "brahma-oct13",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "LightChaser", "henry", "GasAxy", "znBotty", "Pechenkata", "0x6980-bot", "MrsHudson", "vuln-detector", "Hound",  "The_Madaladinator" ],
+            "B": [ "Tera", "auditbase", "Gas-Optimzeer"],
+            "C": [ "c4lanky", "sol2vuln", "mangat" ],
+            "prize": {
+                "winner": 248.99,
+                "A": 191.53,
+                "B": 28.58
+            }
+        }
     }
 ]
