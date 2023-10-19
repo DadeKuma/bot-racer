@@ -531,5 +531,33 @@
                 "B": 28.58
             }
         }
+    },
+    {
+        "name": "wildcat-oct16",
+        "data": {
+            "winner": [ "henry" ],
+            "A": [ "0x6980-bot", "MrsHudson", "The_Madaladinator", "IllIllI-bot", "vuln-detector", "Pechenkata" ],
+            "B": [ "graphium-bot", "Hound", "LightChaser", "Tera", "c4lanky", "znBotty", "GasAxy", "auditbase" ],
+            "C": [  "mangat", "Gas-Optimzeer", "PhyseterMacrocephalus" ],
+            "prize": {
+                "winner": 592.00,
+                "A": 455.38,
+                "B": 53.21
+            }
+        }
+    },
+    {
+        "name": "opendollar-oct18",
+        "data": {
+            "winner": [ "vuln-detector" ],
+            "A": [ "MrsHudson", "Hound", "The_Madaladinator",  "Pechenkata", "henry" ],
+            "B": [ "0x6980-bot", "LightChaser", "graphium-bot", "c4lanky" ],
+            "C": [  "auditbase","Gas-Optimzeer" ],
+            "prize": {
+                "winner": 426.16,
+                "A": 327.82,
+                "B": 46.19
+            }
+        }
     }
 ]
