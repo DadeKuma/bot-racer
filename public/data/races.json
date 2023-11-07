@@ -564,8 +564,8 @@
         "name": "ethena-oct24",
         "data": {
             "winner": ["MrsHudson"],
-            "A": ["Hound","LightChaser","Pechenkata","Tera","auditbase","sol2vuln","vuln-detector","henry","Selucreh","ubl4nk_bot","The_Madaladinator"],
-            "B": ["graphium-bot","GasAxy","0x6980-bot","dervish","znBotty"],
+            "A": ["Hound", "LightChaser", "Pechenkata", "tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucruh", "ubl4nk_bot", "The_Madaladinator"],
+            "B": ["graphium-bot", "GasAxy", "0x6980-bot", "dervish", "znBotty"],
             "C": ["Dragonfly"],
             "prize": {
                 "winner": 224.35,
@@ -579,8 +579,8 @@
         "name": "nextgen-oct30",
         "data": {
             "winner": ["Hound"],
-            "A": ["The_Madaladinator", "LightChaser", "Pechenkata", "henry", "IllIllI-bot", "Selucreh", "vuln-detector"],
-            "B": ["0x6980-bot", "MrsHudson", "znBotty", "sol2vuln", "ubl4nk_bot", "Tera", "Dragonfly", "auditbase", "graphium-bot"],
+            "A": ["LightChaser", "henry", "Pechenkata", "vuln-detector", "IllIllI-bot", "The_Madaladinator", "Selucreh"],
+            "B": ["MrsHudson", "graphium-bot", "Tera", "znBotty", "Dragonfly", "0x6980-bot", "auditbase", "ubl4nk_bot", "sol2vuln"],
             "C": ["dervish", "GasAxy"],
             "prize": {
                 "winner": 520.93,
@@ -594,8 +594,8 @@
         "name": "party-oct31",
         "data": {
             "winner": ["henry"],
-            "A": ["MrsHudson", "Selucreh", "Pechenkata", "The_Madaladinator", "LightChaser", "0x6980-bot"],
-            "B": ["Hound", "dervish", "znBotty", "vuln-detector", "sol2vuln", "graphium-bot", "GasAxy", "ubl4nk_bot", "Dragonfly"],
+            "A": ["0x6980-bot", "MrsHudson", "Pechenkata", "LightChaser", "Selucreh", "The_Madaladinator"],
+            "B": ["ubl4nk_bot", "Hound", "vuln-detector", "znBotty", "graphium-bot", "sol2vuln", "GasAxy", "dervish", "Dragonfly"],
             "C": ["auditbase"],
             "prize": {
                 "winner": 585.92,
