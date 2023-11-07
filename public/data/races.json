@@ -559,5 +559,50 @@
                 "B": 46.19
             }
         }
+    },
+    {
+        "name": "ethena-oct24",
+        "data": {
+            "winner": ["MrsHudson"],
+            "A": ["Hound", "LightChaser", "Pechenkata", "tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucruh", "ubl4nk_bot", "The_Madaladinator"],
+            "B": ["graphium-bot", "GasAxy", "0x6980-bot", "dervish", "znBotty"],
+            "C": ["Dragonfly"],
+            "prize": {
+                "winner": 224.35,
+                "A": 172.57,
+                "B":25.47
+            }
+        }
+
+    },
+    {
+        "name": "nextgen-oct30",
+        "data": {
+            "winner": ["Hound"],
+            "A": ["LightChaser", "henry", "Pechenkata", "vuln-detector", "IllIllI-bot", "The_Madaladinator", "Selucreh"],
+            "B": ["MrsHudson", "graphium-bot", "Tera", "znBotty", "Dragonfly", "0x6980-bot", "auditbase", "ubl4nk_bot", "sol2vuln"],
+            "C": ["dervish", "GasAxy"],
+            "prize": {
+                "winner": 520.93,
+                "A": 400.71,
+                "B": 47.12
+            }
+        }
+
+    },
+    {
+        "name": "party-oct31",
+        "data": {
+            "winner": ["henry"],
+            "A": ["0x6980-bot", "MrsHudson", "Pechenkata", "LightChaser", "Selucreh", "The_Madaladinator"],
+            "B": ["ubl4nk_bot", "Hound", "vuln-detector", "znBotty", "graphium-bot", "sol2vuln", "GasAxy", "dervish", "Dragonfly"],
+            "C": ["auditbase"],
+            "prize": {
+                "winner": 585.92,
+                "A": 450.71,
+                "B": 51.09
+            }
+        }
+
     }
 ]
