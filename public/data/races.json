@@ -604,5 +604,19 @@
             }
         }
 
+    },
+    {
+        "name": "kelpdao-nov10",
+        "data": {
+            "winner": ["Hound"],
+            "A": ["MrsHudson", "henry", "0x6980-bot", "Tera", "The_Madaladinator", "LightChaser", "Selucreh", "Pechenkata", "vuln-detector"],
+            "B": ["Dragonfly", "graphium-bot", "dervish", "ubl4nk_bot"],
+            "C": ["sol2vuln", "auditbase"],
+            "prize": {
+                "winner": 206.34,
+                "A": 158.72,
+                "B": 22.54
+            }
+        }
     }
 ]
