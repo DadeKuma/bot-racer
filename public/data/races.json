@@ -564,7 +564,7 @@
         "name": "ethena-oct24",
         "data": {
             "winner": ["MrsHudson"],
-            "A": ["Hound", "LightChaser", "Pechenkata", "tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucruh", "ubl4nk_bot", "The_Madaladinator"],
+            "A": ["Hound", "LightChaser", "Pechenkata", "Tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucreh", "ubl4nk_bot", "The_Madaladinator"],
             "B": ["graphium-bot", "GasAxy", "0x6980-bot", "dervish", "znBotty"],
             "C": ["Dragonfly"],
             "prize": {
