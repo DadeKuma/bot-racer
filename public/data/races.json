@@ -564,7 +564,7 @@
         "name": "ethena-oct24",
         "data": {
             "winner": ["MrsHudson"],
-            "A": ["Hound", "LightChaser", "Pechenkata", "tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucruh", "ubl4nk_bot", "The_Madaladinator"],
+            "A": ["Hound", "LightChaser", "Pechenkata", "Tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucreh", "ubl4nk_bot", "The_Madaladinator"],
             "B": ["graphium-bot", "GasAxy", "0x6980-bot", "dervish", "znBotty"],
             "C": ["Dragonfly"],
             "prize": {
@@ -604,5 +604,19 @@
             }
         }
 
+    },
+    {
+        "name": "kelpdao-nov10",
+        "data": {
+            "winner": ["Hound"],
+            "A": ["MrsHudson", "henry", "0x6980-bot", "Tera", "The_Madaladinator", "LightChaser", "Selucreh", "Pechenkata", "vuln-detector"],
+            "B": ["Dragonfly", "graphium-bot", "dervish", "ubl4nk_bot"],
+            "C": ["sol2vuln", "auditbase"],
+            "prize": {
+                "winner": 206.34,
+                "A": 158.72,
+                "B": 22.54
+            }
+        }
     }
 ]
