@@ -618,5 +618,19 @@
                 "B": 22.54
             }
         }
+    },
+    {
+        "name": "canto-nov13",
+        "data": {
+            "winner": ["henry"],
+            "A": ["0x6980-bot", "Selucreh", "Pechenkata", "vuln-detector", "IllIllI-bot", "MrsHudson"],
+            "B": ["ubl4nk_bot", "GasAxy", "Hound", "graphium-bot", "Tera", "The_Madaladinator", "Dragonfly", "znBotty", "auditbase", "LightChaser"],
+            "C": ["dervish"],
+            "prize": {
+                "winner": 232.05,
+                "A": 178.50,
+                "B": 19.70
+            }
+        }
     }
 ]
