@@ -554,5 +554,120 @@
                 "B": 23.37
             }
         }
+    },
+    {
+        "name": "brahma-oct13",
+        "data": {
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "LightChaser", "henry", "GasAxy", "znBotty", "Pechenkata", "0x6980-bot", "MrsHudson", "vuln-detector", "Hound",  "The_Madaladinator" ],
+            "B": [ "Tera", "auditbase", "Gas-Optimzeer"],
+            "C": [ "c4lanky", "sol2vuln", "mangat" ],
+            "prize": {
+                "winner": 248.99,
+                "A": 191.53,
+                "B": 28.58
+            }
+        }
+    },
+    {
+        "name": "wildcat-oct16",
+        "data": {
+            "winner": [ "henry" ],
+            "A": [ "0x6980-bot", "MrsHudson", "The_Madaladinator", "IllIllI-bot", "vuln-detector", "Pechenkata" ],
+            "B": [ "graphium-bot", "Hound", "LightChaser", "Tera", "c4lanky", "znBotty", "GasAxy", "auditbase" ],
+            "C": [  "mangat", "Gas-Optimzeer", "PhyseterMacrocephalus" ],
+            "prize": {
+                "winner": 592.00,
+                "A": 455.38,
+                "B": 53.21
+            }
+        }
+    },
+    {
+        "name": "opendollar-oct18",
+        "data": {
+            "winner": [ "vuln-detector" ],
+            "A": [ "MrsHudson", "Hound", "The_Madaladinator",  "Pechenkata", "henry" ],
+            "B": [ "0x6980-bot", "LightChaser", "graphium-bot", "c4lanky" ],
+            "C": [  "auditbase","Gas-Optimzeer" ],
+            "prize": {
+                "winner": 426.16,
+                "A": 327.82,
+                "B": 46.19
+            }
+        }
+    },
+    {
+        "name": "ethena-oct24",
+        "data": {
+            "winner": ["MrsHudson"],
+            "A": ["Hound", "LightChaser", "Pechenkata", "Tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucreh", "ubl4nk_bot", "The_Madaladinator"],
+            "B": ["graphium-bot", "GasAxy", "0x6980-bot", "dervish", "znBotty"],
+            "C": ["Dragonfly"],
+            "prize": {
+                "winner": 224.35,
+                "A": 172.57,
+                "B":25.47
+            }
+        }
+
+    },
+    {
+        "name": "nextgen-oct30",
+        "data": {
+            "winner": ["Hound"],
+            "A": ["LightChaser", "henry", "Pechenkata", "vuln-detector", "IllIllI-bot", "The_Madaladinator", "Selucreh"],
+            "B": ["MrsHudson", "graphium-bot", "Tera", "znBotty", "Dragonfly", "0x6980-bot", "auditbase", "ubl4nk_bot", "sol2vuln"],
+            "C": ["dervish", "GasAxy"],
+            "prize": {
+                "winner": 520.93,
+                "A": 400.71,
+                "B": 47.12
+            }
+        }
+
+    },
+    {
+        "name": "party-oct31",
+        "data": {
+            "winner": ["henry"],
+            "A": ["0x6980-bot", "MrsHudson", "Pechenkata", "LightChaser", "Selucreh", "The_Madaladinator"],
+            "B": ["ubl4nk_bot", "Hound", "vuln-detector", "znBotty", "graphium-bot", "sol2vuln", "GasAxy", "dervish", "Dragonfly"],
+            "C": ["auditbase"],
+            "prize": {
+                "winner": 585.92,
+                "A": 450.71,
+                "B": 51.09
+            }
+        }
+
+    },
+    {
+        "name": "kelpdao-nov10",
+        "data": {
+            "winner": ["Hound"],
+            "A": ["MrsHudson", "henry", "0x6980-bot", "Tera", "The_Madaladinator", "LightChaser", "Selucreh", "Pechenkata", "vuln-detector"],
+            "B": ["Dragonfly", "graphium-bot", "dervish", "ubl4nk_bot"],
+            "C": ["sol2vuln", "auditbase"],
+            "prize": {
+                "winner": 206.34,
+                "A": 158.72,
+                "B": 22.54
+            }
+        }
+    },
+    {
+        "name": "canto-nov13",
+        "data": {
+            "winner": ["henry"],
+            "A": ["0x6980-bot", "Selucreh", "Pechenkata", "vuln-detector", "IllIllI-bot", "MrsHudson"],
+            "B": ["ubl4nk_bot", "GasAxy", "Hound", "graphium-bot", "Tera", "The_Madaladinator", "Dragonfly", "znBotty", "auditbase", "LightChaser"],
+            "C": ["dervish"],
+            "prize": {
+                "winner": 232.05,
+                "A": 178.50,
+                "B": 19.70
+            }
+        }
     }
 ]
