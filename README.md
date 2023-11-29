@@ -18,6 +18,7 @@ To add a new race, follow these steps:
 {
     "name": "",
     "data": {
+        "judge": "",
         "winner": [ ],
         "A": [ ],
         "B": [ ],

@@ -32,6 +32,14 @@
                     color: $background-color;
                 }
             }
+
+            .judgeLink {
+                background-color: $background-panel-color;
+                padding: $font-size;
+                border-radius: 5px;
+                color: $text-primary-color;
+                text-decoration: none;
+            }
         }
     }
 }

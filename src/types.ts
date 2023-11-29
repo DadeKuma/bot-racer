@@ -10,6 +10,7 @@ export type Option = {
 export type RaceData = {
     name: string;
     data: {
+        judge: string;
         winner: string[];
         A: string[];
         B: string[];
