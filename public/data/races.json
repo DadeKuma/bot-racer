@@ -2,6 +2,7 @@
     {
         "name": "eigenlayer-apr27",
         "data": {
+            "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "znBotty" ],
             "B": [ "MrsHudson", "zz_plus_ultra", "LightChaser", "Hound", "The_Madaladinator" ],
@@ -16,6 +17,7 @@
     {
         "name": "ajna-may03",
         "data": {
+            "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "Hound", "LightChaser" ],
             "B": [ "c4lanky", "The_Madaladinator" ],
@@ -31,6 +33,7 @@
     {
         "name": "venus-may08",
         "data": {
+            "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "znBotty" ],
             "B": [ "LightChaser", "Hound", "zz_plus_ultra", "MrsHudson", "c4lanky", "The_Madaladinator" ],
@@ -45,6 +48,7 @@
     {
         "name": "juicebox-may18",
         "data": {
+            "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "Gas-Optimzeer", "znBotty", "MrsHudson", "c4lanky", "zz_plus_ultra" ],
             "B": [ "Hound" ],
@@ -59,6 +63,7 @@
     {
         "name": "chainlink-may26",
         "data": {
+            "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot", "LightChaser", "zz_plus_ultra" ],
             "A": [ "The_Madaladinator", "MrsHudson", "c4lanky", "znBotty" ],
             "B": [ "Hound" ],
@@ -73,6 +78,7 @@
     {
         "name": "maia-may30",
         "data": {
+            "judge": "Trust",
             "winner": [ "c4lanky" ],
             "A": [ "IllIllI-bot", "The_Madaladinator" ],
             "B": [ "Hound", "LightChaser" ],
@@ -87,6 +93,7 @@
     {
         "name": "stader-jun02",
         "data": {
+            "judge": "Picodes",
             "winner": [ "IllIllI-bot" ],
             "A": [ "c4lanky", "LightChaser", "The_Madaladinator", "znBotty" ],
             "B": [ "Hound", "zz_plus_ultra", "MrsHudson" ],
@@ -101,6 +108,7 @@
     {
         "name": "llama-jun06",
         "data": {
+            "judge": "sorryNotsorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "Hound", "Gas-Optimzeer", "c4lanky", "zz_plus_ultra", "The_Madaladinator" ],
             "B": [ "znBotty", "LightChaser" ],
@@ -115,6 +123,7 @@
     {
         "name": "lybra-jun23",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "LightChaser", "znBotty", "MrsHudson" ],
             "B": [ "Hound", "zz_plus_ultra", "c4lanky", "The_Madaladinator" ],
@@ -129,6 +138,7 @@
     {
         "name": "lukso-jun30",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "zz_plus_ultra", "MrsHudson", "The_Madaladinator", "LightChaser", "Hound", "znBotty" ],
             "B": [ "c4lanky", "Gas-Optimzeer" ],
@@ -143,6 +153,7 @@
     {
         "name": "nounsdao-jul03",
         "data": {
+            "judge": "RaymondFam",
             "winner": [ "znBotty" ],
             "A": [ "LightChaser", "Hound", "0x6980-bot", "zz_plus_ultra", "Gas-Optimzeer" ],
             "B": [ "MrsHudson" ],
@@ -157,6 +168,7 @@
     {
         "name": "basin-jul03",
         "data": {
+            "judge": "__141345__",
             "winner": [ "0x6980-bot" ],
             "A": [ "zz_plus_ultra" ],
             "B": [ "MrsHudson", "sol2vuln", "c4lanky" ],
@@ -171,6 +183,7 @@
     {
         "name": "chainlink-jul05",
         "data": {
+            "judge": "",
             "winner": [ "Hound" ],
             "A": [ "0x6980-bot", "The_Madaladinator", "LightChaser", "MrsHudson", "znBotty", "sol2vuln" ],
             "B": [ "c4lanky", "zz_plus_ultra", "vuln-detector", "Gas-Optimzeer" ],
@@ -185,6 +198,7 @@
     {
         "name": "tapioca-jul05",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "The_Madaladinator", "MrsHudson", "Hound", "znBotty" ],
             "B": [ "graphium-bot", "LightChaser", "zz_plus_ultra", "c4lanky", "sol2vuln", "vuln-detector" ],
@@ -199,6 +213,7 @@
     {
         "name": "pooltogether-jul07",
         "data": {
+            "judge": "Picodes",
             "winner": [ "LightChaser" ],
             "A": [ "zz_plus_ultra", "The_Madaladinator", "IllIllI-bot", "Hound", "MrsHudson" ],
             "B": [ "c4lanky", "Gas-Optimzeer", "znBotty", "graphium-bot", "vuln-detector", "sol2vuln" ],
@@ -213,6 +228,7 @@
     {
         "name": "axelar-jul12",
         "data": {
+            "judge": "sorryNotsorry",
             "winner": [ "LightChaser" ],
             "A": [ "The_Madaladinator", "0x6980-bot", "vuln-detector", "zz_plus_ultra", "znBotty", "Hound" ],
             "B": [ "c4lanky", "MrsHudson", "Gas-Optimzeer", "IllIllI-bot", "sol2vuln" ],
@@ -227,6 +243,7 @@
     {
         "name": "lens-jul17",
         "data": {
+            "judge": "",
             "winner": [ "0x6980-bot" ],
             "A": [ "LightChaser", "IllIllI-bot", "znBotty", "Hound", "c4lanky", "MrsHudson", "The_Madaladinator" ],
             "B": [ "Gas-Optimzeer", "sol2vuln", "graphium-bot", "zz_plus_ultra" ],
@@ -241,6 +258,7 @@
     {
         "name": "amphora-jul21",
         "data": {
+            "judge": "",
             "winner": [ "Hound" ],
             "A": [ "c4lanky", "znBotty", "LightChaser", "0x6980-bot", "MrsHudson", "sol2vuln" ],
             "B": [ "vuln-detector", "Gas-Optimzeer" ],
@@ -255,6 +273,7 @@
     {
         "name": "arcade-jul21",
         "data": {
+            "judge": "",
             "winner": [ "c4lanky" ],
             "A": [ "LightChaser", "MrsHudson", "vuln-detector", "0x6980-bot", "IllIllI-bot" ],
             "B": [ "znBotty", "Hound", "graphium-bot" ],
@@ -269,6 +288,7 @@
     {
         "name": "moonwell-jul24",
         "data": {
+            "judge": "sorryNotsorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "Hound", "MrsHudson", "0x6980-bot" ],
             "B": [ "graphium-bot", "c4lanky", "znBotty", "LightChaser" ],
@@ -283,6 +303,7 @@
     {
         "name": "tangible-aug01",
         "data": {
+            "judge": "",
             "winner": [ "0x6980-bot" ],
             "A": [ "The_Madaladinator", "znBotty", "LightChaser", "Hound", "c4lanky", "vuln-detector", "MrsHudson", "sol2vuln" ],
             "B": [ "Pechenkata", "graphium-bot" ],
@@ -297,6 +318,7 @@
     {
         "name": "goodentry-aug01",
         "data": {
+            "judge": "",
             "winner": [ "LightChaser" ],
             "A": [ "znBotty", "The_Madaladinator", "IllIllI-bot", "vuln-detector", "0x6980-bot", "c4lanky", "sol2vuln", "Pechenkata", "MrsHudson" ],
             "B": [ "Hound", "graphium-bot" ],
@@ -311,6 +333,7 @@
     {
         "name": "pooltogether-aug02",
         "data": {
+            "judge": "",
             "winner": [ "LightChaser" ],
             "A": [ "Hound", "c4lanky", "The_Madaladinator", "znBotty", "vuln-detector", "MrsHudson" ],
             "B": [ "0x6980-bot", "graphium-bot", "Gas-Optimzeer", "auditbase" ],
@@ -325,6 +348,7 @@
     {
         "name": "arbitrum-aug03",
         "data": {
+            "judge": "sorryNotSorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "The_Madaladinator", "Hound", "znBotty", "vuln-detector", "0x6980-bot", "c4lanky", "graphium-bot" ],
             "B": [ "auditbase", "LightChaser", "Pechenkata" ],
@@ -339,6 +363,7 @@
     {
         "name": "verwa-aug07",
         "data": {
+            "judge": "",
             "winner": [ "Hound" ],
             "A": [ "0x6980-bot", "IllIllI-bot", "MrsHudson", "Pechenkata" ],
             "B": [ "graphium-bot", "The_Madaladinator", "LightChaser", "vuln-detector", "c4lanky", "sol2vuln", "znBotty", "auditbase" ],
@@ -353,6 +378,7 @@
     {
         "name": "shell-aug21",
         "data": {
+            "judge": "",
             "winner": [ "Hound" ],
             "A": [ "IllIllI-bot", "MrsHudson", "vuln-detector", "0x6980-bot" ],
             "B": [ "Pechenkata", "The_Madaladinator", "LightChaser", "auditbase", "sol2vuln" ],
@@ -367,6 +393,7 @@
     {
         "name": "dopex-aug21",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "0x6980-bot" ],
             "B": [ "LightChaser", "The_Madaladinator", "Hound", "znBotty" ],
@@ -381,6 +408,7 @@
     {
         "name": "chainlink-aug25",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "Hound", "vuln-detector" ],
             "B": [ "The_Madaladinator", "znBotty", "MrsHudson", "graphium-bot", "0x6980-bot" ],
@@ -395,6 +423,7 @@
     {
         "name": "livepeer-aug31",
         "data": {
+            "judge": "",
             "winner": [ "henry" ],
             "A": [ "The_Madaladinator", "IllIllI-bot", "Hound", "vuln-detector", "0x6980-bot", "GasAxy", "MrsHudson", "c4lanky" ],
             "B": [ "znBotty", "graphium-bot", "auditbase", "Tera", "LightChaser" ],
@@ -409,6 +438,7 @@
     {
         "name": "ondo-sep01",
         "data": {
+            "judge": "",
             "winner": [ "henry" ],
             "A": [ "LightChaser", "vuln-detector", "0x6980-bot", "znBotty", "MrsHudson" ],
             "B": [ "GasAxy", "Hound", "The_Madaladinator", "auditbase", "c4lanky", "graphium-bot", "Tera", "Gas-Optimzeer" ],
@@ -423,6 +453,7 @@
     {
         "name": "delegate-sep05",
         "data": {
+            "judge": "bytes032",
             "winner": [ "Hound" ],
             "A": [ "henry", "MrsHudson" ],
             "B": [ "0x6980-bot", "The_Madaladinator" ],
@@ -437,6 +468,7 @@
     {
         "name": "centrifuge-sep08",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "henry", "0x6980-bot", "LightChaser", "vuln-detector", "Hound", "Pechenkata", "MrsHudson" ],
             "B": [ "graphium-bot", "c4lanky", "PhyseterMacrocephalus", "GasAxy", "Gas-Optimzeer", "Tera" ],
@@ -451,6 +483,7 @@
     {
         "name": "maiadao-sep22",
         "data": {
+            "judge": "0xA5DF",
             "winner": [ "IllIllI-bot" ],
             "A": [ "0x6980-bot", "henry", "MrsHudson", "vuln-detector", "LightChaser" ],
             "B": [ "graphium-bot", "Tera", "Hound", "znBotty", "The_Madaladinator", "auditbase", "c4lanky" ],
@@ -465,6 +498,7 @@
     {
         "name": "venus-sep28",
         "data": {
+            "judge": "0xRobocop",
             "winner": [ "Tera" ],
             "A": [ "Hound", "MrsHudson", "0x6980-bot", "henry", "vuln-detector", "graphium-bot" ],
             "B": [ "LightChaser", "The_Madaladinator", "znBotty" ],
@@ -479,6 +513,7 @@
     {
         "name": "zksync-oct02",
         "data": {
+            "judge": "",
             "winner": [ "IllIllI-bot" ],
             "A": [ "LightChaser", "0x6980-bot", "vuln-detector", "znBotty", "henry", "The_Madaladinator", "MrsHudson" ],
             "B": [ "GasAxy", "Hound", "graphium-bot", "c4lanky", "Tera" ],
@@ -493,6 +528,7 @@
     {
         "name": "canto-oct03",
         "data": {
+            "judge": "__141345__",
             "winner": [ "IllIllI-bot" ],
             "A": [ "0x6980-bot", "henry", "GasAxy", "vuln-detector", "The_Madaladinator", "Hound" ],
             "B": [ "graphium-bot", "Pechenkata", "MrsHudson", "auditbase", "Tera", "sol2vuln", "znBotty", "LightChaser" ],
@@ -507,6 +543,7 @@
     {
         "name": "ens-oct05",
         "data": {
+            "judge": "__141345__",
             "winner": [ "henry" ],
             "A": [ "0x6980-bot", "vuln-detector", "Hound", "LightChaser", "The_Madaladinator", "graphium-bot", "sol2vuln" ],
             "B": [ "MrsHudson", "znBotty", "Pechenkata", "Gas-Optimzeer" ],

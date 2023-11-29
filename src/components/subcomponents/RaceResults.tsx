@@ -35,8 +35,19 @@ const RaceResults: React.FC<RaceResultsProps> = ({ race, handleTabChange }) => {
         );
     };
 
+    const renderJudgeName = (judge: string, rowName: string) => {
+        const judgeElement = <div className={styles.judgeLink} >{judge}</div>;
+        return (
+            <div className={styles.botRow}>
+                <p className={styles.rowName}>{rowName}</p>
+                <div className={styles.botLinks}>{judgeElement}</div>
+            </div>
+        );
+    };
+
     return (
         <div className={styles.raceResults}>
+            {renderJudgeName(data.judge, "🧑‍⚖️ Judge")}
             {renderBotLinks(data.winner, "👑 Winner")}
             {renderBotLinks(data.A, "A Rank")}
             {renderBotLinks(data.B, "B Rank")}
