@@ -677,5 +677,36 @@
                 "B": 19.70
             }
         }
+    },
+    {
+        "name": "panoptic-nov27",
+        "data": {
+            "judge": "Picodes",
+            "winner": [ "IllIllI-bot" ],
+            "A": [ "ubl4nk_bot", "0x6980-bot", "Tera", "Hound", "henry" ],
+            "B": [ "MrsHudson", "znBotty", "LightChaser", "vuln-detector", "The_Madaladinator", "Dragonfly", "Selucreh", "Pechenkata", "GasAxy" ],
+            "C": [ "auditbase", "graphium-bot" ],
+            "prize": {
+                "winner": 668.63,
+                "A": 514.33,
+                "B": 56.63
+            }
+        }
+    },
+    {
+        "name": "shellprotocol-nov30",
+        "data": {
+            "judge": "RaymondFam",
+            "winner": [ "The_Madaladinator" ],
+            "A": [ "MrsHudson", "LightChaser", "vuln-detector", "0x6980-bot", "henry", "Hound", "Pechenkata", "Dragonfly", "Tera", "ubl4nk_bot" ],
+            "B": [ "auditbase", "Cygnet", "Selucreh", "Outis", "znBotty", "dervish", "GasAxy" ],
+            "C": [ ],
+            "prize": {
+                "winner": 238.50,
+                "A": 183.46,
+                "B": 25.28
+            }
+        }
     }
+
 ]
