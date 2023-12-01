@@ -700,6 +700,7 @@
             "winner": [ "The_Madaladinator" ],
             "A": [ "MrsHudson", "LightChaser", "vuln-detector", "0x6980-bot", "henry", "Hound", "Pechenkata", "Dragonfly", "Tera", "ubl4nk_bot" ],
             "B": [ "auditbase", "Cygnet", "Selucreh", "Outis", "znBotty", "dervish", "GasAxy" ],
+            "C": [ ],
             "prize": {
                 "winner": 238.50,
                 "A": 183.46,
