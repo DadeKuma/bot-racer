@@ -683,7 +683,7 @@
         "data": {
             "judge": "Picodes",
             "winner": [ "IllIllI-bot" ],
-            "A": [ "henry", "ubl4nk_bot", "Tera", "0x6980-bot",  "Hound" ],
+            "A": [ "henry", "ubl4nk_bot", "Tera", "0x6980-bot", "Hound" ],
             "B": [ "vuln-detector", "The_Madaladinator", "MrsHudson", "LightChaser", "GasAxy", "znBotty", "Dragonfly", "Selucreh", "Pechenkata" ],
             "C": [ "graphium-bot", "auditbase" ],
             "prize": {
@@ -707,6 +707,33 @@
                 "B": 25.28
             }
         }
+    },
+    {
+        "name": "ethcreditguild-dec11",
+        "data": {
+            "winner": [ "henry" ],
+            "A": [ "Tera", "MrsHudson", "IllIllI-bot", "vuln-detector", "0x6980-bot", "ubl4nk_bot", "Selucreh" ],
+            "B": [ "Pechenkata", "dervish", "The_Madaladinator", "Outis", "Cygnet", "Dragonfly", "GasAxy" ],
+            "C": [ "znBotty" ],
+            "prize": {
+                "winner": 797.70,
+                "A": 613.62,
+                "B": 76.00
+            }
+        }
+    },
+    {
+        "name": "revolution-dec13",
+        "data": {
+            "winner": [ "vuln-detector" ],
+            "A": [ "0x6980-bot", "LightChaser", "Hound", "MrsHudson", "ubl4nk_bot", "The_Madaladinator", "Pechenkata", "henry", "Selucreh", "auditbase", "Dragonfly" ],
+            "B": [ "Cygnet", "Tera", "GasAxy" ],
+            "C": [ "Outis" ],
+            "prize": {
+                "winner": 229.25,
+                "A": 176.34,
+                "B": 26.99
+            }
+        }
     }
-
 ]
