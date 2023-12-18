@@ -1,17 +1,14 @@
-name: JSON check
+name: Validate Race JSON
 
-on:
-  push:
-    paths:
-      - '**.json'
-  pull_request:
+on: [pull_request]
 
 jobs:
-  test:
+  verify-json-validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: json-syntax-check
-        uses: limitusus/json-syntax-check@v2
-        with:
-          pattern: "\\.json$"
+      - uses: actions/checkout@v1
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /public/schema/races.json
+          INPUT_JSONS: /public/data/races.json
