@@ -20,7 +20,7 @@
                                 "A": { "type": "number" },
                                 "B": { "type": "number" }
                             },
-                            "required": [ "winner", "A", "B", "C" ],
+                            "required": [ "winner", "A", "B" ],
                             "additionalProperties": false
                         }
                     },
