@@ -1,0 +1,35 @@
+{
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "name": { "type": "string" },
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "judge": { "type": "string" },
+                        "winner": { "type": "array", "items": { "type": "string" } },
+                        "A": { "type": "array", "items": { "type": "string" } },
+                        "B": { "type": "array", "items": { "type": "string" } },
+                        "C": { "type": "array", "items": { "type": "string" } },
+                        "prize": {
+                            "type": "object",
+                            "properties": {
+                                "winner": { "type": "number" },
+                                "A": { "type": "number" },
+                                "B": { "type": "number" }
+                            },
+                            "required": [ "winner", "A", "B" ],
+                            "additionalProperties": false
+                        }
+                    },
+                    "required": [ "judge", "winner", "A", "B", "C", "prize" ],
+                    "additionalProperties": false
+                }
+            },
+            "required": [ "name", "data" ],
+            "additionalProperties": false
+        }
+    ]
+}
