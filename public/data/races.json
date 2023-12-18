@@ -348,7 +348,7 @@
     {
         "name": "arbitrum-aug03",
         "data": {
-            "judge": "sorryNotSorry",
+            "judge": "sorryNotsorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "The_Madaladinator", "Hound", "znBotty", "vuln-detector", "0x6980-bot", "c4lanky", "graphium-bot" ],
             "B": [ "auditbase", "LightChaser", "Pechenkata" ],
@@ -711,6 +711,7 @@
     {
         "name": "ethcreditguild-dec11",
         "data": {
+            "judge": "sorryNotsorry",
             "winner": [ "henry" ],
             "A": [ "Tera", "MrsHudson", "IllIllI-bot", "vuln-detector", "0x6980-bot", "ubl4nk_bot", "Selucreh" ],
             "B": [ "Pechenkata", "dervish", "The_Madaladinator", "Outis", "Cygnet", "Dragonfly", "GasAxy" ],
@@ -725,6 +726,7 @@
     {
         "name": "revolution-dec13",
         "data": {
+            "judge": "RaymondFam",
             "winner": [ "vuln-detector" ],
             "A": [ "0x6980-bot", "LightChaser", "Hound", "MrsHudson", "ubl4nk_bot", "The_Madaladinator", "Pechenkata", "henry", "Selucreh", "auditbase", "Dragonfly" ],
             "B": [ "Cygnet", "Tera", "GasAxy" ],
