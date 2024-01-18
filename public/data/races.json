@@ -737,5 +737,69 @@
                 "B": 26.99
             }
         }
-    }
+    },
+    {
+      "name": "olas-dec21",
+      "data": {
+          "year": 2023,
+          "judge": "0xsomeone",
+          "winner": [ "vuln-detector" ],
+          "A": [ "Cygnet", "LightChaser", "Pechenkata", "Hound", "Selucreh" ],
+          "B": [  "MrsHudson", "Dragonfly", "dervish", "0x6980-bot", "znBotty", "ubl4nk_bot" ],
+          "C": [  ],
+          "prize": {
+              "winner": 1037.09,
+              "A": 797.76,
+              "B": 99.85
+          }
+      }
+  },
+  {
+      "name": "curves-jan8",
+      "data": {
+          "year": 2024,
+          "judge": "RaymondFam",
+          "winner": [ "LightChaser" ],
+          "A": [ "The_Madaladinator", "Pechenkata", "MrsHudson", "Tera", "henry", "vuln-detector", "Hound", "znBotty", "Cygnet", "Selucruh" ],
+          "B": [  "Dragonfly", "0x6980",  "ubl4nk_bot", "dervish", "auditbase" ],
+          "C": [ "GasAxy", "Outis" ],
+          "prize": {
+              "winner": 243.49,
+              "A": 187.30,
+              "B": 26.71
+          }
+      }
+  },
+  {
+      "name": "renft-jan8",
+      "data": {
+          "year": 2024,
+          "judge": "__141345__",
+          "winner": [ "LightChaser" ],
+          "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
+          "B": [  "graphium", "auditbase", "Outis", "The_Madaladinator", "0x6980", "Cygnet", "Dragonfly", "znBotty" ],
+          "C": [ "GasAxy", "dervish" ],
+          "prize": {
+              "winner": 429.85,
+              "A": 330.65,
+              "B": 43.03
+          }
+      }
+  },
+    {
+      "name": "salty-jan16",
+      "data": {
+          "year": 2024,
+          "judge": "Picodes",
+          "winner": [ "The_Madaladinator" ],
+          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
+          "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium", "vuln-detector", "Outis" ],
+          "C": [ "GasAxy", "dervish",  "ubl4nk_bot" ],
+          "prize": {
+              "winner": 633.14,
+              "A": 487.03,
+              "B": 62.23
+          }
+      }
+  }
 ]
