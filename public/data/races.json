@@ -825,7 +825,7 @@
           "year": 2024,
           "judge": "__141345__",
           "winner": [ "LightChaser" ],
-          "A": [ "IllIllI", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
+          "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
           "B": [  "graphium", "auditbase", "Outis", "The_Madaladinator", "0x6980", "Cygnet", "Dragonfly", "znBotty" ],
           "C": [ "GasAxy", "dervish" ],
           "prize": {
@@ -841,7 +841,7 @@
           "year": 2024,
           "judge": "Picodes",
           "winner": [ "The_Madaladinator" ],
-          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IlllIlll", "Pechenkata", "Dragonfly" ],
+          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
           "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium", "vuln-detector", "Outis" ],
           "C": [ "GasAxy", "dervish",  "ubl4nk_bot" ],
           "prize": {
