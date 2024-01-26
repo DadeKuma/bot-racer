@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../style/LeaderboardTab.module.scss";
 import { Contestant, RaceData, TabProps } from "../types";
+import YearSelection from "./subcomponents/YearSelection";
 
 const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
     const [leaderboard, setLeaderboard] = useState<Contestant[]>([]);
@@ -39,6 +40,37 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
         }
     };
 
+    const sortLeadearboard = useCallback(() => {
+        setLeaderboard(prevLeaderboard => {
+            const sortedLeaderboard = [...prevLeaderboard].sort((a, b) => {
+                if (sortedColumn === "Bot") {
+                    return sortOrder === "asc"
+                        ? a.name.localeCompare(b.name)
+                        : b.name.localeCompare(a.name);
+                } else if (sortedColumn === "USD") {
+                    return sortOrder === "asc"
+                        ? a.earnings - b.earnings
+                        : b.earnings - a.earnings;
+                } else if (sortedColumn === "Races") {
+                    return sortOrder === "asc" ? a.races - b.races : b.races - a.races;
+                } else if (sortedColumn === "Avg Position") {
+                    const avgPositionA =
+                        a.positions.reduce((sum, position) => sum + position, 0) /
+                        a.positions.length;
+                    const avgPositionB =
+                        b.positions.reduce((sum, position) => sum + position, 0) /
+                        b.positions.length;
+                    return sortOrder === "asc"
+                        ? avgPositionA - avgPositionB
+                        : avgPositionB - avgPositionA;
+                }
+                return 0;
+            });
+
+            return sortedLeaderboard;
+        });
+    }, [sortOrder, sortedColumn]);
+
     const sortColumn = (column: string) => {
         if (sortedColumn === column) {
             setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -46,6 +78,7 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
             setSortOrder("asc");
             setSortedColumn(column);
         }
+        sortLeadearboard();
     };
 
     const leaderboardBody = () => {
@@ -102,43 +135,20 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
             } catch (error) {
                 console.error("Error fetching race data:", error);
             }
+            sortLeadearboard();
         };
         fetchData();
-    }, []);
+    }, [sortLeadearboard]);
 
-    useEffect(() => {
-        setLeaderboard(prevLeaderboard => {
-            const sortedLeaderboard = [...prevLeaderboard].sort((a, b) => {
-                if (sortedColumn === "Bot") {
-                    return sortOrder === "asc"
-                        ? a.name.localeCompare(b.name)
-                        : b.name.localeCompare(a.name);
-                } else if (sortedColumn === "USD") {
-                    return sortOrder === "asc"
-                        ? a.earnings - b.earnings
-                        : b.earnings - a.earnings;
-                } else if (sortedColumn === "Races") {
-                    return sortOrder === "asc" ? a.races - b.races : b.races - a.races;
-                } else if (sortedColumn === "Avg Position") {
-                    const avgPositionA =
-                        a.positions.reduce((sum, position) => sum + position, 0) /
-                        a.positions.length;
-                    const avgPositionB =
-                        b.positions.reduce((sum, position) => sum + position, 0) /
-                        b.positions.length;
-                    return sortOrder === "asc"
-                        ? avgPositionA - avgPositionB
-                        : avgPositionB - avgPositionA;
-                }
-                return 0;
-            });
 
-            return sortedLeaderboard;
-        });
-    }, [leaderboard, sortedColumn, sortOrder]);
+
+    const handleYearSelection = (selectedYear: string) => {
+        console.log('Selected Year:', selectedYear);
+    };
 
     return (
         <div className={styles.leaderboardTab}>
+            <YearSelection onSelectYear={handleYearSelection} />
             <table className={styles.leaderboardTable}>
                 <thead>
                     <tr>

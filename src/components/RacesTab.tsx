@@ -5,6 +5,7 @@ import { selectStyle } from "../customStyle";
 import styles from "../style/RacesTab.module.scss";
 import { Option, RaceData, TabProps } from "../types";
 import RaceResults from "./subcomponents/RaceResults";
+import YearSelection from "./subcomponents/YearSelection";
 
 const RacesTab: React.FC<TabProps> = ({ handleTabChange }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
@@ -58,8 +59,14 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange }) => {
     navigate(`?${newSearchParams.toString()}`);
   };
 
+  const handleYearSelection = (selectedYear: string) => {
+    // Handle the selected year, you can use it to filter data or perform any other action
+    console.log('Selected Year:', selectedYear);
+  };
+
   return (
     <div className={styles.statsTab}>
+      <YearSelection onSelectYear={handleYearSelection} />
       <Select
         options={entries}
         value={selectedOption}

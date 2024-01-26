@@ -1,0 +1,37 @@
+@import "./variables";
+
+.yearSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    button {
+        background-color: $background-panel-secondary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: $font-size;
+        font-family: $font-family;
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $background-panel-secondary-color;
+        }
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+
+        &.selected {
+            background-color: $primary-color;
+            color: $background-panel-secondary-color;
+        }
+    }
+}

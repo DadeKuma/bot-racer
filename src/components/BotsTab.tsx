@@ -6,6 +6,7 @@ import { selectStyle } from "../customStyle";
 import styles from "../style/BotsTab.module.scss";
 import { BotStats, Option, RaceData, TabProps } from "../types";
 import RaceGraph from "./subcomponents/RaceGraph";
+import YearSelection from "./subcomponents/YearSelection";
 
 const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
@@ -141,8 +142,13 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
     );
   };
 
+  const handleYearSelection = (selectedYear: string) => {
+    console.log('Selected Year:', selectedYear);
+  };
+
   return (
     <div className={styles.botsTab}>
+      <YearSelection onSelectYear={handleYearSelection} />
       <Select
         options={entries}
         value={selectedOption}
