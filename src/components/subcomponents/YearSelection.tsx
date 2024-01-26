@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { currentYear, getAllYearsUntilNow } from '../../dateUtils';
 import styles from '../../style/YearSelection.module.scss';
 
 interface YearSelectionProps {
@@ -6,34 +7,26 @@ interface YearSelectionProps {
 }
 
 const YearSelection: React.FC<YearSelectionProps> = ({ onSelectYear }) => {
-    const currentYear = new Date().getFullYear();
-    const startYear = 2023;
-    const [selectedYear, setSelectedYear] = useState<string | null>(null);
+    const [selectedYear, setSelectedYear] = useState<string>(currentYear);
 
     const handleSelection = (year: string) => {
         setSelectedYear(year);
         onSelectYear(year);
     };
 
-    useEffect(() => {
-        const year = String(currentYear);
-        setSelectedYear(year);
-        onSelectYear(year);
-    }, [setSelectedYear, onSelectYear, currentYear]);
-
     const renderYearButtons = () => {
         const buttons = [];
-        for (let year = startYear; year <= currentYear; year++) {
+        getAllYearsUntilNow().forEach(year => {
             buttons.push(
                 <button
                     key={year}
-                    className={selectedYear === String(year) ? styles.selected : ''}
-                    onClick={() => handleSelection(String(year))}
+                    className={selectedYear === year ? styles.selected : ''}
+                    onClick={() => handleSelection(year)}
                 >
                     {year}
                 </button>
             );
-        }
+        });
         buttons.push(
             <button
                 key="all"
