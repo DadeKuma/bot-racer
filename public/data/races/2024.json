@@ -1,0 +1,63 @@
+[
+  {
+      "name": "curves-jan8",
+      "data": {
+          "judge": "RaymondFam",
+          "winner": [ "LightChaser" ],
+          "A": [ "The_Madaladinator", "Pechenkata", "MrsHudson", "Tera", "henry", "vuln-detector", "Hound", "znBotty", "Cygnet", "Selucruh" ],
+          "B": [  "Dragonfly", "0x6980",  "ubl4nk_bot", "dervish", "auditbase" ],
+          "C": [ "GasAxy", "Outis" ],
+          "prize": {
+              "winner": 243.49,
+              "A": 187.30,
+              "B": 26.71
+          }
+      }
+  },
+  {
+      "name": "renft-jan8",
+      "data": {
+          "judge": "__141345__",
+          "winner": [ "LightChaser" ],
+          "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
+          "B": [  "graphium", "auditbase", "Outis", "The_Madaladinator", "0x6980", "Cygnet", "Dragonfly", "znBotty" ],
+          "C": [ "GasAxy", "dervish" ],
+          "prize": {
+              "winner": 429.85,
+              "A": 330.65,
+              "B": 43.03
+          }
+      }
+  },
+    {
+      "name": "salty-jan16",
+      "data": {
+          "judge": "Picodes",
+          "winner": [ "The_Madaladinator" ],
+          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
+          "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium", "vuln-detector", "Outis" ],
+          "C": [ "GasAxy", "dervish",  "ubl4nk_bot" ],
+          "prize": {
+              "winner": 633.14,
+              "A": 487.03,
+              "B": 62.23
+          }
+      }
+  },
+    {
+      "name": "decent-jan19",
+      "data": {
+          "judge": "RaymondFam",
+          "winner": [ "vuln-detector" ],
+          "A": [ "LightChaser", "MrsHudson", "Selucruh", "Cygnet", "Pechenkata", "The_Madaladinator", "henry", "Hound", "TragedyOfCommons" ],
+          "B": [  "dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk" ],
+          "C": [ ],
+          "prize": {
+              "winner": 260.53,
+              "A": 200.40,
+              "B": 26.55
+          }
+      }
+  }
+
+]
