@@ -2,7 +2,6 @@
     {
         "name": "eigenlayer-apr27",
         "data": {
-            "year": 2023,
             "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "znBotty" ],
@@ -18,7 +17,6 @@
     {
         "name": "ajna-may03",
         "data": {
-            "year": 2023,
             "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "Hound", "LightChaser" ],
@@ -35,7 +33,6 @@
     {
         "name": "venus-may08",
         "data": {
-            "year": 2023,
             "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "znBotty" ],
@@ -51,7 +48,6 @@
     {
         "name": "juicebox-may18",
         "data": {
-            "year": 2023,
             "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "Gas-Optimzeer", "znBotty", "MrsHudson", "c4lanky", "zz_plus_ultra" ],
@@ -67,7 +63,6 @@
     {
         "name": "chainlink-may26",
         "data": {
-            "year": 2023,
             "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot", "LightChaser", "zz_plus_ultra" ],
             "A": [ "The_Madaladinator", "MrsHudson", "c4lanky", "znBotty" ],
@@ -83,7 +78,6 @@
     {
         "name": "maia-may30",
         "data": {
-            "year": 2023,
             "judge": "Trust",
             "winner": [ "c4lanky" ],
             "A": [ "IllIllI-bot", "The_Madaladinator" ],
@@ -99,7 +93,6 @@
     {
         "name": "stader-jun02",
         "data": {
-            "year": 2023,
             "judge": "Picodes",
             "winner": [ "IllIllI-bot" ],
             "A": [ "c4lanky", "LightChaser", "The_Madaladinator", "znBotty" ],
@@ -115,7 +108,6 @@
     {
         "name": "llama-jun06",
         "data": {
-            "year": 2023,
             "judge": "sorryNotsorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "Hound", "Gas-Optimzeer", "c4lanky", "zz_plus_ultra", "The_Madaladinator" ],
@@ -131,7 +123,6 @@
     {
         "name": "lybra-jun23",
         "data": {
-            "year": 2023,
             "judge": "ladboy233",
             "winner": [ "IllIllI-bot" ],
             "A": [ "LightChaser", "znBotty", "MrsHudson" ],
@@ -147,7 +138,6 @@
     {
         "name": "lukso-jun30",
         "data": {
-            "year": 2023,
             "judge": "minhquanym",
             "winner": [ "IllIllI-bot" ],
             "A": [ "zz_plus_ultra", "MrsHudson", "The_Madaladinator", "LightChaser", "Hound", "znBotty" ],
@@ -163,7 +153,6 @@
     {
         "name": "nounsdao-jul03",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "znBotty" ],
             "A": [ "LightChaser", "Hound", "0x6980-bot", "zz_plus_ultra", "Gas-Optimzeer" ],
@@ -179,7 +168,6 @@
     {
         "name": "basin-jul03",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "0x6980-bot" ],
             "A": [ "zz_plus_ultra" ],
@@ -195,7 +183,6 @@
     {
         "name": "chainlink-jul05",
         "data": {
-            "year": 2023,
             "judge": "ladboy233",
             "winner": [ "Hound" ],
             "A": [ "0x6980-bot", "The_Madaladinator", "LightChaser", "MrsHudson", "znBotty", "sol2vuln" ],
@@ -211,7 +198,6 @@
     {
         "name": "tapioca-jul05",
         "data": {
-            "year": 2023,
             "judge": "Alex The Entreprenerd",
             "winner": [ "IllIllI-bot" ],
             "A": [ "The_Madaladinator", "MrsHudson", "Hound", "znBotty" ],
@@ -227,7 +213,6 @@
     {
         "name": "pooltogether-jul07",
         "data": {
-            "year": 2023,
             "judge": "Picodes",
             "winner": [ "LightChaser" ],
             "A": [ "zz_plus_ultra", "The_Madaladinator", "IllIllI-bot", "Hound", "MrsHudson" ],
@@ -243,7 +228,6 @@
     {
         "name": "axelar-jul12",
         "data": {
-            "year": 2023,
             "judge": "sorryNotsorry",
             "winner": [ "LightChaser" ],
             "A": [ "The_Madaladinator", "0x6980-bot", "vuln-detector", "zz_plus_ultra", "znBotty", "Hound" ],
@@ -259,7 +243,6 @@
     {
         "name": "lens-jul17",
         "data": {
-            "year": 2023,
             "judge": "0xA5DF",
             "winner": [ "0x6980-bot" ],
             "A": [ "LightChaser", "IllIllI-bot", "znBotty", "Hound", "c4lanky", "MrsHudson", "The_Madaladinator" ],
@@ -275,7 +258,6 @@
     {
         "name": "amphora-jul21",
         "data": {
-            "year": 2023,
             "judge": "minhquanym",
             "winner": [ "Hound" ],
             "A": [ "c4lanky", "znBotty", "LightChaser", "0x6980-bot", "MrsHudson", "sol2vuln" ],
@@ -291,7 +273,6 @@
     {
         "name": "arcade-jul21",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "c4lanky" ],
             "A": [ "LightChaser", "MrsHudson", "vuln-detector", "0x6980-bot", "IllIllI-bot" ],
@@ -307,7 +288,6 @@
     {
         "name": "moonwell-jul24",
         "data": {
-            "year": 2023,
             "judge": "sorryNotsorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "Hound", "MrsHudson", "0x6980-bot" ],
@@ -323,7 +303,6 @@
     {
         "name": "tangible-aug01",
         "data": {
-            "year": 2023,
             "judge": "hansfriese",
             "winner": [ "0x6980-bot" ],
             "A": [ "The_Madaladinator", "znBotty", "LightChaser", "Hound", "c4lanky", "vuln-detector", "MrsHudson", "sol2vuln" ],
@@ -339,7 +318,6 @@
     {
         "name": "goodentry-aug01",
         "data": {
-            "year": 2023,
             "judge": "hansfriese",
             "winner": [ "LightChaser" ],
             "A": [ "znBotty", "The_Madaladinator", "IllIllI-bot", "vuln-detector", "0x6980-bot", "c4lanky", "sol2vuln", "Pechenkata", "MrsHudson" ],
@@ -355,7 +333,6 @@
     {
         "name": "pooltogether-aug02",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "LightChaser" ],
             "A": [ "Hound", "c4lanky", "The_Madaladinator", "znBotty", "vuln-detector", "MrsHudson" ],
@@ -371,7 +348,6 @@
     {
         "name": "arbitrum-aug03",
         "data": {
-            "year": 2023,
             "judge": "sorryNotsorry",
             "winner": [ "IllIllI-bot" ],
             "A": [ "MrsHudson", "The_Madaladinator", "Hound", "znBotty", "vuln-detector", "0x6980-bot", "c4lanky", "graphium-bot" ],
@@ -387,7 +363,6 @@
     {
         "name": "verwa-aug07",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "Hound" ],
             "A": [ "0x6980-bot", "IllIllI-bot", "MrsHudson", "Pechenkata" ],
@@ -403,7 +378,6 @@
     {
         "name": "shell-aug21",
         "data": {
-            "year": 2023,
             "judge": "0xRobocop",
             "winner": [ "Hound" ],
             "A": [ "IllIllI-bot", "MrsHudson", "vuln-detector", "0x6980-bot" ],
@@ -419,7 +393,6 @@
     {
         "name": "dopex-aug21",
         "data": {
-            "year": 2023,
             "judge": "bytes032",
             "winner": [ "IllIllI-bot" ],
             "A": [ "0x6980-bot" ],
@@ -435,7 +408,6 @@
     {
         "name": "chainlink-aug25",
         "data": {
-            "year": 2023,
             "judge": "minhquanym",
             "winner": [ "IllIllI-bot" ],
             "A": [ "Hound", "vuln-detector" ],
@@ -451,7 +423,6 @@
     {
         "name": "livepeer-aug31",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "henry" ],
             "A": [ "The_Madaladinator", "IllIllI-bot", "Hound", "vuln-detector", "0x6980-bot", "GasAxy", "MrsHudson", "c4lanky" ],
@@ -467,7 +438,6 @@
     {
         "name": "ondo-sep01",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "henry" ],
             "A": [ "LightChaser", "vuln-detector", "0x6980-bot", "znBotty", "MrsHudson" ],
@@ -483,7 +453,6 @@
     {
         "name": "delegate-sep05",
         "data": {
-            "year": 2023,
             "judge": "bytes032",
             "winner": [ "Hound" ],
             "A": [ "henry", "MrsHudson" ],
@@ -499,7 +468,6 @@
     {
         "name": "centrifuge-sep08",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "IllIllI-bot" ],
             "A": [ "henry", "0x6980-bot", "LightChaser", "vuln-detector", "Hound", "Pechenkata", "MrsHudson" ],
@@ -515,7 +483,6 @@
     {
         "name": "maiadao-sep22",
         "data": {
-            "year": 2023,
             "judge": "0xA5DF",
             "winner": [ "IllIllI-bot" ],
             "A": [ "0x6980-bot", "henry", "MrsHudson", "vuln-detector", "LightChaser" ],
@@ -531,7 +498,6 @@
     {
         "name": "venus-sep28",
         "data": {
-            "year": 2023,
             "judge": "0xRobocop",
             "winner": [ "Tera" ],
             "A": [ "Hound", "MrsHudson", "0x6980-bot", "henry", "vuln-detector", "graphium-bot" ],
@@ -547,7 +513,6 @@
     {
         "name": "zksync-oct02",
         "data": {
-            "year": 2023,
             "judge": "minhquanym",
             "winner": [ "IllIllI-bot" ],
             "A": [ "LightChaser", "0x6980-bot", "vuln-detector", "znBotty", "henry", "The_Madaladinator", "MrsHudson" ],
@@ -563,7 +528,6 @@
     {
         "name": "canto-oct03",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "IllIllI-bot" ],
             "A": [ "0x6980-bot", "henry", "GasAxy", "vuln-detector", "The_Madaladinator", "Hound" ],
@@ -579,7 +543,6 @@
     {
         "name": "ens-oct05",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "henry" ],
             "A": [ "0x6980-bot", "vuln-detector", "Hound", "LightChaser", "The_Madaladinator", "graphium-bot", "sol2vuln" ],
@@ -595,7 +558,6 @@
     {
         "name": "brahma-oct13",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "IllIllI-bot" ],
             "A": [ "LightChaser", "henry", "GasAxy", "znBotty", "Pechenkata", "0x6980-bot", "MrsHudson", "vuln-detector", "Hound", "The_Madaladinator" ],
@@ -611,7 +573,6 @@
     {
         "name": "wildcat-oct16",
         "data": {
-            "year": 2023,
             "judge": "minhquanym",
             "winner": [ "henry" ],
             "A": [ "0x6980-bot", "MrsHudson", "The_Madaladinator", "IllIllI-bot", "vuln-detector", "Pechenkata" ],
@@ -627,7 +588,6 @@
     {
         "name": "opendollar-oct18",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "vuln-detector" ],
             "A": [ "MrsHudson", "Hound", "The_Madaladinator", "Pechenkata", "henry" ],
@@ -643,7 +603,6 @@
     {
         "name": "ethena-oct24",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "MrsHudson" ],
             "A": [ "Hound", "LightChaser", "Pechenkata", "Tera", "auditbase", "sol2vuln", "vuln-detector", "henry", "Selucreh", "ubl4nk_bot", "The_Madaladinator" ],
@@ -660,7 +619,6 @@
     {
         "name": "nextgen-oct30",
         "data": {
-            "year": 2023,
             "judge": "__141345__",
             "winner": [ "Hound" ],
             "A": [ "LightChaser", "henry", "Pechenkata", "vuln-detector", "IllIllI-bot", "The_Madaladinator", "Selucreh" ],
@@ -677,7 +635,6 @@
     {
         "name": "party-oct31",
         "data": {
-            "year": 2023,
             "judge": "KingNFT",
             "winner": [ "henry" ],
             "A": [ "0x6980-bot", "MrsHudson", "Pechenkata", "LightChaser", "Selucreh", "The_Madaladinator" ],
@@ -694,7 +651,6 @@
     {
         "name": "kelpdao-nov10",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "Hound" ],
             "A": [ "MrsHudson", "henry", "0x6980-bot", "Tera", "The_Madaladinator", "LightChaser", "Selucreh", "Pechenkata", "vuln-detector" ],
@@ -710,7 +666,6 @@
     {
         "name": "canto-nov13",
         "data": {
-            "year": 2023,
             "judge": "minhquanym",
             "winner": [ "henry" ],
             "A": [ "0x6980-bot", "Selucreh", "Pechenkata", "vuln-detector", "IllIllI-bot", "MrsHudson" ],
@@ -726,7 +681,6 @@
     {
         "name": "panoptic-nov27",
         "data": {
-            "year": 2023,
             "judge": "Picodes",
             "winner": [ "IllIllI-bot" ],
             "A": [ "henry", "ubl4nk_bot", "Tera", "0x6980-bot", "Hound" ],
@@ -742,7 +696,6 @@
     {
         "name": "shellprotocol-nov30",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "The_Madaladinator" ],
             "A": [ "0x6980-bot", "LightChaser", "Dragonfly", "Hound", "MrsHudson", "Tera", "henry", "Pechenkata", "ubl4nk_bot", "vuln-detector" ],
@@ -758,7 +711,6 @@
     {
         "name": "ethcreditguild-dec11",
         "data": {
-            "year": 2023,
             "judge": "sorryNotsorry",
             "winner": [ "henry" ],
             "A": [ "Tera", "MrsHudson", "IllIllI-bot", "vuln-detector", "0x6980-bot", "ubl4nk_bot", "Selucreh" ],
@@ -774,7 +726,6 @@
     {
         "name": "revolution-dec13",
         "data": {
-            "year": 2023,
             "judge": "RaymondFam",
             "winner": [ "vuln-detector" ],
             "A": [ "0x6980-bot", "LightChaser", "Hound", "MrsHudson", "ubl4nk_bot", "The_Madaladinator", "Pechenkata", "henry", "Selucreh", "auditbase", "Dragonfly" ],
@@ -790,7 +741,6 @@
     {
       "name": "olas-dec21",
       "data": {
-          "year": 2023,
           "judge": "0xsomeone",
           "winner": [ "vuln-detector" ],
           "A": [ "Cygnet", "LightChaser", "Pechenkata", "Hound", "Selucreh" ],
