@@ -74,10 +74,10 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
     }, []);
 
     useEffect(() => {
-        setLeaderboard(l => {
-            const data = l.get(selectedYear);
+        setLeaderboard(prevLeaderboard => {
+            const data = prevLeaderboard.get(selectedYear);
             if (!data)
-                return l;
+                return prevLeaderboard;
             const result = [...data].sort((a, b) => {
                 if (sortedColumn === "Bot") {
                     return sortOrder === "asc"
@@ -100,17 +100,18 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
                 }
                 return 0;
             });
-            l.set(selectedYear, result);
-            return l;
+            const newLeaderboard = new Map(prevLeaderboard);
+            newLeaderboard.set(selectedYear, result);
+            return newLeaderboard;
         });
     }, [sortOrder, sortedColumn, selectedYear]);
 
     const sortColumn = (column: string) => {
         if (sortedColumn === column) {
-            setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+            setSortOrder(o => o === "asc" ? "desc" : "asc");
         } else {
-            setSortOrder("asc");
-            setSortedColumn(column);
+            setSortOrder(() => "asc");
+            setSortedColumn(() => column);
         }
     };
 
@@ -144,9 +145,13 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
         });
     };
 
+    const refreshYear = (year: string) => {
+        setSelectedYear(() => year);
+    };
+
     return (
         <div className={styles.leaderboardTab}>
-            <YearSelection onSelectYear={year => setSelectedYear(() => year)} />
+            <YearSelection onSelectYear={refreshYear} />
             <table className={styles.leaderboardTable}>
                 <thead>
                     <tr>

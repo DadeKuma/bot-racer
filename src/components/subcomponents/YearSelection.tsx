@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { currentYear, getAllYearsUntilNow } from '../../dateUtils';
 import styles from '../../style/YearSelection.module.scss';
 
@@ -13,6 +13,10 @@ const YearSelection: React.FC<YearSelectionProps> = ({ onSelectYear }) => {
         setSelectedYear(year);
         onSelectYear(year);
     };
+
+    useEffect(() => {
+        onSelectYear(selectedYear);
+    }, [onSelectYear, selectedYear]);
 
     const renderYearButtons = () => {
         const buttons = [];
