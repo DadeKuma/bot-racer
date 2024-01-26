@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { currentYear, getAllYearsUntilNow } from "../dateUtils";
+import { getAllYearsUntilNow } from "../dateUtils";
 import styles from "../style/LeaderboardTab.module.scss";
 import { Contestant, RaceData, TabProps } from "../types";
 import YearSelection from "./subcomponents/YearSelection";
 
-const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
+const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, currentYear }) => {
     const [leaderboard, setLeaderboard] = useState<Map<string, Contestant[]>>(new Map<string, Contestant[]>());
     const [sortedColumn, setSortedColumn] = useState<string>("USD");
     const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
-    const [selectedYear, setSelectedYear] = useState<string>(currentYear());
     const columnHeadings = ["Bot", "USD", "Races", "Avg Position"];
 
     const formatUSD = (amount: number): string => {
@@ -75,7 +74,7 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
     useEffect(() => {
         setLeaderboard(prevLeaderboard => {
-            const data = prevLeaderboard.get(selectedYear);
+            const data = prevLeaderboard.get(currentYear);
             if (!data)
                 return prevLeaderboard;
             const result = [...data].sort((a, b) => {
@@ -101,10 +100,10 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
                 return 0;
             });
             const newLeaderboard = new Map(prevLeaderboard);
-            newLeaderboard.set(selectedYear, result);
+            newLeaderboard.set(currentYear, result);
             return newLeaderboard;
         });
-    }, [sortOrder, sortedColumn, selectedYear]);
+    }, [sortOrder, sortedColumn, currentYear]);
 
     const sortColumn = (column: string) => {
         if (sortedColumn === column) {
@@ -116,9 +115,9 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
     };
 
     const leaderboardBody = () => {
-        const result = leaderboard.get(selectedYear);
+        const result = leaderboard.get(currentYear);
         if (!result) {
-            console.error(`Couldn't find year ${selectedYear}`);
+            console.error(`Couldn't find year ${currentYear}`);
             return <></>;
         }
         return result.map((contestant, index) => {
@@ -145,13 +144,9 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange }) => {
         });
     };
 
-    const refreshYear = (year: string) => {
-        setSelectedYear(() => year);
-    };
-
     return (
         <div className={styles.leaderboardTab}>
-            <YearSelection onSelectYear={refreshYear} />
+            <YearSelection onSelectYear={handleYearChange} selectedYear={currentYear} />
             <table className={styles.leaderboardTable}>
                 <thead>
                     <tr>

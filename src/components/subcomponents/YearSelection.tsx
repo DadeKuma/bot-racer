@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { currentYear, getAllYearsUntilNow } from '../../dateUtils';
+import React from 'react';
+import { getAllYearsUntilNow } from '../../dateUtils';
 import styles from '../../style/YearSelection.module.scss';
 
 interface YearSelectionProps {
     onSelectYear: (selectedYear: string) => void;
+    selectedYear: string;
 }
 
-const YearSelection: React.FC<YearSelectionProps> = ({ onSelectYear }) => {
-    const [selectedYear, setSelectedYear] = useState<string>(currentYear);
-
-    const handleSelection = (year: string) => {
-        setSelectedYear(year);
-        onSelectYear(year);
-    };
-
-    useEffect(() => {
-        onSelectYear(selectedYear);
-    }, [onSelectYear, selectedYear]);
-
+const YearSelection: React.FC<YearSelectionProps> = ({ onSelectYear, selectedYear }) => {
     const renderYearButtons = () => {
         const buttons = [];
         getAllYearsUntilNow().forEach(year => {
@@ -25,7 +15,7 @@ const YearSelection: React.FC<YearSelectionProps> = ({ onSelectYear }) => {
                 <button
                     key={year}
                     className={selectedYear === year ? styles.selected : ''}
-                    onClick={() => handleSelection(year)}
+                    onClick={() => onSelectYear(year)}
                 >
                     {year}
                 </button>
@@ -35,7 +25,7 @@ const YearSelection: React.FC<YearSelectionProps> = ({ onSelectYear }) => {
             <button
                 key="all"
                 className={selectedYear === 'all' ? styles.selected : ''}
-                onClick={() => handleSelection('all')}
+                onClick={() => onSelectYear('all')}
             >
                 All
             </button>

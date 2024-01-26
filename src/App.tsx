@@ -5,10 +5,12 @@ import BotsTab from "./components/BotsTab";
 import IssuesTab from "./components/IssuesTab";
 import LeaderboardTab from "./components/LeaderboardTab";
 import RacesTab from "./components/RacesTab";
+import { currentYear } from "./dateUtils";
 import "./style/App.scss";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState("");
+  const [activeYear, setActiveYear] = useState(currentYear());
 
   useEffect(() => {
     setActiveTab(window.location.pathname);
@@ -16,6 +18,10 @@ const App: React.FC = () => {
 
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
+  };
+
+  const handleYearChange = (year: string) => {
+    setActiveYear(year);
   };
 
   return (
@@ -63,23 +69,23 @@ const App: React.FC = () => {
           <Routes>
             <Route
               path="/issues"
-              element={<IssuesTab handleTabChange={handleTabChange} />}
+              element={<IssuesTab handleTabChange={handleTabChange} handleYearChange={handleYearChange} currentYear={activeYear} />}
             />
             <Route
               path="/races"
-              element={<RacesTab handleTabChange={handleTabChange} />}
+              element={<RacesTab handleTabChange={handleTabChange} handleYearChange={handleYearChange} currentYear={activeYear} />}
             />
             <Route
               path="/bots"
-              element={<BotsTab handleTabChange={handleTabChange} />}
+              element={<BotsTab handleTabChange={handleTabChange} handleYearChange={handleYearChange} currentYear={activeYear} />}
             />
             <Route
               path="/leaderboard"
-              element={<LeaderboardTab handleTabChange={handleTabChange} />}
+              element={<LeaderboardTab handleTabChange={handleTabChange} handleYearChange={handleYearChange} currentYear={activeYear} />}
             />
             <Route
               path="/about"
-              element={<AboutTab handleTabChange={handleTabChange} />}
+              element={<AboutTab handleTabChange={handleTabChange} handleYearChange={handleYearChange} currentYear={activeYear} />}
             />
             <Route path="/" element={<Navigate to="/issues" replace />} />
           </Routes>
