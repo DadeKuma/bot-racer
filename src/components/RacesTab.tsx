@@ -23,7 +23,7 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, curre
   useEffect(() => {
     const fetchData = async () => {
       const raceMapByYear = new Map<string, RaceData[]>();
-      getAllYearsUntilNow().forEach(async year => {
+      Promise.all(getAllYearsUntilNow().map(async year => {
         let raceData: RaceData[];
         try {
           const response = await fetch(`/data/races/${year}.json`);
@@ -32,17 +32,14 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, curre
           return console.error(`Error fetching race data for year ${year}: ${error}`);
         }
         raceMapByYear.set(year, raceData);
-      });
-      setRacesData(() => raceMapByYear);
+      })).then(() => setRacesData(raceMapByYear));
     };
     fetchData();
   }, []);
 
   useEffect(() => {
     if (searchQuery) {
-      const data = racesData.get(currentYear);
-      if (!data)
-        return;
+      const data = racesData.get(currentYear) || [];
       const selectedRace = data.find(race => race.name === searchQuery);
       if (selectedRace) {
         setSelectedOption({ value: selectedRace.name, label: selectedRace.name.replace(/-/g, " ").toUpperCase() });

@@ -31,16 +31,6 @@ const BotsTab: React.FC<TabProps> = ({ handleYearChange, currentYear }) => {
     }
   }, [searchQuery, botStats]);
 
-  useEffect(() => {
-    const data = racesData.get(currentYear) || [];
-    const options = [...data].reverse().map((race) => ({
-      value: race.name,
-      label: race.name.replace(/-/g, " ").toUpperCase(),
-    }));
-    setSelectedRaceYear(data);
-    setEntries(options);
-  }, [racesData, currentYear]);
-
   const incrementBotStat = (
     botStatsMap: Map<string, BotStats>,
     bot: string,
@@ -66,7 +56,7 @@ const BotsTab: React.FC<TabProps> = ({ handleYearChange, currentYear }) => {
   useEffect(() => {
     const fetchData = async () => {
       const raceMapByYear = new Map<string, RaceData[]>();
-      getAllYearsUntilNow().forEach(async year => {
+      Promise.all(getAllYearsUntilNow().map(async year => {
         let raceData: RaceData[];
         try {
           const response = await fetch(`/data/races/${year}.json`);
@@ -75,42 +65,33 @@ const BotsTab: React.FC<TabProps> = ({ handleYearChange, currentYear }) => {
           return console.error(`Error fetching race data for year ${year}: ${error}`);
         }
         raceMapByYear.set(year, raceData);
-
-        setRacesData(() => raceMapByYear);
-      });
+      })).then(() => setRacesData(() => raceMapByYear));
     };
     fetchData();
   }, []);
 
   useEffect(() => {
-    if (searchQuery) {
-      const data = racesData.get(currentYear);
-      if (!data)
-        return;
-      const botStatsMap = new Map<string, BotStats>();
+    const data = racesData.get(currentYear) || [];
+    const botStatsMap = new Map<string, BotStats>();
+    data.forEach((race) => {
+      const { winner, A, B, C } = race.data;
+      winner.forEach((bot) => incrementBotStat(botStatsMap, bot, "winner"));
+      A.forEach((bot) => incrementBotStat(botStatsMap, bot, "A"));
+      B.forEach((bot) => incrementBotStat(botStatsMap, bot, "B"));
+      C.forEach((bot) => incrementBotStat(botStatsMap, bot, "C"));
+    });
+    const botStatsArr = Array.from(botStatsMap.values());
+    setBotStats(botStatsArr);
+    const options = [...botStatsArr]
+      .sort((s1, s2) => s1.bot.localeCompare(s2.bot))
+      .map((stats) => ({
+        value: stats.bot,
+        label: stats.bot,
+      }));
 
-      data.forEach((race) => {
-        const { winner, A, B, C } = race.data;
-
-        winner.forEach((bot) => incrementBotStat(botStatsMap, bot, "winner"));
-        A.forEach((bot) => incrementBotStat(botStatsMap, bot, "A"));
-        B.forEach((bot) => incrementBotStat(botStatsMap, bot, "B"));
-        C.forEach((bot) => incrementBotStat(botStatsMap, bot, "C"));
-      });
-
-      const botStatsArr = Array.from(botStatsMap.values());
-      setBotStats(botStatsArr);
-
-      const options = botStatsArr
-        .sort((s1, s2) => s1.bot.localeCompare(s2.bot))
-        .map((stats) => ({
-          value: stats.bot,
-          label: stats.bot,
-        }));
-
-      setEntries(options);
-    }
-  }, [searchQuery, racesData, currentYear]);
+    setEntries(options);
+    setSelectedRaceYear(data);
+  }, [racesData, currentYear]);
 
   const handleSelectChange = (option: Option | null) => {
     if (selectedOption && option && selectedOption.value === option.value) {
@@ -126,7 +107,6 @@ const BotsTab: React.FC<TabProps> = ({ handleYearChange, currentYear }) => {
 
   const AnimatedNumber: React.FC<{ value: number; }> = ({ value }) => {
     const numberProps = useSpring({ value, from: { value: 0 } });
-
     return (
       <animated.span>
         {numberProps.value.to((val) => val.toFixed(0))}
