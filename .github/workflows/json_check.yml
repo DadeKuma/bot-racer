@@ -11,4 +11,4 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
           INPUT_SCHEMA: /public/schema/races.json
-          INPUT_JSONS: /public/data/races.json
+          INPUT_JSONS: /public/data/races/*.json
