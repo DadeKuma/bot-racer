@@ -31,6 +31,7 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, curre
         } catch (error) {
           return console.error(`Error fetching race data for year ${year}: ${error}`);
         }
+        raceMapByYear.set("all", [...raceData, ...(raceMapByYear.get("all") || [])]);
         raceMapByYear.set(year, raceData);
       })).then(() => setRacesData(raceMapByYear));
     };

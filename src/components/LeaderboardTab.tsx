@@ -42,9 +42,10 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange,
             }
         };
 
-        const contestantsMap = new Map<string, Contestant>();
         const leaderboardMap = new Map<string, Contestant[]>();
+        const contestantsGlobalMap = new Map<string, Contestant>();
         Promise.all(getAllYearsUntilNow().map(async year => {
+            const contestantsMap = new Map<string, Contestant>();
             let raceData: RaceData[];
             try {
                 const response = await fetch(`/data/races/${year}.json`);
@@ -67,8 +68,19 @@ const LeaderboardTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange,
                     addToContestant(contestantsMap, name, 0, 1 + winner.length + A.length + B.length + idx)
                 );
             });
+            contestantsMap.forEach((c, name) => {
+                const prevData = contestantsGlobalMap.get(name);
+                const data = prevData ? {
+                    name: c.name,
+                    earnings: c.earnings + prevData.earnings,
+                    races: c.races + prevData.races,
+                    positions: [...c.positions, ...prevData.positions]
+                } : c;
+                contestantsGlobalMap.set(name, data);
+            });
             leaderboardMap.set(year, Array.from(contestantsMap.values()));
         })).then(() => {
+            leaderboardMap.set("all", Array.from(contestantsGlobalMap.values()));
             setLeaderboard(() => leaderboardMap);
         });
     }, []);

@@ -64,6 +64,7 @@ const BotsTab: React.FC<TabProps> = ({ handleYearChange, currentYear }) => {
         } catch (error) {
           return console.error(`Error fetching race data for year ${year}: ${error}`);
         }
+        raceMapByYear.set("all", [...raceData, ...(raceMapByYear.get("all") || [])]);
         raceMapByYear.set(year, raceData);
       })).then(() => setRacesData(() => raceMapByYear));
     };
