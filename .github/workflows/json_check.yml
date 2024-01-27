@@ -3,12 +3,14 @@ name: Validate Race JSON
 on: [pull_request]
 
 jobs:
-  verify-json-validation:
+  validate-github-actions-workflows:
+    name: Validate GitHub Actions workflows
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - name: Validate JSON
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: /public/schema/races.json
-          INPUT_JSONS: /public/data/races/*.json
+        uses: dsanders11/json-schema-validate-action
+        with:
+          schema: /public/schema/races.json
+          files: /public/data/races/*.json
