@@ -3,15 +3,18 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import { animated, useSpring } from "react-spring";
 import { selectStyle } from "../customStyle";
+import { getAllYearsUntilNow } from "../dateUtils";
 import styles from "../style/BotsTab.module.scss";
 import { BotStats, Option, RaceData, TabProps } from "../types";
 import RaceGraph from "./subcomponents/RaceGraph";
+import YearSelection from "./subcomponents/YearSelection";
 
-const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
+const BotsTab: React.FC<TabProps> = ({ handleYearChange, currentYear }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [entries, setEntries] = useState<Option[]>([]);
   const [botStats, setBotStats] = useState<BotStats[]>([]);
-  const [raceData, setRaceData] = useState<RaceData[]>([]);
+  const [racesData, setRacesData] = useState<Map<string, RaceData[]>>(new Map<string, RaceData[]>());
+  const [selectedRaceYear, setSelectedRaceYear] = useState<RaceData[]>([]);
 
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -52,40 +55,44 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await fetch("/data/races.json");
-        const data: RaceData[] = await response.json();
-
-        setRaceData(data);
-
-        const botStatsMap = new Map<string, BotStats>();
-
-        data.forEach((race) => {
-          const { winner, A, B, C } = race.data;
-
-          winner.forEach((bot) => incrementBotStat(botStatsMap, bot, "winner"));
-          A.forEach((bot) => incrementBotStat(botStatsMap, bot, "A"));
-          B.forEach((bot) => incrementBotStat(botStatsMap, bot, "B"));
-          C.forEach((bot) => incrementBotStat(botStatsMap, bot, "C"));
-        });
-
-        const botStatsArr = Array.from(botStatsMap.values());
-        setBotStats(botStatsArr);
-
-        const options = botStatsArr
-          .sort((s1, s2) => s1.bot.localeCompare(s2.bot))
-          .map((stats) => ({
-            value: stats.bot,
-            label: stats.bot,
-          }));
-
-        setEntries(options);
-      } catch (error) {
-        console.error("Error fetching race data:", error);
-      }
+      const raceMapByYear = new Map<string, RaceData[]>();
+      Promise.all(getAllYearsUntilNow().map(async year => {
+        let raceData: RaceData[];
+        try {
+          const response = await fetch(`/data/races/${year}.json`);
+          raceData = await response.json();
+        } catch (error) {
+          return console.error(`Error fetching race data for year ${year}: ${error}`);
+        }
+        raceMapByYear.set("all", [...raceData, ...(raceMapByYear.get("all") || [])]);
+        raceMapByYear.set(year, raceData);
+      })).then(() => setRacesData(() => raceMapByYear));
     };
     fetchData();
   }, []);
+
+  useEffect(() => {
+    const data = racesData.get(currentYear) || [];
+    const botStatsMap = new Map<string, BotStats>();
+    data.forEach((race) => {
+      const { winner, A, B, C } = race.data;
+      winner.forEach((bot) => incrementBotStat(botStatsMap, bot, "winner"));
+      A.forEach((bot) => incrementBotStat(botStatsMap, bot, "A"));
+      B.forEach((bot) => incrementBotStat(botStatsMap, bot, "B"));
+      C.forEach((bot) => incrementBotStat(botStatsMap, bot, "C"));
+    });
+    const botStatsArr = Array.from(botStatsMap.values());
+    setBotStats(botStatsArr);
+    const options = [...botStatsArr]
+      .sort((s1, s2) => s1.bot.localeCompare(s2.bot))
+      .map((stats) => ({
+        value: stats.bot,
+        label: stats.bot,
+      }));
+
+    setEntries(options);
+    setSelectedRaceYear(data);
+  }, [racesData, currentYear]);
 
   const handleSelectChange = (option: Option | null) => {
     if (selectedOption && option && selectedOption.value === option.value) {
@@ -101,7 +108,6 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
   const AnimatedNumber: React.FC<{ value: number; }> = ({ value }) => {
     const numberProps = useSpring({ value, from: { value: 0 } });
-
     return (
       <animated.span>
         {numberProps.value.to((val) => val.toFixed(0))}
@@ -143,6 +149,7 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
 
   return (
     <div className={styles.botsTab}>
+      <YearSelection onSelectYear={handleYearChange} selectedYear={currentYear} />
       <Select
         options={entries}
         value={selectedOption}
@@ -156,7 +163,7 @@ const BotsTab: React.FC<TabProps> = ({ handleTabChange }) => {
       {selectedOption && (
         <RaceGraph
           bot={selectedOption.value}
-          raceData={raceData}
+          raceData={selectedRaceYear}
         />
       )}
     </div>

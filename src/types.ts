@@ -40,4 +40,6 @@ export type BotStats = {
 
 export interface TabProps {
     handleTabChange: (tabName: string) => void;
+    handleYearChange: (year: string) => void;
+    currentYear: string;
 }
