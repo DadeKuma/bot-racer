@@ -9,8 +9,8 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
+      - uses: dsanders11/json-schema-validate-action
       - name: Validate JSON
-        uses: dsanders11/json-schema-validate-action
         with:
           schema: /public/schema/races.json
           files: /public/data/races/*.json
