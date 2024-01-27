@@ -3,14 +3,12 @@ name: Validate Race JSON
 on: [pull_request]
 
 jobs:
-  validate-github-actions-workflows:
-    name: Validate GitHub Actions workflows
+  verify-json-validation:
     runs-on: ubuntu-latest
     steps:
-      - name: Ajv validate JSON(s)
-        uses: vanekj/validate-json-action@v1.0.0  
-        with:
-          schema: public/schema/races.schema.json
-          pattern: public/data/races/*.json
-          use_ajv_formats: "true"
-          show_result_in_summary: "true"
+      - uses: actions/checkout@v1
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /public/schema/races.schema.json
+          INPUT_JSONS: /public/data/races/2023.json,/public/data/races/2024.json
