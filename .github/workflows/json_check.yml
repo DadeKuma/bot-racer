@@ -12,5 +12,5 @@ jobs:
       - name: JSON Schema Validate
         uses: dsanders11/json-schema-validate-action@v1.1.0
         with:
-          schema: /public/schema/races.json
-          files: /public/data/races/*.json
+          schema: public/schema/races.json
+          files: public/data/races/*.json
