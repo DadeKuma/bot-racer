@@ -5,7 +5,7 @@
           "judge": "RaymondFam",
           "winner": [ "LightChaser" ],
           "A": [ "The_Madaladinator", "Pechenkata", "MrsHudson", "Tera", "henry", "vuln-detector", "Hound", "znBotty", "Cygnet", "Selucruh" ],
-          "B": [  "Dragonfly", "0x6980",  "ubl4nk_bot", "dervish", "auditbase" ],
+          "B": [  "Dragonfly", "0x6980-bot",  "ubl4nk_bot", "dervish", "auditbase" ],
           "C": [ "GasAxy", "Outis" ],
           "prize": {
               "winner": 243.49,
@@ -20,7 +20,7 @@
           "judge": "__141345__",
           "winner": [ "LightChaser" ],
           "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
-          "B": [  "graphium", "auditbase", "Outis", "The_Madaladinator", "0x6980", "Cygnet", "Dragonfly", "znBotty" ],
+          "B": [  "graphium-bot", "auditbase", "Outis", "The_Madaladinator", "0x6980-bot", "Cygnet", "Dragonfly", "znBotty" ],
           "C": [ "GasAxy", "dervish" ],
           "prize": {
               "winner": 429.85,
@@ -35,7 +35,7 @@
           "judge": "Picodes",
           "winner": [ "The_Madaladinator" ],
           "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
-          "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium", "vuln-detector", "Outis" ],
+          "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium-bot", "vuln-detector", "Outis" ],
           "C": [ "GasAxy", "dervish",  "ubl4nk_bot" ],
           "prize": {
               "winner": 633.14,
@@ -50,7 +50,7 @@
           "judge": "RaymondFam",
           "winner": [ "vuln-detector" ],
           "A": [ "LightChaser", "MrsHudson", "Selucruh", "Cygnet", "Pechenkata", "The_Madaladinator", "henry", "Hound", "TragedyOfCommons" ],
-          "B": [  "dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk" ],
+          "B": [  "dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk_bot" ],
           "C": [ ],
           "prize": {
               "winner": 260.53,
