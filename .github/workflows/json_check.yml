@@ -5,12 +5,12 @@ on: [pull_request]
 jobs:
   validate-github-actions-workflows:
     name: Validate GitHub Actions workflows
-    permissions:
-      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Ajv validate JSON(s)
         uses: vanekj/validate-json-action@v1.0.0  
         with:
-          schema: public/schema/races.json
+          schema: public/schema/races.schema.json
           pattern: public/data/races/*.json
+          use_ajv_formats: "true"
+          show_result_in_summary: "true"
