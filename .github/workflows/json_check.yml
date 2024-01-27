@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ajv validate JSON(s)
-      uses: vanekj/validate-json-action@v1.0.0  
-      with:
-        schema: public/schema/races.json
-        pattern: public/data/races/*.json
+        uses: vanekj/validate-json-action@v1.0.0  
+        with:
+          schema: public/schema/races.json
+          pattern: public/data/races/*.json
