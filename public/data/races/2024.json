@@ -19,7 +19,7 @@
       "data": {
           "judge": "__141345__",
           "winner": [ "LightChaser" ],
-          "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
+          "A": [ "IllIllI-bot", "Pechenkata", "Selucruh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
           "B": [  "graphium-bot", "auditbase", "Outis", "The_Madaladinator", "0x6980-bot", "Cygnet", "Dragonfly", "znBotty" ],
           "C": [ "GasAxy", "dervish" ],
           "prize": {
@@ -34,7 +34,7 @@
       "data": {
           "judge": "Picodes",
           "winner": [ "The_Madaladinator" ],
-          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
+          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucruh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
           "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium-bot", "vuln-detector", "Outis" ],
           "C": [ "GasAxy", "dervish",  "ubl4nk_bot" ],
           "prize": {
@@ -49,8 +49,8 @@
       "data": {
           "judge": "RaymondFam",
           "winner": [ "vuln-detector" ],
-          "A": [ "LightChaser", "MrsHudson", "Selucruh", "Cygnet", "Pechenkata", "The_Madaladinator", "henry", "Hound", "TragedyOfCommons" ],
-          "B": [  "dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk_bot" ],
+          "A": [ "LightChaser", "MrsHudson", "Selucruh", "Cygnet", "Pechenkata", "The_Madaladinator", "henry", "Hound", "TragedyOTCommons" ],
+          "B": [  "Dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk_bot" ],
           "C": [ ],
           "prize": {
               "winner": 260.53,
