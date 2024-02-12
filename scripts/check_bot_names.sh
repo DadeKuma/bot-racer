@@ -18,8 +18,11 @@ for file in public/data/races/*.json; do
         fi
     done
 
-    if [ -n "$invalid_names" ]; then
-        echo "Invalid bot_names found in $file: $invalid_names"
+    # Remove duplicate names
+    unique_invalid_names=$(echo "$invalid_names" | tr ' ' '\n' | awk '!seen[$0]++' | tr '\n' ' ')
+
+    if [ -n "$unique_invalid_names" ]; then
+        echo "Invalid bot_names found in $file: $unique_invalid_names"
         exit 1
     else
         echo "All bot_names in $file are valid"
