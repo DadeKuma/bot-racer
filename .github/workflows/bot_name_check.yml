@@ -1,16 +1,19 @@
-name: Validate Bot Names
+name: Validate Race Names
 
 on:
   pull_request:
 
 jobs:
   file-check:
-    name: Validate Bot Names
+    name: Validate Bot&Judge Names
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Check Names
+      - name: Check Alphabetical order
+        run: bash scripts/validate_name_order.sh
+
+      - name: Check Bot&Judge Names
         run: bash scripts/validate_race_names.sh
