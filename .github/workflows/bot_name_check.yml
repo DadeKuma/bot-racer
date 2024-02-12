@@ -5,7 +5,7 @@ on:
 
 jobs:
   file-check:
-    name: Validate Bot&Judge Names
+    name: Validate Race Names
     runs-on: ubuntu-latest
 
     steps:
