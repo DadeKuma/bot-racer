@@ -58,6 +58,21 @@
               "B": 26.55
           }
       }
+  },
+      {
+      "name": "ai_arena-feb9",
+      "data": {
+          "judge": "RaymondFam",
+          "winner": [ "TragedyOTCommons" ],
+          "A": [ "MrsHudson", "LightChaser", "vuln-detector", "Selucruh", "Pechenkata", "Tera", "znBotty", "ubl4nk_bot", "henry", "Outis", "Cygnet", "Dragonfly", "Hound" ],
+          "B": [  "SolidInspect", "baudit"],
+          "C": [ ],
+          "prize": {
+              "winner": 333.21,
+              "A": 256.32,
+              "B": 42.32
+          }
+      }
   }
 
 ]
