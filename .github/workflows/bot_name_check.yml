@@ -2,8 +2,6 @@ name: Validate Bot Names
 
 on:
   pull_request:
-    paths:
-      - 'public/data/races/*.json'
 
 jobs:
   file-check:
