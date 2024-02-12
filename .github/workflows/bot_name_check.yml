@@ -1,0 +1,16 @@
+name: Validate Bot Names
+
+on:
+  pull_request:
+
+jobs:
+  file-check:
+    name: Check Files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Check Names
+        run: bash scripts/check_bot_names.sh
