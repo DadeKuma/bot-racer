@@ -4,6 +4,7 @@
 successful=true
 
 for file in public/data/races/*.json; do
+    valid_file=true
     # Read JSON file
     data=$(<"$file")
 
@@ -37,16 +38,16 @@ for file in public/data/races/*.json; do
     unique_invalid_bot_names=$(echo "$invalid_bot_names" | tr ' ' '\n' | awk '!seen[$0]++' | tr '\n' ' ')
     unique_invalid_judge_names=$(echo "$invalid_judge_names" | tr ' ' '\n' | awk '!seen[$0]++' | tr '\n' ' ')
     
-    if [ -n "$unique_invalid_bot_names" ]; then
-        echo "Invalid bot_names found in $file: $unique_invalid_bot_names"
-    else
+    if [ -z "$unique_invalid_bot_names" ]; then
         echo "All bot_names in $file are valid"
+    else
+        echo "Invalid bot_names found in $file: $unique_invalid_bot_names"
     fi
 
-    if [ -n "$unique_invalid_judge_names" ]; then
-        echo "Invalid judge_names found in $file: $unique_invalid_judge_names"
-    else
+    if [ -z "$unique_invalid_judge_names" ]; then
         echo "All judge_names in $file are valid"
+    else
+        echo "Invalid judge_names found in $file: $unique_invalid_judge_names"
     fi
 done
 

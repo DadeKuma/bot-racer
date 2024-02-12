@@ -13,15 +13,14 @@ check_json_list() {
         exit 1
     fi
 
-    # Sort the array of strings ignoring case
+    # Sort the original JSON content and the sorted list
+    original_sorted=$(jq -S . "$json_file")
     sorted_list=$(jq -r 'map(ascii_downcase) | sort_by(.) | join("\n")' "$json_file")
 
     # Compare the sorted list with the original list
-    if [ "$(cat "$json_file" | jq -c '.')" != "$(echo "$sorted_list" | jq -c '.')" ]; then
+    if [ "$original_sorted" != "$sorted_list" ]; then
         echo "The list in the JSON file $json_file is not in alphabetical order (case-insensitive)."
         is_sorted=false  # If the lists are not equal, set the flag to false
-    else
-        echo "The list in the JSON file $json_file is in alphabetical order (case-insensitive)."
     fi
     
     # Return the boolean flag
