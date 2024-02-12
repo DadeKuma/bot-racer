@@ -13,7 +13,7 @@ for file in public/data/races/*.json; do
 
     # Extract bot_names from data.json
     bot_names=$(echo "$data" | jq -r '.[].data | .winner[], .A[], .B[], .C[]')
-    judge_names=$(echo "$data" | jq -r '.[].data | .judge[]')
+    judge_names=$(echo "$data" | jq -r '.[].data | .judge')
 
     # Check if all bot_names are valid
     invalid_bot_names=""
