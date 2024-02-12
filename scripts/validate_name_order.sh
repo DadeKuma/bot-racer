@@ -15,7 +15,7 @@ check_json_list() {
 
     # Sort the original JSON content and the sorted list
     original_sorted=$(jq -S . "$json_file")
-    sorted_list=$(jq -r 'map(ascii_downcase) | sort_by(.) | join("\n")' "$json_file")
+    sorted_list=$(jq -S 'map(ascii_downcase) | sort_by(.)' "$json_file")
 
     # Compare the sorted list with the original list
     if [ "$original_sorted" != "$sorted_list" ]; then
