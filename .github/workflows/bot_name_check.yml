@@ -7,7 +7,7 @@ on:
 
 jobs:
   file-check:
-    name: Check Files
+    name: Validate Bot Names
     runs-on: ubuntu-latest
 
     steps:
@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Check Names
-        run: bash scripts/check_bot_names.sh
+        run: bash scripts/validate_race_names.sh
