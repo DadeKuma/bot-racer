@@ -38,7 +38,7 @@ To add a new race, follow these steps:
 ### Adding a new Bot/Judge
 
 1. Modify [bots.json](public/data/bots.json) to add a new Bot
-2. Modify [judges.json](public/data/judges.json) to add a Judge bot
+2. Modify [judges.json](public/data/judges.json) to add a new Judge
 3. The order must be alphabetically sorted, ignoring the case
 
 ### Findings
