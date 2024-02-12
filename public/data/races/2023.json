@@ -741,7 +741,7 @@
     {
       "name": "olas-dec21",
       "data": {
-          "judge": "0xsomeonee",
+          "judge": "0xsomeone",
           "winner": [ "vuln-detector" ],
           "A": [ "Cygnet", "LightChaser", "Pechenkata", "Hound", "Selucreh" ],
           "B": [  "MrsHudson", "Dragonfly", "dervish", "0x6980-bot", "znBotty", "ubl4nk_bot" ],
