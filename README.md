@@ -12,7 +12,7 @@ A live website is available [here](https://botracer.xyz/).
 To add a new race, follow these steps:
 
 1. Fork this project
-2. Modify `public/data/races.json`
+2. Modify `public/data/races/<year>.json`
 3. Keep the same format as this template:
 ```js
 {
@@ -31,7 +31,15 @@ To add a new race, follow these steps:
     }
 }
 ```
-5. Open a pull request
+5. **The Bot name must be available in [bots.json](public/data/bots.json)**
+6. **The Judge name must be available in [judges.json](public/data/judges.json)**
+7. Open a pull request
+
+### Adding a new Bot/Judge
+
+1. Modify [bots.json](public/data/bots.json) to add a new Bot
+2. Modify [judges.json](public/data/judges.json) to add a Judge bot
+3. The order must be alphabetically sorted, ignoring the case
 
 ### Findings
 To add a finding for your bot, follow these steps:
