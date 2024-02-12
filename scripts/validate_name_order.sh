@@ -13,11 +13,13 @@ check_json_list() {
     fi
 
     # Extract the list from JSON and sort it
-    sorted_list=$(jq -r '.[]' "$json_file" | LC_ALL=C sort | uniq)
+    sorted_list=$(jq -r '.[]' "$json_file" | LC_ALL=C sort -f | uniq)
 
     # Compare the sorted list with the original list
-    if ! diff -q <(jq -r '.[]' "$json_file") <(echo "$sorted_list"); then
+    if ! diff -q <(jq -r '.[]' "$json_file") <(echo "$sorted_list") >/dev/null; then
         echo "The list in the JSON file $json_file is not in alphabetical order."
+        echo "Diff:"
+        diff <(jq -r '.[]' "$json_file") <(echo "$sorted_list")
         return 1
     fi
 }
