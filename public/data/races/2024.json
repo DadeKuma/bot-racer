@@ -73,6 +73,21 @@
               "B": 42.32
           }
       }
+  },
+  {
+      "name": "althea-feb13",
+      "data": {
+          "judge": "0xRobocop",
+          "winner": [ "TragedyOTCommons" ],
+          "A": [ "Hound", "baudit", "LightChaser", "Selucreh", "ubl4nk_bot", "SolidInspect", "auditbase", "MrsHudson", "Cygnet", "Pechenkata" ],
+          "B": [  "vuln-detector", "znBotty"],
+          "C": [ "Dragonfly" ],
+          "prize": {
+              "winner": 168.00,
+              "A": 129.23,
+              "B": 19.83
+          }
+      }
   }
 
 ]
