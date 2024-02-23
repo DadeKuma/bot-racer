@@ -88,6 +88,21 @@
               "B": 19.83
           }
       }
+  },
+    {
+      "name": "wiselending-feb21",
+      "data": {
+          "judge": "Alex The Entreprenerd",
+          "winner": [ "znBotty" ],
+          "A": [ "Pechenkata", "henry", "The_Madaladinator", "MrsHudson", "Selucreh", "LightChaser", "TragedyOTCommons" ],
+          "B": [ "Hound", "vuln-detector", "Tera", "ubl4nk_bot", "Cygnet", "auditbase"],
+          "C": [ "SolidInspect", "baudit", "Outis", "Dragonfly" ],
+          "prize": {
+              "winner": 1231.08,
+              "A": 946.99,
+              "B": 121.00
+          }
+      }
   }
 
 ]
