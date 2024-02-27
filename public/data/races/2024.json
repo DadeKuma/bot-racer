@@ -103,6 +103,36 @@
               "B": 121.00
           }
       }
+  },
+        {
+      "name": "uniswap-feb23",
+      "data": {
+          "judge": "0xTheC0der",
+          "winner": [ "LightChaser" ],
+          "A": [ "henry" ],
+          "B": [ "Cygnet", "Pechenkata", "Selucreh", "Dragonfly", "Outis" ],
+          "C": [ "ubl4nk_bot", "znBotty", "MrsHudson", "baudit", "TragedyOTCommons", "Hound", "auditbase", "SolidInspect", "Tera", "vuln-detector" ],
+          "prize": {
+              "winner": 916.40,
+              "A": 704.92,
+              "B": 125.74
+          }
+      }
+  },
+        {
+      "name": "spectra-feb23",
+      "data": {
+          "judge": "gzeon",
+          "winner": [ "TragedyOTCommons" ],
+          "A": [ "henry", "LightChaser", "MrsHudson", "Dragonfly" ],
+          "B": [ "znBotty", "Cygnet", "ubl4nk_bot", "Hound", "Pechenkata", "Selucreh", "vuln-detector", "SolidInspect", "Outis" ],
+          "C": [ "auditbase", "baudit", "Tera" ],
+          "prize": {
+              "winner": 455.88,
+              "A": 350.67,
+              "B": 37.94
+          }
+      }
   }
 
 ]
