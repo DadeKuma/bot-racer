@@ -20,6 +20,10 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, curre
 
   const navigate = useNavigate();
 
+  const reversedRaceOrder = (year: string) => {
+    return [...(racesData.get(year) || [])].reverse();
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       const raceMapByYear = new Map<string, RaceData[]>();
@@ -31,7 +35,6 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, curre
         } catch (error) {
           return console.error(`Error fetching race data for year ${year}: ${error}`);
         }
-        raceMapByYear.set("all", [...raceData, ...(raceMapByYear.get("all") || [])]);
         raceMapByYear.set(year, raceData);
       })).then(() => setRacesData(raceMapByYear));
     };
@@ -49,8 +52,12 @@ const RacesTab: React.FC<TabProps> = ({ handleTabChange, handleYearChange, curre
   }, [searchQuery, racesData, currentYear]);
 
   useEffect(() => {
-    const data = racesData.get(currentYear) || [];
-    const options = [...data].reverse().map((race) => ({
+    const data = (currentYear === "all")
+      ? [...getAllYearsUntilNow()]
+        .reverse()
+        .flatMap(year => reversedRaceOrder(year))
+      : reversedRaceOrder(currentYear);
+    const options = data.map(race => ({
       value: race.name,
       label: race.name.replace(/-/g, " ").toUpperCase(),
     }));
