@@ -1,138 +1,167 @@
 [
-  {
-      "name": "curves-jan8",
-      "data": {
-          "judge": "RaymondFam",
-          "winner": [ "LightChaser" ],
-          "A": [ "The_Madaladinator", "Pechenkata", "MrsHudson", "Tera", "henry", "vuln-detector", "Hound", "znBotty", "Cygnet", "Selucreh" ],
-          "B": [  "Dragonfly", "0x6980-bot",  "ubl4nk_bot", "dervish", "auditbase" ],
-          "C": [ "GasAxy", "Outis" ],
-          "prize": {
-              "winner": 243.49,
-              "A": 187.30,
-              "B": 26.71
-          }
-      }
-  },
-  {
-      "name": "renft-jan8",
-      "data": {
-          "judge": "__141345__",
-          "winner": [ "LightChaser" ],
-          "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
-          "B": [  "graphium-bot", "auditbase", "Outis", "The_Madaladinator", "0x6980-bot", "Cygnet", "Dragonfly", "znBotty" ],
-          "C": [ "GasAxy", "dervish" ],
-          "prize": {
-              "winner": 429.85,
-              "A": 330.65,
-              "B": 43.03
-          }
-      }
-  },
     {
-      "name": "salty-jan16",
-      "data": {
-          "judge": "Picodes",
-          "winner": [ "The_Madaladinator" ],
-          "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
-          "B": [  "auditbase", "henry", "Tera", "Cygnet", "graphium-bot", "vuln-detector", "Outis" ],
-          "C": [ "GasAxy", "dervish",  "ubl4nk_bot" ],
-          "prize": {
-              "winner": 633.14,
-              "A": 487.03,
-              "B": 62.23
-          }
-      }
-  },
+        "name": "curves-jan8",
+        "data": {
+            "judge": "RaymondFam",
+            "winner": [ "LightChaser" ],
+            "A": [ "The_Madaladinator", "Pechenkata", "MrsHudson", "Tera", "henry", "vuln-detector", "Hound", "znBotty", "Cygnet", "Selucreh" ],
+            "B": [ "Dragonfly", "0x6980-bot", "ubl4nk_bot", "dervish", "auditbase" ],
+            "C": [ "GasAxy", "Outis" ],
+            "prize": {
+                "winner": 243.49,
+                "A": 187.30,
+                "B": 26.71
+            }
+        }
+    },
     {
-      "name": "decent-jan19",
-      "data": {
-          "judge": "RaymondFam",
-          "winner": [ "vuln-detector" ],
-          "A": [ "LightChaser", "MrsHudson", "Selucreh", "Cygnet", "Pechenkata", "The_Madaladinator", "henry", "Hound", "TragedyOTCommons" ],
-          "B": [  "Dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk_bot" ],
-          "C": [ ],
-          "prize": {
-              "winner": 260.53,
-              "A": 200.40,
-              "B": 26.55
-          }
-      }
-  },
-      {
-      "name": "ai_arena-feb9",
-      "data": {
-          "judge": "RaymondFam",
-          "winner": [ "TragedyOTCommons" ],
-          "A": [ "MrsHudson", "LightChaser", "vuln-detector", "Selucreh", "Pechenkata", "Tera", "znBotty", "ubl4nk_bot", "henry", "Outis", "Cygnet", "Dragonfly", "Hound" ],
-          "B": [  "SolidInspect", "baudit"],
-          "C": [ ],
-          "prize": {
-              "winner": 333.21,
-              "A": 256.32,
-              "B": 42.32
-          }
-      }
-  },
-  {
-      "name": "althea-feb13",
-      "data": {
-          "judge": "0xRobocop",
-          "winner": [ "TragedyOTCommons" ],
-          "A": [ "Hound", "baudit", "LightChaser", "Selucreh", "ubl4nk_bot", "SolidInspect", "auditbase", "MrsHudson", "Cygnet", "Pechenkata" ],
-          "B": [  "vuln-detector", "znBotty"],
-          "C": [ "Dragonfly" ],
-          "prize": {
-              "winner": 168.00,
-              "A": 129.23,
-              "B": 19.83
-          }
-      }
-  },
+        "name": "renft-jan8",
+        "data": {
+            "judge": "__141345__",
+            "winner": [ "LightChaser" ],
+            "A": [ "IllIllI-bot", "Pechenkata", "Selucreh", "vuln-detector", "henry", "ubl4nk_bot", "MrsHudson", "Tera", "Hound" ],
+            "B": [ "graphium-bot", "auditbase", "Outis", "The_Madaladinator", "0x6980-bot", "Cygnet", "Dragonfly", "znBotty" ],
+            "C": [ "GasAxy", "dervish" ],
+            "prize": {
+                "winner": 429.85,
+                "A": 330.65,
+                "B": 43.03
+            }
+        }
+    },
     {
-      "name": "wiselending-feb21",
-      "data": {
-          "judge": "Alex The Entreprenerd",
-          "winner": [ "znBotty" ],
-          "A": [ "Pechenkata", "henry", "The_Madaladinator", "MrsHudson", "Selucreh", "LightChaser", "TragedyOTCommons" ],
-          "B": [ "Hound", "vuln-detector", "Tera", "ubl4nk_bot", "Cygnet", "auditbase"],
-          "C": [ "SolidInspect", "baudit", "Outis", "Dragonfly" ],
-          "prize": {
-              "winner": 1231.08,
-              "A": 946.99,
-              "B": 121.00
-          }
-      }
-  },
-        {
-      "name": "uniswap-feb23",
-      "data": {
-          "judge": "0xTheC0der",
-          "winner": [ "LightChaser" ],
-          "A": [ "henry" ],
-          "B": [ "Cygnet", "Pechenkata", "Selucreh", "Dragonfly", "Outis" ],
-          "C": [ "ubl4nk_bot", "znBotty", "MrsHudson", "baudit", "TragedyOTCommons", "Hound", "auditbase", "SolidInspect", "Tera", "vuln-detector" ],
-          "prize": {
-              "winner": 916.40,
-              "A": 704.92,
-              "B": 125.74
-          }
-      }
-  },
-        {
-      "name": "spectra-feb23",
-      "data": {
-          "judge": "gzeon",
-          "winner": [ "TragedyOTCommons" ],
-          "A": [ "henry", "LightChaser", "MrsHudson", "Dragonfly" ],
-          "B": [ "znBotty", "Cygnet", "ubl4nk_bot", "Hound", "Pechenkata", "Selucreh", "vuln-detector", "SolidInspect", "Outis" ],
-          "C": [ "auditbase", "baudit", "Tera" ],
-          "prize": {
-              "winner": 455.88,
-              "A": 350.67,
-              "B": 37.94
-          }
-      }
-  }
-
+        "name": "salty-jan16",
+        "data": {
+            "judge": "Picodes",
+            "winner": [ "The_Madaladinator" ],
+            "A": [ "znBotty", "LightChaser", "Hound", "MrsHudson", "Selucreh", "IllIllI-bot", "Pechenkata", "Dragonfly" ],
+            "B": [ "auditbase", "henry", "Tera", "Cygnet", "graphium-bot", "vuln-detector", "Outis" ],
+            "C": [ "GasAxy", "dervish", "ubl4nk_bot" ],
+            "prize": {
+                "winner": 633.14,
+                "A": 487.03,
+                "B": 62.23
+            }
+        }
+    },
+    {
+        "name": "decent-jan19",
+        "data": {
+            "judge": "RaymondFam",
+            "winner": [ "vuln-detector" ],
+            "A": [ "LightChaser", "MrsHudson", "Selucreh", "Cygnet", "Pechenkata", "The_Madaladinator", "henry", "Hound", "TragedyOTCommons" ],
+            "B": [ "Dragonfly", "auditbase", "Outis", "znBotty", "SolidInspect", "baudit", "ubl4nk_bot" ],
+            "C": [ ],
+            "prize": {
+                "winner": 260.53,
+                "A": 200.40,
+                "B": 26.55
+            }
+        }
+    },
+    {
+        "name": "ai_arena-feb9",
+        "data": {
+            "judge": "RaymondFam",
+            "winner": [ "TragedyOTCommons" ],
+            "A": [ "MrsHudson", "LightChaser", "vuln-detector", "Selucreh", "Pechenkata", "Tera", "znBotty", "ubl4nk_bot", "henry", "Outis", "Cygnet", "Dragonfly", "Hound" ],
+            "B": [ "SolidInspect", "baudit" ],
+            "C": [ ],
+            "prize": {
+                "winner": 333.21,
+                "A": 256.32,
+                "B": 42.32
+            }
+        }
+    },
+    {
+        "name": "althea-feb13",
+        "data": {
+            "judge": "0xRobocop",
+            "winner": [ "TragedyOTCommons" ],
+            "A": [ "Hound", "baudit", "LightChaser", "Selucreh", "ubl4nk_bot", "SolidInspect", "auditbase", "MrsHudson", "Cygnet", "Pechenkata" ],
+            "B": [ "vuln-detector", "znBotty" ],
+            "C": [ "Dragonfly" ],
+            "prize": {
+                "winner": 168.00,
+                "A": 129.23,
+                "B": 19.83
+            }
+        }
+    },
+    {
+        "name": "wiselending-feb21",
+        "data": {
+            "judge": "Alex The Entreprenerd",
+            "winner": [ "znBotty" ],
+            "A": [ "Pechenkata", "henry", "The_Madaladinator", "MrsHudson", "Selucreh", "LightChaser", "TragedyOTCommons" ],
+            "B": [ "Hound", "vuln-detector", "Tera", "ubl4nk_bot", "Cygnet", "auditbase" ],
+            "C": [ "SolidInspect", "baudit", "Outis", "Dragonfly" ],
+            "prize": {
+                "winner": 1231.08,
+                "A": 946.99,
+                "B": 121.00
+            }
+        }
+    },
+    {
+        "name": "uniswap-feb23",
+        "data": {
+            "judge": "0xTheC0der",
+            "winner": [ "LightChaser" ],
+            "A": [ "henry" ],
+            "B": [ "Cygnet", "Pechenkata", "Selucreh", "Dragonfly", "Outis" ],
+            "C": [ "ubl4nk_bot", "znBotty", "MrsHudson", "baudit", "TragedyOTCommons", "Hound", "auditbase", "SolidInspect", "Tera", "vuln-detector" ],
+            "prize": {
+                "winner": 916.40,
+                "A": 704.92,
+                "B": 125.74
+            }
+        }
+    },
+    {
+        "name": "spectra-feb23",
+        "data": {
+            "judge": "gzeon",
+            "winner": [ "TragedyOTCommons" ],
+            "A": [ "henry", "LightChaser", "MrsHudson", "Dragonfly" ],
+            "B": [ "znBotty", "Cygnet", "ubl4nk_bot", "Hound", "Pechenkata", "Selucreh", "vuln-detector", "SolidInspect", "Outis" ],
+            "C": [ "auditbase", "baudit", "Tera" ],
+            "prize": {
+                "winner": 455.88,
+                "A": 350.67,
+                "B": 37.94
+            }
+        }
+    },
+    {
+        "name": "pooltogether-mar04",
+        "data": {
+            "judge": "RaymondFam",
+            "winner": [ "Cygnet" ],
+            "A": [ "MrsHudson", "LightChaser", "vuln-detector", "TragedyOTCommons", "Hound", "ubl4nk_bot", "znBotty", "Selucreh", "Tera", "henry", "auditbase", "The_Madaladinator" ],
+            "B": [ "Dragonfly", "SolidInspect", "baudit" ],
+            "C": [ "dervish" ],
+            "prize": {
+                "winner": 212.38,
+                "A": 163.37,
+                "B": 25.75
+            }
+        }
+    },
+    {
+        "name": "revert-mar04",
+        "data": {
+            "judge": "EV_om",
+            "winner": [ "Hound" ],
+            "A": [ "The_Madaladinator", "henry" ],
+            "B": [ "Cygnet", "Pechenkata", "TragedyOTCommons" ],
+            "C": [ "ubl4nk_bot", "dervish", "MrsHudson", "Outis", "baudit", "SolidInspect", "Tera", "Selucreh", "LightChaser", "vuln-detector", "Dragonfly", "znBotty", "auditbase" ],
+            "prize": {
+                "winner": 1297.67,
+                "A": 998.21,
+                "B": 201.97
+            }
+        }
+    }
 ]
