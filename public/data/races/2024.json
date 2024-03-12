@@ -139,7 +139,7 @@
         "data": {
             "judge": "RaymondFam",
             "winner": [ "Cygnet" ],
-            "A": [ "MrsHudson", "LightChaser", "vuln-detector", "TragedyOfCommons", "Hound", "ubl4nk_bot", "znBotty", "Selucreh", "Tera", "henry", "auditbase", "The_Madaladinator" ],
+            "A": [ "MrsHudson", "LightChaser", "vuln-detector", "TragedyOTCommons", "Hound", "ubl4nk_bot", "znBotty", "Selucreh", "Tera", "henry", "auditbase", "The_Madaladinator" ],
             "B": [ "Dragonfly", "SolidInspect", "baudit" ],
             "C": [ "dervish" ],
             "prize": {
