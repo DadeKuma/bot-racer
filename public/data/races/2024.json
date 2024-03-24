@@ -163,5 +163,20 @@
                 "B": 201.97
             }
         }
+    },
+    {
+        "name": "coinbase-mar14",
+        "data": {
+            "judge": "RaymondFam",
+            "winner": [ "Pechenkata" ],
+            "A": [ "Selucreh", "znBotty", "Outis", "vuln-detector", "Hound", "SolidInspect", "MrsHudson", "henry", "TragedyOTCommons", "Tera", "Cygnet", "ubl4nk_bot", "LightChaser" ],
+            "B": [ "baudit", "dervish", "auditbase", "Dragonfly" ],
+            "C": [  ],
+            "prize": {
+                "winner": 195.74,
+                "A": 150.57,
+                "B": 24.20
+            }
+        }
     }
 ]
